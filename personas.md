@@ -3,9 +3,9 @@
 ### Jim Morrison, Switching Majors
 * **Who are you?** I am a second year at University of Delaware. I originially was a Civil Engineer major, but I decided to switch to Computer Science after taking basic programming classes.
 
-* **What’s your main goal?** I have already spent two years of my time here at UD in a major I do not want. I want to see what classes I need to graduate and make a schedule so I can graduate as soon as I can so I don't lose more time and money taking courses I do not need.
+* **What’s your main goal?** I have already spent two years of my time here at UD in a major I do not want to take any unnecessary classes. I want to see what classes I need to graduate and make a schedule so I can graduate as soon as I can so I don't lose more time and money taking courses I do not need.
 
-* **What’s your main barrier to achieving this goal?** I am having trouble coordinating times to meet with the advisor, so I have to pick my classes on my own. I want to formulate a graduuation plan so I can make up for lost time.
+* **What’s your main barrier to achieving this goal?** I am having trouble coordinating times to meet with the advisor, so I have to pick my classes on my own. I want to formulate a graduation plan so I can make up for lost time.
 
 
 ### Tom Petty, Deploying Reservist
