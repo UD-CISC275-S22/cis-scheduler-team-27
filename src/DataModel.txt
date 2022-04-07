@@ -1,0 +1,27 @@
+possibleCourses: [Course]
+
+Course{
+    courseCode: string
+    courseTitle: string
+    courseCredits: int
+    preReq: [string]
+}
+
+semester{
+    name: string
+    numOfCourses: int
+    listOfCourses: [Course]
+    numberOfCredits: int
+    Year: int
+    Season: string
+}
+Still deciding how to sperate for the year and season, may or may not make 
+a sepereate interface to store a year of classes and place that information within 
+the year. 
+
+degreePlan{
+    name: string
+    listOfSemesters: [semester]
+    numOfSemesters: int
+}
+
