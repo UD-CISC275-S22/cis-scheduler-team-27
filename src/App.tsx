@@ -1,4 +1,5 @@
 import React from "react";
+import { Planner } from "./Plan/Planner";
 import "./App.css";
 
 function App(): JSX.Element {
@@ -12,8 +13,8 @@ function App(): JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.
             </p>
+            <Planner></Planner>
         </div>
     );
 }
-
 export default App;
