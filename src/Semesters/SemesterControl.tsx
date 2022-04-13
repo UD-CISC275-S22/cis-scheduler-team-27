@@ -4,7 +4,7 @@ import { Semester } from "../interfaces/Semester";
 import { AddSemester } from "./AddSemester";
 import { SemesterList } from "./SemesterList";
 const blank_semester: Semester = {
-    name: "",
+    name: "Semester 1",
     year: 0,
     season: "",
     courses: [],
