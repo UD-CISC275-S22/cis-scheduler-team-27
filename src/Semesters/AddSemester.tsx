@@ -11,12 +11,13 @@ export function AddSemester({
     handleClose: () => void;
     addSemester: (newSemester: Semester) => void;
 }) {
-    const [name, setName] = useState<string>("");
+    const [season, setSeason] = useState<string>("");
+    const [year, setYear] = useState<string>("");
     function saveChanges() {
         addSemester({
-            name: name,
-            year: 0,
-            season: "",
+            name: season + " " + year.toString(),
+            year: parseInt(year),
+            season: season,
             courses: [],
             credits: 0
         });
@@ -30,12 +31,26 @@ export function AddSemester({
                 </Modal.Header>
                 <Modal.Body>
                     <Form.Group controlId="AddSemester" as={Row}>
+                        <Form.Label column sm={3}>
+                            Semester Season:
+                        </Form.Label>
                         <Col>
                             <Form.Control
-                                value={name}
+                                value={season}
                                 onChange={(
                                     event: React.ChangeEvent<HTMLInputElement>
-                                ) => setName(event.target.value)}
+                                ) => setSeason(event.target.value)}
+                            />
+                        </Col>
+                        <Form.Label column sm={3}>
+                            Semester Year:
+                        </Form.Label>
+                        <Col>
+                            <Form.Control
+                                value={year}
+                                onChange={(
+                                    event: React.ChangeEvent<HTMLInputElement>
+                                ) => setYear(event.target.value)}
                             />
                         </Col>
                     </Form.Group>

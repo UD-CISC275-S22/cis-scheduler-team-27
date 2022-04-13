@@ -34,7 +34,6 @@ export function Planner(): JSX.Element {
     }
     return (
         <div>
-            <h3>Add a Plan</h3>
             <div>
                 <PlanList
                     plans={plans}
