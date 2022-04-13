@@ -26,13 +26,11 @@ export function SemesterView({
     ) : (
         <Container>
             <Col>
-                <h3>{semester.name}</h3>
+                <h5>{semester.name}</h5>
                 <Row>Number of Courses: {semester.courses.length}</Row>
                 <Row>Credits: {semester.credits}</Row>
-                <Row>Year: {semester.year}</Row>
-                <Row>Season: {semester.season}</Row>
                 {/*Semester Displays Here*/}
-                <Button onClick={changeEditing}>Edit Plan</Button>
+                <Button onClick={changeEditing}>Edit Semester</Button>
             </Col>
         </Container>
     );
