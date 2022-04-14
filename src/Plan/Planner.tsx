@@ -3,9 +3,14 @@ import { Plan } from "../interfaces/Plan";
 import { PlanList } from "./PlanList";
 import { PlanModal } from "./AddPlan";
 import { Button } from "react-bootstrap";
-let blank_plan: Plan;
+const blank_plan: Plan = {
+    title: "Plan 1",
+    description: "add description",
+    semesters: []
+};
+const INTIAL_PLANS = [blank_plan];
 export function Planner(): JSX.Element {
-    const [plans, setPlan] = useState<Plan[]>([blank_plan]);
+    const [plans, setPlan] = useState<Plan[]>(INTIAL_PLANS);
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -29,6 +34,7 @@ export function Planner(): JSX.Element {
     }
     return (
         <div>
+            <h3>Add a Plan</h3>
             <div>
                 <PlanList
                     plans={plans}
