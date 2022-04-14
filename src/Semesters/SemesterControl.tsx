@@ -3,16 +3,9 @@ import { Button } from "react-bootstrap";
 import { Semester } from "../interfaces/Semester";
 import { AddSemester } from "./AddSemester";
 import { SemesterList } from "./SemesterList";
-const blank_semester: Semester = {
-    name: "Semester 1",
-    year: 0,
-    season: "",
-    courses: [],
-    credits: 0
-};
-const INITIAL_SEMESTERS = [blank_semester];
+
 export function SemesterControl(): JSX.Element {
-    const [semesters, setSemesters] = useState<Semester[]>(INITIAL_SEMESTERS);
+    const [semesters, setSemesters] = useState<Semester[]>([]);
     const [show, setShow] = useState<boolean>(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);

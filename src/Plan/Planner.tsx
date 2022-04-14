@@ -3,14 +3,9 @@ import { Plan } from "../interfaces/Plan";
 import { PlanList } from "./PlanList";
 import { PlanModal } from "./AddPlan";
 import { Button } from "react-bootstrap";
-const blank_plan: Plan = {
-    title: "Plan 1",
-    description: "add description",
-    semesters: []
-};
-const INTIAL_PLANS = [blank_plan];
+
 export function Planner(): JSX.Element {
-    const [plans, setPlan] = useState<Plan[]>(INTIAL_PLANS);
+    const [plans, setPlan] = useState<Plan[]>([]);
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
