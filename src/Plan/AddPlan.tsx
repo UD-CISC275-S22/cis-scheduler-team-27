@@ -30,7 +30,7 @@ export function PlanModal({
                     {/* Title */}
                     <Form.Group controlId="AddPlan" as={Row}>
                         <Form.Label column sm={3}>
-                            Title:
+                            Plan Name:
                         </Form.Label>
                         <Col>
                             <Form.Control

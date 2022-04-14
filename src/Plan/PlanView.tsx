@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Col, Container, Button } from "react-bootstrap";
 import { Plan } from "../interfaces/Plan";
+import { SemesterControl } from "../Semesters/SemesterControl";
 import { PlanEditor } from "./PlanEditor";
 export function PlanView({
     plan,
@@ -32,6 +33,7 @@ export function PlanView({
                     </Col>
                     <Button onClick={changeEditing}>Edit Plan</Button>
                     {/*Semester Goes Here */}
+                    <SemesterControl></SemesterControl>
                 </span>
             </Col>
         </Container>

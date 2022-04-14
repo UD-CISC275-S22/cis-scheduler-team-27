@@ -4,8 +4,8 @@ import { PlanList } from "./PlanList";
 import { PlanModal } from "./AddPlan";
 import { Button } from "react-bootstrap";
 const blank_plan: Plan = {
-    title: "",
-    description: "",
+    title: "Plan 1",
+    description: "add description",
     semesters: []
 };
 const INTIAL_PLANS = [blank_plan];
@@ -34,7 +34,6 @@ export function Planner(): JSX.Element {
     }
     return (
         <div>
-            <h3>Add a Plan</h3>
             <div>
                 <PlanList
                     plans={plans}
