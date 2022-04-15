@@ -27,6 +27,9 @@ export function Planner(): JSX.Element {
             setPlan([...plans, newPlan]);
         }
     }
+    function clearPlans() {
+        setPlan([]);
+    }
     return (
         <div>
             <h3>Add a Plan</h3>
@@ -39,6 +42,9 @@ export function Planner(): JSX.Element {
             </div>
             <div>
                 <Button onClick={handleShow}>Add New Plan</Button>
+                {plans.length !== 0 && (
+                    <Button onClick={clearPlans}>Clear Plans</Button>
+                )}
                 <PlanModal
                     show={show}
                     handleClose={handleClose}
