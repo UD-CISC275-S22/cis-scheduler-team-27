@@ -141,20 +141,20 @@ FAIL src/App.test.tsx
 -------------------------|---------|----------|---------|---------|-------------------
 File                     | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------|---------|----------|---------|---------|-------------------
-All files                |   14.86 |     7.14 |   10.63 |   15.94 |                   
+All files                |   14.47 |    11.11 |    10.2 |   15.49 |                   
  src                     |      75 |       50 |   66.66 |      75 |                   
   App.tsx                |     100 |      100 |     100 |     100 |                   
   interfaces.tsx         |       0 |        0 |       0 |       0 |                   
   openingInstruction.tsx |   66.66 |       50 |      50 |   66.66 | 8                 
- src/Plan                |   24.24 |        0 |   14.28 |   26.66 |                   
+ src/Plan                |   23.52 |     12.5 |   13.63 |    25.8 |                   
   AddPlan.tsx            |      40 |      100 |   33.33 |      40 | 16-21,40          
   PlanEditor.tsx         |       0 |      100 |       0 |       0 | 16-56             
   PlanList.tsx           |      50 |      100 |      50 |      50 | 17                
   PlanView.tsx           |       0 |        0 |       0 |       0 | 15-19             
-  Planner.tsx            |   33.33 |        0 |   11.11 |   41.66 | 13-27             
+  Planner.tsx            |   31.25 |    16.66 |      10 |   38.46 | 13-31             
  src/Semesters           |       0 |        0 |       0 |       0 |                   
   AddSemester.tsx        |       0 |      100 |       0 |       0 | 14-53             
-  SemesterControl.tsx    |       0 |        0 |       0 |       0 | 8-34              
+  SemesterControl.tsx    |       0 |        0 |       0 |       0 | 8-37              
   SemesterEditor.tsx     |       0 |      100 |       0 |       0 | 16-79             
   SemesterList.tsx       |       0 |      100 |       0 |       0 | 14-17             
   SemesterView.tsx       |       0 |        0 |       0 |       0 | 15-19             
@@ -166,5 +166,5 @@ All files                |   14.86 |     7.14 |   10.63 |   15.94 |
 Test Suites: 2 failed, 2 total
 Tests:       2 failed, 2 total
 Snapshots:   0 total
-Time:        2.901 s
+Time:        3.005 s
 Ran all test suites.
