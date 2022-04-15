@@ -31,6 +31,9 @@ export function SemesterControl(): JSX.Element {
             setSemesters([...semesters, newSemester]);
         }
     }
+    function clearSemesters() {
+        setSemesters([]);
+    }
     return (
         <div>
             <h3>Add Semesters</h3>
@@ -43,6 +46,9 @@ export function SemesterControl(): JSX.Element {
             </div>
             <div>
                 <Button onClick={handleShow}>Add New Semester</Button>
+                {semesters.length !== 0 && (
+                    <Button onClick={clearSemesters}>Clear Semesters</Button>
+                )}
                 <AddSemester
                     show={show}
                     handleClose={handleClose}
