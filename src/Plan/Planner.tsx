@@ -3,9 +3,9 @@ import { Plan } from "../interfaces/Plan";
 import { PlanList } from "./PlanList";
 import { PlanModal } from "./AddPlan";
 import { Button } from "react-bootstrap";
-let blank_plan: Plan;
+
 export function Planner(): JSX.Element {
-    const [plans, setPlan] = useState<Plan[]>([blank_plan]);
+    const [plans, setPlan] = useState<Plan[]>([]);
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -27,8 +27,12 @@ export function Planner(): JSX.Element {
             setPlan([...plans, newPlan]);
         }
     }
+    function clearPlans() {
+        setPlan([]);
+    }
     return (
         <div>
+            <h3>Add a Plan</h3>
             <div>
                 <PlanList
                     plans={plans}
@@ -38,6 +42,9 @@ export function Planner(): JSX.Element {
             </div>
             <div>
                 <Button onClick={handleShow}>Add New Plan</Button>
+                {plans.length !== 0 && (
+                    <Button onClick={clearPlans}>Clear Plans</Button>
+                )}
                 <PlanModal
                     show={show}
                     handleClose={handleClose}
