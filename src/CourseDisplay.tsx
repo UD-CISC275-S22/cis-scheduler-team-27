@@ -16,9 +16,9 @@ export function CourseDisplay({
         return (
             <div>
                 <span>
-                    <h5>{chosenCourse.courseTitle}</h5>
-                    <p>Course Code: {chosenCourse.courseCode}</p>
-                    <p>Credits: {chosenCourse.courseCredits}</p>
+                    <h5>{chosenCourse.name}</h5>
+                    <p>Course Code: {chosenCourse.code}</p>
+                    <p>Credits: {chosenCourse.credits}</p>
                     <p>Required PreReqs: {chosenCourse.preReq}</p>
                 </span>
             </div>

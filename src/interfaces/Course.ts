@@ -1,6 +1,10 @@
 export interface Course {
-    courseCode: string;
-    courseTitle: string;
-    courseCredits: number;
-    preReq: string[];
+    code: string;
+    name: string;
+    descr: string;
+    credits: string;
+    preReq: string;
+    restrict: string;
+    breadth: string;
+    typ: string;
 }
