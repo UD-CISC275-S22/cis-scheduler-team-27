@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import { SemesterControl } from "./SemesterControl";
 import userEvent from "@testing-library/user-event";
 
-describe("CheckAnswer Component tests", () => {
+describe("Semester Component tests", () => {
     test("There are initially two buttons", () => {
         render(<SemesterControl />);
         const addSemester = screen.getByRole("button");
