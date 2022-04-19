@@ -45,9 +45,16 @@ export function SemesterControl(): JSX.Element {
                 ></SemesterList>
             </div>
             <div>
-                <Button onClick={handleShow}>Add New Semester</Button>
+                <Button onClick={handleShow} data-testid="AddSemButton">
+                    Add New Semester
+                </Button>
                 {semesters.length !== 0 && (
-                    <Button onClick={clearSemesters}>Clear Semesters</Button>
+                    <Button
+                        onClick={clearSemesters}
+                        data-testid="clear-all-sems"
+                    >
+                        Clear Semesters
+                    </Button>
                 )}
                 <AddSemester
                     show={show}

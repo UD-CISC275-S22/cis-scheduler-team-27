@@ -30,7 +30,9 @@ export function SemesterView({
                 <Row>Number of Courses: {semester.courses.length}</Row>
                 <Row>Credits: {semester.credits}</Row>
                 {/*Semester Displays Here*/}
-                <Button onClick={changeEditing}>Edit Semester</Button>
+                <Button onClick={changeEditing} data-testid="edit-sem-button">
+                    Edit Semester
+                </Button>
             </Col>
         </Container>
     );

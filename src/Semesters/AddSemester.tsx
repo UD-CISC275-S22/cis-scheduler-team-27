@@ -56,10 +56,18 @@ export function AddSemester({
                     </Form.Group>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="seconary" onClick={handleClose}>
+                    <Button
+                        variant="seconary"
+                        onClick={handleClose}
+                        data-testid="cancel-button"
+                    >
                         Close
                     </Button>
-                    <Button variant="primary" onClick={saveChanges}>
+                    <Button
+                        variant="primary"
+                        onClick={saveChanges}
+                        data-testid="save-button"
+                    >
                         Save
                     </Button>
                 </Modal.Footer>
