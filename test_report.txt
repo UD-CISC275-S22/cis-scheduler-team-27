@@ -33,21 +33,23 @@
 
 PASS src/Semesters/Semester.test.tsx
   Semester Component tests
-    ✓ There are initially two buttons (84 ms)
-    ✓ Add Semester Modal Pops up (67 ms)
-    ✓ Save Button saves input (80 ms)
-    ✓ Cancel Button doesn't save input (68 ms)
-    ✓ There is an edit button (18 ms)
-    ✓ Edit Button creates three textboxes (133 ms)
-    ✓ Save button in edit mode saves changes (99 ms)
-    ✓ Delete button deletes semester (62 ms)
+    ✓ There are initially two buttons (113 ms)
+    ✓ Add Semester Modal Pops up (89 ms)
+    ✓ Save Button saves input (108 ms)
+    ✓ Cancel Button doesn't save input (90 ms)
+    ✓ There is an edit button (25 ms)
+    ✓ Edit Button creates three textboxes (163 ms)
+    ✓ Save button in edit mode saves changes (140 ms)
+    ✓ Delete button deletes semester (88 ms)
 
 -------------------------|---------|----------|---------|---------|-------------------
 File                     | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------|---------|----------|---------|---------|-------------------
-All files                |   44.73 |    33.33 |   40.81 |   45.07 |                   
+All files                |   39.53 |       30 |   37.03 |    39.5 |                   
  src                     |       0 |        0 |       0 |       0 |                   
-  App.tsx                |       0 |      100 |       0 |       0 | 7                 
+  App.tsx                |       0 |      100 |       0 |       0 | 9                 
+  CourseDisplay.tsx      |       0 |        0 |       0 |       0 | 9-16              
+  CourseView.tsx         |       0 |      100 |       0 |       0 | 12-28             
   interfaces.tsx         |       0 |        0 |       0 |       0 |                   
   openingInstruction.tsx |       0 |        0 |       0 |       0 | 5-10              
  src/Plan                |       0 |        0 |       0 |       0 |                   
@@ -70,5 +72,5 @@ All files                |   44.73 |    33.33 |   40.81 |   45.07 |
 Test Suites: 1 passed, 1 total
 Tests:       8 passed, 8 total
 Snapshots:   0 total
-Time:        3.047 s
+Time:        4.182 s
 Ran all test suites.
