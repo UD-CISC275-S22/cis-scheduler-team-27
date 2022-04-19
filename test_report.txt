@@ -32,15 +32,15 @@
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
 
 PASS src/Semesters/Semester.test.tsx
-  CheckAnswer Component tests
+  Semester Component tests
     ✓ There are initially two buttons (84 ms)
-    ✓ Add Semester Modal Pops up (65 ms)
-    ✓ Save Button saves input (79 ms)
-    ✓ Cancel Button doesn't save input (67 ms)
+    ✓ Add Semester Modal Pops up (67 ms)
+    ✓ Save Button saves input (80 ms)
+    ✓ Cancel Button doesn't save input (68 ms)
     ✓ There is an edit button (18 ms)
-    ✓ Edit Button creates three textboxes (127 ms)
-    ✓ Save button in edit mode saves changes (98 ms)
-    ✓ Delete button deletes semester (60 ms)
+    ✓ Edit Button creates three textboxes (133 ms)
+    ✓ Save button in edit mode saves changes (99 ms)
+    ✓ Delete button deletes semester (62 ms)
 
 -------------------------|---------|----------|---------|---------|-------------------
 File                     | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
@@ -70,5 +70,5 @@ All files                |   44.73 |    33.33 |   40.81 |   45.07 |
 Test Suites: 1 passed, 1 total
 Tests:       8 passed, 8 total
 Snapshots:   0 total
-Time:        3.075 s
+Time:        3.047 s
 Ran all test suites.
