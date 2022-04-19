@@ -19,10 +19,10 @@ export function OpeningInstruction(): JSX.Element {
                 See Instructions
             </Button>
             {isMessageVisible && (
-                <h3>
-                    Add you wanted classes and make mock semesters to see how
-                    you can graduate.
-                </h3>
+                <p>
+                    Add courses and make mock semesters to see how you can
+                    graduate on time.
+                </p>
             )}
         </div>
     );

@@ -1,6 +1,5 @@
-{
-    "ACCT": {
-        "ACCT 166": {
+[ 
+    {
             "code": "ACCT 166",
             "name": "SPECIAL PROBLEM",
             "descr": "",
@@ -74593,4 +74592,4 @@
             "typ": ""
         }
     }
-}
+]
