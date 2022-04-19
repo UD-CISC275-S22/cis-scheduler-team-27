@@ -75,8 +75,13 @@ export function SemesterEditor({
                     </Col>
                 </Form.Group>
             </Col>
-            <Button onClick={save}>Save</Button>
-            <Button onClick={() => deleteSemester(semester.name)}>
+            <Button onClick={save} data-testid="edit-sem-save-button">
+                Save
+            </Button>
+            <Button
+                onClick={() => deleteSemester(semester.name)}
+                data-testid="delete-sem-button"
+            >
                 Delete
             </Button>
         </Container>
