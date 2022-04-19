@@ -2,7 +2,6 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import { SemesterControl } from "./SemesterControl";
 import userEvent from "@testing-library/user-event";
-import { AddSemester } from "./AddSemester";
 
 describe("CheckAnswer Component tests", () => {
     test("There are initially two buttons", () => {
