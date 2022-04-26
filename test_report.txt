@@ -349,11 +349,12 @@ FAIL src/Welcome.test.tsx
 -------------------------|---------|----------|---------|---------|-------------------
 File                     | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------|---------|----------|---------|---------|-------------------
-All files                |   52.32 |       45 |   46.29 |   53.08 |                   
- src                     |   21.42 |       50 |      25 |   21.42 |                   
+All files                |   42.05 |    32.14 |   37.31 |   42.57 |                   
+ src                     |    8.57 |    16.66 |    9.52 |    8.82 |                   
   App.tsx                |       0 |      100 |       0 |       0 | 9                 
   CourseDisplay.tsx      |       0 |        0 |       0 |       0 | 9-16              
-  CourseView.tsx         |       0 |      100 |       0 |       0 | 12-28             
+  CourseEditor.tsx       |       0 |        0 |       0 |       0 | 28-92             
+  CourseView.tsx         |       0 |        0 |       0 |       0 | 12-79             
   interfaces.tsx         |       0 |        0 |       0 |       0 |                   
   openingInstruction.tsx |     100 |      100 |     100 |     100 |                   
  src/Plan                |   23.52 |     12.5 |   13.63 |    25.8 |                   
@@ -376,5 +377,5 @@ All files                |   52.32 |       45 |   46.29 |   53.08 |
 Test Suites: 2 failed, 1 passed, 3 total
 Tests:       8 failed, 10 passed, 18 total
 Snapshots:   0 total
-Time:        5.893 s
+Time:        4.52 s
 Ran all test suites.
