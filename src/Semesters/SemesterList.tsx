@@ -1,4 +1,6 @@
 import React from "react";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 import { Semester } from "../interfaces/Semester";
 import { SemesterView } from "./SemesterView";
 
@@ -15,11 +17,13 @@ export function SemesterList({
         <div>
             {semesters.map((semester: Semester) => (
                 <div key={semester.name} className="bg-light border m-2 p-2">
-                    <SemesterView
-                        semester={semester}
-                        deleteSemester={deleteSemester}
-                        editSemester={editSemester}
-                    ></SemesterView>
+                    <DndProvider backend={HTML5Backend}>
+                        <SemesterView
+                            semester={semester}
+                            deleteSemester={deleteSemester}
+                            editSemester={editSemester}
+                        ></SemesterView>
+                    </DndProvider>
                 </div>
             ))}
         </div>

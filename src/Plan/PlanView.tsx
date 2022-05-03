@@ -3,6 +3,7 @@ import { Col, Container, Button } from "react-bootstrap";
 import { Plan } from "../interfaces/Plan";
 import { SemesterControl } from "../Semesters/SemesterControl";
 import { PlanEditor } from "./PlanEditor";
+import "../course.css";
 export function PlanView({
     plan,
     deletePlan,
@@ -24,18 +25,20 @@ export function PlanView({
             deletePlan={deletePlan}
         ></PlanEditor>
     ) : (
-        <Container>
-            <Col>
-                <span>
-                    <Col>
-                        <h3>{plan.title}</h3>
-                        <p> Description: {plan.description}</p>
-                    </Col>
-                    <Button onClick={changeEditing}>Edit Plan</Button>
-                    {/*Semester Goes Here */}
-                    <SemesterControl></SemesterControl>
-                </span>
-            </Col>
-        </Container>
+        <div>
+            <Container>
+                <Col>
+                    <span>
+                        <Col>
+                            <h3>{plan.title}</h3>
+                            <p> Description: {plan.description}</p>
+                        </Col>
+                        <Button onClick={changeEditing}>Edit Plan</Button>
+                        {/*Semester Goes Here */}
+                        <SemesterControl></SemesterControl>
+                    </span>
+                </Col>
+            </Container>
+        </div>
     );
 }

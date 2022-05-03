@@ -3,6 +3,7 @@ import { Plan } from "../interfaces/Plan";
 import { PlanList } from "./PlanList";
 import { PlanModal } from "./AddPlan";
 import { Button } from "react-bootstrap";
+import "../course.css";
 
 export function Planner(): JSX.Element {
     const [plans, setPlan] = useState<Plan[]>([]);
@@ -34,13 +35,6 @@ export function Planner(): JSX.Element {
         <div>
             <h3>Add a Plan</h3>
             <div>
-                <PlanList
-                    plans={plans}
-                    editPlan={editPlan}
-                    deletePlan={deletePlan}
-                ></PlanList>
-            </div>
-            <div>
                 <Button onClick={handleShow}>Add New Plan</Button>
                 {plans.length !== 0 && (
                     <Button onClick={clearPlans} data-testid="AddSemButton">
@@ -52,6 +46,13 @@ export function Planner(): JSX.Element {
                     handleClose={handleClose}
                     addPlan={addPlan}
                 ></PlanModal>
+            </div>
+            <div className="planViewer">
+                <PlanList
+                    plans={plans}
+                    editPlan={editPlan}
+                    deletePlan={deletePlan}
+                ></PlanList>
             </div>
         </div>
     );

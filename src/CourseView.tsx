@@ -4,6 +4,8 @@ import { Course } from "./interfaces/Course";
 import catalog from "./catalog.json";
 import { CourseDisplay } from "./CourseDisplay";
 import { CourseEditor } from "./CourseEditor";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 
 type ChangeEvent = React.ChangeEvent<
     HTMLTextAreaElement | HTMLInputElement | HTMLSelectElement
@@ -75,7 +77,9 @@ export function CourseView(): JSX.Element {
                     ))}
                 </Form.Select>
             </Form.Group>
-            <CourseDisplay chosenCourse={courseInfo}></CourseDisplay>
+            <DndProvider backend={HTML5Backend}>
+                <CourseDisplay chosenCourse={courseInfo}></CourseDisplay>
+            </DndProvider>
             <Button onClick={() => deleteCourse(chosenCourse)}>
                 Delete Course
             </Button>

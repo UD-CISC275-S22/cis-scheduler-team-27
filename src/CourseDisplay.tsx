@@ -1,5 +1,7 @@
 import React from "react";
 import { Course } from "./interfaces/Course";
+import "./course.css";
+import { CourseCard } from "./CourseCard";
 
 export function CourseDisplay({
     chosenCourse
@@ -13,15 +15,6 @@ export function CourseDisplay({
             </div>
         );
     } else {
-        return (
-            <div>
-                <span>
-                    <h5>{chosenCourse.name}</h5>
-                    <p>Course Code: {chosenCourse.code}</p>
-                    <p>Credits: {chosenCourse.credits}</p>
-                    <p>Required PreReqs: {chosenCourse.preReq}</p>
-                </span>
-            </div>
-        );
+        return <CourseCard course={chosenCourse}></CourseCard>;
     }
 }
