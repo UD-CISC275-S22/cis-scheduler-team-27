@@ -4,6 +4,9 @@ import "./App.css";
 import { OpeningInstruction } from "./openingInstruction";
 import { CourseView } from "./CourseView";
 import { Col, Container, Row } from "react-bootstrap";
+import { CoursePool } from "./CoursePool";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 
 function App(): JSX.Element {
     return (
@@ -21,6 +24,9 @@ function App(): JSX.Element {
                     <Row>
                         <Col xs={4}>
                             <CourseView></CourseView>
+                            <DndProvider backend={HTML5Backend}>
+                                <CoursePool></CoursePool>
+                            </DndProvider>
                         </Col>
                         <Col>
                             <Planner></Planner>
