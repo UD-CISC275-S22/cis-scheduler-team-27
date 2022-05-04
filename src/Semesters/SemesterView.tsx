@@ -6,6 +6,7 @@ import "../course.css";
 import { Course } from "../interfaces/Course";
 import { useDrop } from "react-dnd";
 import { CourseCard } from "../CourseCard";
+import "Semester.css";
 
 export function SemesterView({
     semester,
@@ -41,7 +42,7 @@ export function SemesterView({
             deleteSemester={deleteSemester}
         ></SemesterEditor>
     ) : (
-        <Container>
+        <Container className="Semester">
             <Col>
                 <h5>{semester.name}</h5>
                 <Row>Number of Courses: {semester.courses.length}</Row>
