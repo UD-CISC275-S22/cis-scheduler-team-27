@@ -126,14 +126,14 @@ All files                |    2.41 |     6.25 |    2.56 |    2.54 |
   AddPlan.tsx            |       0 |      100 |       0 |       0 | 14-40             
   PlanEditor.tsx         |       0 |      100 |       0 |       0 | 16-56             
   PlanList.tsx           |       0 |      100 |       0 |       0 | 14-17             
-  PlanView.tsx           |       0 |        0 |       0 |       0 | 16-20             
+  PlanView.tsx           |       0 |        0 |       0 |       0 | 17-21             
   Planner.tsx            |       0 |        0 |       0 |       0 | 9-34              
  src/Semesters           |       0 |        0 |       0 |       0 |                   
   AddSemester.tsx        |       0 |      100 |       0 |       0 | 14-53             
   SemesterControl.tsx    |       0 |        0 |       0 |       0 | 8-37              
   SemesterEditor.tsx     |       0 |      100 |       0 |       0 | 16-82             
   SemesterList.tsx       |       0 |      100 |       0 |       0 | 16-19             
-  SemesterView.tsx       |       0 |        0 |       0 |       0 | 19-52             
+  SemesterView.tsx       |       0 |        0 |       0 |       0 | 20-53             
  src/interfaces          |       0 |        0 |       0 |       0 |                   
   Course.ts              |       0 |        0 |       0 |       0 |                   
   Plan.tsx               |       0 |        0 |       0 |       0 |                   
@@ -142,5 +142,5 @@ All files                |    2.41 |     6.25 |    2.56 |    2.54 |
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        5.943 s
+Time:        3.947 s
 Ran all test suites.
