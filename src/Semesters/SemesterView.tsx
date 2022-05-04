@@ -6,7 +6,7 @@ import "../course.css";
 import { Course } from "../interfaces/Course";
 import { useDrop } from "react-dnd";
 import { CourseCard } from "../CourseCard";
-import "Semester.css";
+import "./Semester.css";
 
 export function SemesterView({
     semester,

@@ -3,7 +3,7 @@ import { Col, Container, Button } from "react-bootstrap";
 import { Plan } from "../interfaces/Plan";
 import { SemesterControl } from "../Semesters/SemesterControl";
 import { PlanEditor } from "./PlanEditor";
-import "Plan.css";
+import "./Plan.css";
 import "../course.css";
 export function PlanView({
     plan,

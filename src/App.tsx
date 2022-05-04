@@ -11,14 +11,16 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 function App(): JSX.Element {
     return (
         <div className="App">
+            <header>
+                <img
+                    src="https://commerce.cashnet.com/cashnetg/logos/UDEL_PROD/4HASC18922Cashnet-UDHeader.png"
+                    alt="University of Delaware Banner"
+                />
+            </header>
             <header className="App-header">
                 <OpeningInstruction></OpeningInstruction>
             </header>
             <p>Sara Noor, Riley Johnson, and Sydney Segear</p>
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
-            </p>
             <div>
                 <Container>
                     <Row>
