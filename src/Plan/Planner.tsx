@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Plan } from "../interfaces/Plan";
 import { PlanList } from "./PlanList";
 import { PlanModal } from "./AddPlan";
-import { Button, Container } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import "../course.css";
 
 export function Planner(): JSX.Element {
@@ -33,7 +33,7 @@ export function Planner(): JSX.Element {
     }
     return (
         <div>
-            <Container className="planViewer">
+            <div className="planViewer">
                 <div className="Plan">
                     <PlanList
                         plans={plans}
@@ -54,7 +54,7 @@ export function Planner(): JSX.Element {
                         addPlan={addPlan}
                     ></PlanModal>
                 </div>
-            </Container>
+            </div>
         </div>
     );
 }
