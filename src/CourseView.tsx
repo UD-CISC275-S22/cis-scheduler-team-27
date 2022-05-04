@@ -65,7 +65,7 @@ export function CourseView(): JSX.Element {
             changeEditMode={changeEditMode}
         ></CourseEditor>
     ) : (
-        <div>
+        <div className="Plan">
             <h3>Courses</h3>
             <Form.Group controlId="chosenClass">
                 <Form.Label>Choose a Course</Form.Label>
