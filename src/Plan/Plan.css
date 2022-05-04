@@ -1,5 +1,5 @@
 .Plan {
-    background-color: #1f55b9;
+    background-color: #fafafa;
     border-style: solid;
     border-color: #1f55b9;
     border-width: 10px;
@@ -8,7 +8,7 @@
 .PlanView {
     background-color: #ffffff;
     border-style: solid;
-    border-color: #ada70a;
+    border-color: #1f55b9;
     border-width: 5px;
 }
 .Plan-Button {

@@ -36,7 +36,6 @@ export function SemesterControl(): JSX.Element {
     }
     return (
         <div>
-            <h3>Add Semesters</h3>
             <div>
                 <SemesterList
                     semesters={semesters}

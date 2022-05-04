@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Plan } from "../interfaces/Plan";
 import { PlanList } from "./PlanList";
 import { PlanModal } from "./AddPlan";
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import "../course.css";
 
 export function Planner(): JSX.Element {
@@ -33,26 +33,27 @@ export function Planner(): JSX.Element {
     }
     return (
         <div>
-            <h3>Add a Plan</h3>
-            <div>
-                <Button onClick={handleShow}>Add New Plan</Button>
-                {plans.length !== 0 && (
-                    <Button onClick={clearPlans} data-testid="AddSemButton">
-                        Clear Plans
-                    </Button>
-                )}
-                <PlanModal
-                    show={show}
-                    handleClose={handleClose}
-                    addPlan={addPlan}
-                ></PlanModal>
-            </div>
             <div className="planViewer">
-                <PlanList
-                    plans={plans}
-                    editPlan={editPlan}
-                    deletePlan={deletePlan}
-                ></PlanList>
+                <div className="Plan">
+                    <PlanList
+                        plans={plans}
+                        editPlan={editPlan}
+                        deletePlan={deletePlan}
+                    ></PlanList>
+                </div>
+                <div>
+                    <Button onClick={handleShow}>Add New Plan</Button>
+                    {plans.length !== 0 && (
+                        <Button onClick={clearPlans} data-testid="AddSemButton">
+                            Clear Plans
+                        </Button>
+                    )}
+                    <PlanModal
+                        show={show}
+                        handleClose={handleClose}
+                        addPlan={addPlan}
+                    ></PlanModal>
+                </div>
             </div>
         </div>
     );

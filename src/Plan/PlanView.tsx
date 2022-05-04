@@ -27,10 +27,10 @@ export function PlanView({
         ></PlanEditor>
     ) : (
         <div>
-            <Container className="Plan">
+            <Container className="PlanView">
                 <Col>
                     <span>
-                        <Col className="PlanView">
+                        <Col>
                             <h3>{plan.title}</h3>
                             <p> Description: {plan.description}</p>
                         </Col>

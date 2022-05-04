@@ -11,7 +11,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 function App(): JSX.Element {
     return (
         <div className="App">
-            <header>
+            <header className="Banner-header">
                 <img
                     src="https://commerce.cashnet.com/cashnetg/logos/UDEL_PROD/4HASC18922Cashnet-UDHeader.png"
                     alt="University of Delaware Banner"
@@ -19,8 +19,8 @@ function App(): JSX.Element {
             </header>
             <header className="App-header">
                 <OpeningInstruction></OpeningInstruction>
+                <p>Sara Noor, Riley Johnson, and Sydney Segear</p>
             </header>
-            <p>Sara Noor, Riley Johnson, and Sydney Segear</p>
             <div>
                 <Container>
                     <Row>
