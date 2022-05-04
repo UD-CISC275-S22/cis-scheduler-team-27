@@ -33,7 +33,7 @@ export function Planner(): JSX.Element {
     }
     return (
         <div>
-            <div className="planViewer">
+            <Container className="planViewer">
                 <div className="Plan">
                     <PlanList
                         plans={plans}
@@ -54,7 +54,7 @@ export function Planner(): JSX.Element {
                         addPlan={addPlan}
                     ></PlanModal>
                 </div>
-            </div>
+            </Container>
         </div>
     );
 }
