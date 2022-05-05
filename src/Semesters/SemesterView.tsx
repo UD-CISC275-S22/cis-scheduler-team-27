@@ -21,6 +21,16 @@ export function SemesterView({
     function changeEditing() {
         setEditing(!editing);
     }
+    /*
+    const [credits, setCredits] = useState<number>(0);
+    function sumCredits() {
+        {
+            courseList.map((course) =>
+                setCredits(credits + parseInt(course.credits))
+            );
+        }
+    }
+    */
     const [courseList, setCourseList] = useState<Course[]>([]);
     const [, drop] = useDrop({
         accept: "course",
@@ -45,17 +55,18 @@ export function SemesterView({
         <Container className="Semester">
             <Col>
                 <h5>{semester.name}</h5>
-                <Row>Number of Courses: {semester.courses.length}</Row>
-                <Row>Credits: {semester.credits}</Row>
+                <Row>Number of Courses: {courseList.length}</Row>
                 {/*Semester Displays Here*/}
-                <Container className="semesterCourses" ref={drop}>
+                <div ref={drop}>
+                    <h3>Courses</h3>
+                    <div></div>
                     {courseList.map((course) => (
                         <CourseCard
                             key={course.code}
                             course={course}
                         ></CourseCard>
                     ))}
-                </Container>
+                </div>
                 <Button onClick={changeEditing} data-testid="edit-sem-button">
                     Edit Semester
                 </Button>
