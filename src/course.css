@@ -5,14 +5,11 @@
 .pool {
     height: 500px;
     width: 415 px;
-    background-color: rgb(163, 161, 161);
     overflow-y: auto;
-}
-
-.semesterCourses {
-    height: 600px;
-    width: 600px;
-    background-color: rgb(163, 161, 161);
+    background-color: #d8e6fa;
+    border-style: solid;
+    border-color: #1f55b9;
+    border-width: 10px;
 }
 
 .planViewer {

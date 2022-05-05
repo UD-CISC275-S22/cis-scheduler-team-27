@@ -33,26 +33,27 @@ export function Planner(): JSX.Element {
     }
     return (
         <div>
-            <h3>Add a Plan</h3>
-            <div>
-                <Button onClick={handleShow}>Add New Plan</Button>
-                {plans.length !== 0 && (
-                    <Button onClick={clearPlans} data-testid="AddSemButton">
-                        Clear Plans
-                    </Button>
-                )}
-                <PlanModal
-                    show={show}
-                    handleClose={handleClose}
-                    addPlan={addPlan}
-                ></PlanModal>
-            </div>
             <div className="planViewer">
-                <PlanList
-                    plans={plans}
-                    editPlan={editPlan}
-                    deletePlan={deletePlan}
-                ></PlanList>
+                <div className="Plan">
+                    <PlanList
+                        plans={plans}
+                        editPlan={editPlan}
+                        deletePlan={deletePlan}
+                    ></PlanList>
+                </div>
+                <div className="PlanView">
+                    <Button onClick={handleShow}>Add New Plan</Button>
+                    {plans.length !== 0 && (
+                        <Button onClick={clearPlans} data-testid="AddSemButton">
+                            Clear Plans
+                        </Button>
+                    )}
+                    <PlanModal
+                        show={show}
+                        handleClose={handleClose}
+                        addPlan={addPlan}
+                    ></PlanModal>
+                </div>
             </div>
         </div>
     );

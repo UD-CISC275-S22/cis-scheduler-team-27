@@ -1,5 +1,12 @@
 .App {
     text-align: center;
+    background-color: rgb(224, 224, 238);
+    border-left-color: #0048a5;
+    border-left-style: solid;
+    border-left-width: 100px;
+    border-right-color: #0048a5;
+    border-right-style: solid;
+    border-right-width: 100px;
 }
 
 .App-logo {
@@ -15,14 +22,30 @@
 
 .App-header {
     width: 100%;
-    background-color: #282c34;
-    min-height: 40vh;
+    background-color: #0048a5;
+    background-position-x: center;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #ffcc00;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+}
+
+.Banner-header {
+    width: 100%;
+    background-color: #0048a5;
+}
+
+.Planner {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #0048a5;
+    border-width: 10px;
 }
 
 .App-link {

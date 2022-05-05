@@ -1,0 +1,34 @@
+.Semester {
+    text-align: center;
+}
+
+.Semester-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .Semester-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.Semester {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #1f55b9;
+    border-width: 5px;
+}
+
+.Semester-link {
+    color: #61dafb;
+}
+
+@keyframes Semester-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
