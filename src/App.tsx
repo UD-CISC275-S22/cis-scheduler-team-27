@@ -15,10 +15,6 @@ function App(): JSX.Element {
                 <OpeningInstruction></OpeningInstruction>
             </header>
             <p>Sara Noor, Riley Johnson, and Sydney Segear</p>
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
-            </p>
             <div>
                 <Container>
                     <Row>
