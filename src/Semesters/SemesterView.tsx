@@ -21,6 +21,12 @@ export function SemesterView({
     function changeEditing() {
         setEditing(!editing);
     }
+    function editClasses(id: string, courseList: Course[]) {
+        setCourseList(
+            courseList.filter((course: Course): boolean => id !== course.code)
+        );
+    }
+
     /*
     const [credits, setCredits] = useState<number>(0);
     function sumCredits() {
@@ -50,6 +56,8 @@ export function SemesterView({
             semester={semester}
             editSemester={editSemester}
             deleteSemester={deleteSemester}
+            courseList={courseList}
+            editClasses={editClasses}
         ></SemesterEditor>
     ) : (
         <Container className="Semester">
