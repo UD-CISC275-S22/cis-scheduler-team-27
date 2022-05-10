@@ -2,132 +2,364 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-FAIL src/Semesters/Semester.test.tsx
-  ● Test suite failed to run
+PASS src/Semesters/Semester.test.tsx (17.99 s)
+  ● Console
 
-    Jest encountered an unexpected token
+    console.error
+      Warning: Received NaN for the `value` attribute. If this is expected, cast the value to a string.
+          at input
+          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-bootstrap/cjs/FormControl.js:27:3)
+          at div
+          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-bootstrap/cjs/Col.js:72:8)
+          at div
+          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-bootstrap/cjs/FormGroup.js:19:3)
+          at div
+          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-bootstrap/cjs/Col.js:72:8)
+          at div
+          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-bootstrap/cjs/Container.js:24:3)
+          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Semesters/SemesterEditor.tsx:8:5)
+          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Semesters/SemesterView.tsx:12:5)
+          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-dnd/dist/cjs/core/DndProvider.js:41:23)
+          at div
+          at div
+          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Semesters/SemesterList.tsx:8:5)
+          at div
+          at div
+          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Semesters/SemesterControl.tsx:8:39)
 
-    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
-
-    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
-
-    By default "node_modules" folder is ignored by transformers.
-
-    Here's what you can do:
-     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
-     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
-     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
-     • If you need a custom transformation specify a "transform" option in your config.
-     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
-
-    You'll find more details and examples of these config options in the docs:
-    https://jestjs.io/docs/configuration
-    For information about custom transformations, see:
-    https://jestjs.io/docs/code-transformation
-
-    Details:
-
-    /home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-dnd-html5-backend/dist/index.js:1
-    ({"Object.<anonymous>":function(module,exports,require,__dirname,__filename,jest){import { HTML5BackendImpl } from './HTML5BackendImpl.js';
-                                                                                      ^^^^^^
-
-    SyntaxError: Cannot use import statement outside a module
-
-      1 | import React from "react";
-      2 | import { DndProvider } from "react-dnd";
-    > 3 | import { HTML5Backend } from "react-dnd-html5-backend";
-        | ^
-      4 | import { Semester } from "../interfaces/Semester";
-      5 | import { SemesterView } from "./SemesterView";
-      6 |
-
-      at Runtime.createScriptFromCode (node_modules/react-scripts/node_modules/jest-runtime/build/index.js:1728:14)
-      at Object.<anonymous> (src/Semesters/SemesterList.tsx:3:1)
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateProperty$1 (node_modules/react-dom/cjs/react-dom.development.js:3492:7)
+      at warnUnknownProperties (node_modules/react-dom/cjs/react-dom.development.js:3559:21)
+      at validateProperties$2 (node_modules/react-dom/cjs/react-dom.development.js:3583:3)
+      at validatePropertiesInDevelopment (node_modules/react-dom/cjs/react-dom.development.js:8765:5)
+      at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
+      at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
 FAIL src/Plan/Plan.test.tsx
-  ● Test suite failed to run
+  ● Plan Component tests › Add Semester Modal Pops up
 
-    Jest encountered an unexpected token
+    TestingLibraryElementError: Unable to find an element by: [data-testid="AddPlanButton"]
 
-    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"PlanView"[39m
+            [36m>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Plan[0m
+              [36m</button>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
 
-    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+      12 |     test("Add Semester Modal Pops up", () => {
+      13 |         render(<Planner />);
+    > 14 |         const addPlanBut = screen.getByTestId("AddPlanButton");
+         |                                   ^
+      15 |         addPlanBut.click();
+      16 |         const planInput = screen.queryAllByRole("textbox");
+      17 |         expect(planInput).toHaveLength(1);
 
-    By default "node_modules" folder is ignored by transformers.
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Plan/Plan.test.tsx:14:35)
 
-    Here's what you can do:
-     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
-     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
-     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
-     • If you need a custom transformation specify a "transform" option in your config.
-     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+  ● Plan Component tests › Save Button saves input
 
-    You'll find more details and examples of these config options in the docs:
-    https://jestjs.io/docs/configuration
-    For information about custom transformations, see:
-    https://jestjs.io/docs/code-transformation
+    TestingLibraryElementError: Unable to find an element by: [data-testid="AddPlanButton"]
 
-    Details:
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"PlanView"[39m
+            [36m>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Plan[0m
+              [36m</button>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
 
-    /home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-dnd-html5-backend/dist/index.js:1
-    ({"Object.<anonymous>":function(module,exports,require,__dirname,__filename,jest){import { HTML5BackendImpl } from './HTML5BackendImpl.js';
-                                                                                      ^^^^^^
+      19 |     test("Save Button saves input", () => {
+      20 |         render(<Planner />);
+    > 21 |         const addPlanBut = screen.getByTestId("AddPlanButton");
+         |                                   ^
+      22 |         addPlanBut.click();
+      23 |         const planInput = screen.queryAllByRole("textbox");
+      24 |         const inputBox = planInput[0];
 
-    SyntaxError: Cannot use import statement outside a module
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Plan/Plan.test.tsx:21:35)
 
-      1 | import React from "react";
-      2 | import { DndProvider } from "react-dnd";
-    > 3 | import { HTML5Backend } from "react-dnd-html5-backend";
-        | ^
-      4 | import { Semester } from "../interfaces/Semester";
-      5 | import { SemesterView } from "./SemesterView";
-      6 |
+  ● Plan Component tests › Cancel Button doesn't save input
 
-      at Runtime.createScriptFromCode (node_modules/react-scripts/node_modules/jest-runtime/build/index.js:1728:14)
-      at Object.<anonymous> (src/Semesters/SemesterList.tsx:3:1)
+    TestingLibraryElementError: Unable to find an element by: [data-testid="AddPlanButton"]
 
-FAIL src/Course.test.tsx
-  ● Test suite failed to run
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"PlanView"[39m
+            [36m>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Plan[0m
+              [36m</button>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
 
-    Jest encountered an unexpected token
+      32 |         const planList = screen.queryAllByText(/Plan Name/);
+      33 |         expect(planList).toHaveLength(0);
+    > 34 |         const addPlanBut = screen.getByTestId("AddPlanButton");
+         |                                   ^
+      35 |         addPlanBut.click();
+      36 |         const planInput = screen.queryAllByRole("textbox");
+      37 |         const inputBox = planInput[0];
 
-    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Plan/Plan.test.tsx:34:35)
 
-    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+  ● Plan Component tests › There is an edit button
 
-    By default "node_modules" folder is ignored by transformers.
+    TestingLibraryElementError: Unable to find an element by: [data-testid="AddPlanButton"]
 
-    Here's what you can do:
-     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
-     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
-     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
-     • If you need a custom transformation specify a "transform" option in your config.
-     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"PlanView"[39m
+            [36m>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Plan[0m
+              [36m</button>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
 
-    You'll find more details and examples of these config options in the docs:
-    https://jestjs.io/docs/configuration
-    For information about custom transformations, see:
-    https://jestjs.io/docs/code-transformation
+      44 |     test("There is an edit button", () => {
+      45 |         render(<Planner />);
+    > 46 |         const addPlanBut = screen.getByTestId("AddPlanButton");
+         |                                   ^
+      47 |         addPlanBut.click();
+      48 |         const savePlanBut = screen.getByTestId("addPlan-save");
+      49 |         savePlanBut.click();
 
-    Details:
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Plan/Plan.test.tsx:46:35)
 
-    /home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-dnd-html5-backend/dist/index.js:1
-    ({"Object.<anonymous>":function(module,exports,require,__dirname,__filename,jest){import { HTML5BackendImpl } from './HTML5BackendImpl.js';
-                                                                                      ^^^^^^
+  ● Plan Component tests › Edit Button creates two textboxes
 
-    SyntaxError: Cannot use import statement outside a module
+    TestingLibraryElementError: Unable to find an element by: [data-testid="AddPlanButton"]
 
-       6 | import { CourseEditor } from "./CourseEditor";
-       7 | import { DndProvider } from "react-dnd";
-    >  8 | import { HTML5Backend } from "react-dnd-html5-backend";
-         | ^
-       9 |
-      10 | type ChangeEvent = React.ChangeEvent<
-      11 |     HTMLTextAreaElement | HTMLInputElement | HTMLSelectElement
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"PlanView"[39m
+            [36m>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Plan[0m
+              [36m</button>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
 
-      at Runtime.createScriptFromCode (node_modules/react-scripts/node_modules/jest-runtime/build/index.js:1728:14)
-      at Object.<anonymous> (src/CourseView.tsx:8:1)
+      53 |     test("Edit Button creates two textboxes", () => {
+      54 |         render(<Planner />);
+    > 55 |         const addPlanBut = screen.getByTestId("AddPlanButton");
+         |                                   ^
+      56 |         addPlanBut.click();
+      57 |         const savePlanBut = screen.getByTestId("addPlan-save");
+      58 |         savePlanBut.click();
 
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Plan/Plan.test.tsx:55:35)
+
+  ● Plan Component tests › Save button in edit mode saves changes
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="AddPlanButton"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"PlanView"[39m
+            [36m>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Plan[0m
+              [36m</button>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      64 |     test("Save button in edit mode saves changes", () => {
+      65 |         render(<Planner />);
+    > 66 |         const addPlanBut = screen.getByTestId("AddPlanButton");
+         |                                   ^
+      67 |         addPlanBut.click();
+      68 |         const saveButton = screen.getByTestId("addPlan-save");
+      69 |         saveButton.click();
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Plan/Plan.test.tsx:66:35)
+
+  ● Plan Component tests › Delete button deletes plan
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="AddPlanButton"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"PlanView"[39m
+            [36m>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Plan[0m
+              [36m</button>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      79 |     test("Delete button deletes plan", () => {
+      80 |         render(<Planner />);
+    > 81 |         const addPlanBut = screen.getByTestId("AddPlanButton");
+         |                                   ^
+      82 |         addPlanBut.click();
+      83 |         const saveButton = screen.getByTestId("addPlan-save");
+      84 |         const inputBoxes = screen.queryAllByRole("textbox");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Plan/Plan.test.tsx:81:35)
+
+PASS src/Course/Course.test.tsx (9.882 s)
 FAIL src/Welcome.test.tsx
   ● Welcome component tests › Clicking button displays instructions
 
@@ -154,35 +386,36 @@ FAIL src/Welcome.test.tsx
 -------------------------|---------|----------|---------|---------|-------------------
 File                     | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------|---------|----------|---------|---------|-------------------
-All files                |    2.32 |     6.25 |     2.4 |    2.43 |                   
- src                     |    6.38 |    14.28 |    6.89 |    6.52 |                   
+All files                |   49.61 |     37.5 |   40.96 |   49.59 |                   
+ src                     |      75 |      100 |   66.66 |      75 |                   
   App.tsx                |       0 |      100 |       0 |       0 | 12                
-  CourseCard.tsx         |       0 |      100 |       0 |       0 | 5-13              
-  CourseDisplay.tsx      |       0 |        0 |       0 |       0 | 11-18             
-  CourseEditor.tsx       |       0 |        0 |       0 |       0 | 28-92             
-  CoursePool.tsx         |       0 |        0 |       0 |       0 | 9-28              
-  CourseView.tsx         |       0 |        0 |       0 |       0 | 14-83             
   interfaces.tsx         |       0 |        0 |       0 |       0 |                   
   openingInstruction.tsx |     100 |      100 |     100 |     100 |                   
- src/Plan                |       0 |        0 |       0 |       0 |                   
-  AddPlan.tsx            |       0 |      100 |       0 |       0 | 14-40             
+ src/Course              |    37.2 |       25 |   30.76 |   35.71 |                   
+  CourseCard.tsx         |     100 |      100 |     100 |     100 |                   
+  CourseDisplay.tsx      |   66.66 |       50 |     100 |   66.66 | 12                
+  CourseEditor.tsx       |       0 |        0 |       0 |       0 | 28-92             
+  CoursePool.tsx         |       0 |        0 |       0 |       0 | 9-28              
+  CourseView.tsx         |   58.82 |    33.33 |   45.45 |   56.25 | 35-41,47-50,83    
+ src/Plan                |   23.52 |     12.5 |   13.63 |    25.8 |                   
+  AddPlan.tsx            |      40 |      100 |   33.33 |      40 | 16-21,40          
   PlanEditor.tsx         |       0 |      100 |       0 |       0 | 16-56             
-  PlanList.tsx           |       0 |      100 |       0 |       0 | 14-17             
+  PlanList.tsx           |      50 |      100 |      50 |      50 | 17                
   PlanView.tsx           |       0 |        0 |       0 |       0 | 17-21             
-  Planner.tsx            |       0 |        0 |       0 |       0 | 9-34              
- src/Semesters           |       0 |        0 |       0 |       0 |                   
-  AddSemester.tsx        |       0 |      100 |       0 |       0 | 14-53             
-  SemesterControl.tsx    |       0 |        0 |       0 |       0 | 8-37              
-  SemesterEditor.tsx     |       0 |      100 |       0 |       0 | 22-116            
-  SemesterList.tsx       |       0 |      100 |       0 |       0 | 16-19             
-  SemesterView.tsx       |       0 |        0 |       0 |       0 | 20-72             
+  Planner.tsx            |   31.25 |    16.66 |      10 |   38.46 | 14-32             
+ src/Semesters           |   77.08 |       60 |   65.62 |   76.08 |                   
+  AddSemester.tsx        |     100 |      100 |     100 |     100 |                   
+  SemesterControl.tsx    |    87.5 |    66.66 |      80 |   85.71 | 28,35             
+  SemesterEditor.tsx     |   66.66 |      100 |      50 |   66.66 | 67-100            
+  SemesterList.tsx       |     100 |      100 |     100 |     100 |                   
+  SemesterView.tsx       |   54.54 |       50 |    37.5 |   54.54 | 25-26,44-45,72    
  src/interfaces          |       0 |        0 |       0 |       0 |                   
   Course.ts              |       0 |        0 |       0 |       0 |                   
   Plan.tsx               |       0 |        0 |       0 |       0 |                   
   Semester.tsx           |       0 |        0 |       0 |       0 |                   
 -------------------------|---------|----------|---------|---------|-------------------
-Test Suites: 4 failed, 4 total
-Tests:       1 failed, 1 passed, 2 total
+Test Suites: 2 failed, 2 passed, 4 total
+Tests:       8 failed, 12 passed, 20 total
 Snapshots:   0 total
-Time:        4.676 s
+Time:        31.674 s
 Ran all test suites.
