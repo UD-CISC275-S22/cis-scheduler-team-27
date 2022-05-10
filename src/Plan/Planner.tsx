@@ -3,7 +3,7 @@ import { Plan } from "../interfaces/Plan";
 import { PlanList } from "./PlanList";
 import { PlanModal } from "./AddPlan";
 import { Button } from "react-bootstrap";
-import "../course.css";
+import "../Course/course.css";
 
 export function Planner(): JSX.Element {
     const [plans, setPlan] = useState<Plan[]>([]);

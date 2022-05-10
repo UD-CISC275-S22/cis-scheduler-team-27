@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { Course } from "./interfaces/Course";
-import catalog from "./catalog.json";
+import { Course } from "../interfaces/Course";
+import catalog from "../catalog.json";
 import { CourseDisplay } from "./CourseDisplay";
 import { CourseEditor } from "./CourseEditor";
 import { DndProvider } from "react-dnd";

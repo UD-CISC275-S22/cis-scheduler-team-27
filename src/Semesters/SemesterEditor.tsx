@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { Course } from "../interfaces/Course";
 import { Semester } from "../interfaces/Semester";
-import { CourseCard } from "../CourseCard";
+import { CourseCard } from "../Course/CourseCard";
 
 export function SemesterEditor({
     changeEditing,

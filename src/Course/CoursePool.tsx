@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Course } from "./interfaces/Course";
+import { Course } from "../interfaces/Course";
 import "./course.css";
 import { useDrop } from "react-dnd";
 import { CourseCard } from "./CourseCard";
