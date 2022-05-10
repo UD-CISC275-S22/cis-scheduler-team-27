@@ -154,7 +154,7 @@ FAIL src/Welcome.test.tsx
 -------------------------|---------|----------|---------|---------|-------------------
 File                     | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------|---------|----------|---------|---------|-------------------
-All files                |     2.4 |     6.25 |    2.53 |    2.52 |                   
+All files                |    2.32 |     6.25 |     2.4 |    2.43 |                   
  src                     |    6.38 |    14.28 |    6.89 |    6.52 |                   
   App.tsx                |       0 |      100 |       0 |       0 | 12                
   CourseCard.tsx         |       0 |      100 |       0 |       0 | 5-13              
@@ -173,9 +173,9 @@ All files                |     2.4 |     6.25 |    2.53 |    2.52 |
  src/Semesters           |       0 |        0 |       0 |       0 |                   
   AddSemester.tsx        |       0 |      100 |       0 |       0 | 14-53             
   SemesterControl.tsx    |       0 |        0 |       0 |       0 | 8-37              
-  SemesterEditor.tsx     |       0 |      100 |       0 |       0 | 16-82             
+  SemesterEditor.tsx     |       0 |      100 |       0 |       0 | 22-116            
   SemesterList.tsx       |       0 |      100 |       0 |       0 | 16-19             
-  SemesterView.tsx       |       0 |        0 |       0 |       0 | 20-64             
+  SemesterView.tsx       |       0 |        0 |       0 |       0 | 20-72             
  src/interfaces          |       0 |        0 |       0 |       0 |                   
   Course.ts              |       0 |        0 |       0 |       0 |                   
   Plan.tsx               |       0 |        0 |       0 |       0 |                   
@@ -184,5 +184,5 @@ All files                |     2.4 |     6.25 |    2.53 |    2.52 |
 Test Suites: 4 failed, 4 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
-Time:        4.303 s
+Time:        4.676 s
 Ran all test suites.
