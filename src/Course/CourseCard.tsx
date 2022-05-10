@@ -1,6 +1,6 @@
 import React from "react";
 import { useDrag } from "react-dnd";
-import { Course } from "./interfaces/Course";
+import { Course } from "../interfaces/Course";
 
 export const CourseCard = ({ course }: { course: Course }) => {
     const [, drag] = useDrag({
