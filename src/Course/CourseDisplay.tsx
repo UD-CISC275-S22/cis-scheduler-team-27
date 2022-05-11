@@ -1,5 +1,5 @@
 import React from "react";
-import { Course } from "./interfaces/Course";
+import { Course } from "../interfaces/Course";
 import "./course.css";
 import { CourseCard } from "./CourseCard";
 

@@ -2,9 +2,9 @@ import React from "react";
 import { Planner } from "./Plan/Planner";
 import "./App.css";
 import { OpeningInstruction } from "./openingInstruction";
-import { CourseView } from "./CourseView";
+import { CourseView } from "./Course/CourseView";
 import { Col, Container, Row } from "react-bootstrap";
-import { CoursePool } from "./CoursePool";
+import { CoursePool } from "./Course/CoursePool";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 

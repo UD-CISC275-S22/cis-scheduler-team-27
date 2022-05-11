@@ -4,7 +4,7 @@ import { Plan } from "../interfaces/Plan";
 import { SemesterControl } from "../Semesters/SemesterControl";
 import { PlanEditor } from "./PlanEditor";
 import "./Plan.css";
-import "../course.css";
+import "../Course/course.css";
 export function PlanView({
     plan,
     deletePlan,

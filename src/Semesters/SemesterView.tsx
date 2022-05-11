@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Semester } from "../interfaces/Semester";
 import { SemesterEditor } from "./SemesterEditor";
-import "../course.css";
+import "../Course/course.css";
 import { Course } from "../interfaces/Course";
 import { useDrop } from "react-dnd";
-import { CourseCard } from "../CourseCard";
+import { CourseCard } from "../Course/CourseCard";
 import "./Semester.css";
 
 export function SemesterView({
