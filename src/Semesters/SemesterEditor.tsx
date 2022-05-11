@@ -1,17 +1,23 @@
 import React, { useState } from "react";
-import { Button, Col, Container, Form } from "react-bootstrap";
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { Course } from "../interfaces/Course";
 import { Semester } from "../interfaces/Semester";
+import { CourseCard } from "../CourseCard";
 
 export function SemesterEditor({
     changeEditing,
     semester,
     editSemester,
-    deleteSemester
+    deleteSemester,
+    courseList,
+    editClasses
 }: {
     changeEditing: () => void;
     semester: Semester;
     editSemester: (title: string, newSemester: Semester) => void;
     deleteSemester: (title: string) => void;
+    editClasses: (id: string, courseList: Course[]) => void;
+    courseList: Course[];
 }): JSX.Element {
     const [name, setName] = useState<string>(semester.name);
     const [year, setYear] = useState<number>(semester.year);
@@ -34,6 +40,7 @@ export function SemesterEditor({
         });
         changeEditing();
     }
+
     return (
         <Container>
             <Col>
@@ -75,15 +82,43 @@ export function SemesterEditor({
                     </Col>
                 </Form.Group>
             </Col>
-            <Button onClick={save} data-testid="edit-sem-save-button">
-                Save
-            </Button>
-            <Button
-                onClick={() => deleteSemester(semester.name)}
-                data-testid="delete-sem-button"
-            >
-                Delete
-            </Button>
+            <Col>
+                <h5>{semester.name}</h5>
+                <Row>Number of Courses: {courseList.length}</Row>
+                {/*Semester Displays Here*/}
+                <div>
+                    <h3>Courses</h3>
+                    <div></div>
+                    {courseList.map((course) => (
+                        <div key={course.code}>
+                            <CourseCard
+                                key={course.code}
+                                course={course}
+                            ></CourseCard>
+                            <Button
+                                onClick={() =>
+                                    editClasses(course.code, courseList)
+                                }
+                            >
+                                Delete
+                            </Button>
+                        </div>
+                    ))}
+                </div>
+                <div></div>
+                <Button onClick={changeEditing} data-testid="edit-sem-button">
+                    Edit Semester
+                </Button>
+                <Button onClick={save} data-testid="edit-sem-save-button">
+                    Save
+                </Button>
+                <Button
+                    onClick={() => deleteSemester(semester.name)}
+                    data-testid="delete-sem-button"
+                >
+                    Delete
+                </Button>
+            </Col>
         </Container>
     );
 }

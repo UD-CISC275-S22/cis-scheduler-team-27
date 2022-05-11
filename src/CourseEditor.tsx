@@ -85,7 +85,6 @@ export function CourseEditor({
                             </Form.Label>
                             <Col>
                                 <Form.Control
-                                    type="number"
                                     value={newCreds}
                                     onChange={(
                                         event: React.ChangeEvent<HTMLInputElement>

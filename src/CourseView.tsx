@@ -40,7 +40,7 @@ export function CourseView(): JSX.Element {
     function changeEditMode() {
         setEditing(!editing);
     }
-    const courseInfo = COURSES.find(
+    const courseInfo = courseList.find(
         (course: Course): boolean => course.code == chosenCourse
     );
     function editCourse(id: string, newCourse: Course) {
@@ -55,7 +55,7 @@ export function CourseView(): JSX.Element {
         <CourseEditor
             code={courseInfo.code}
             name={courseInfo.name}
-            credits={courseInfo.name}
+            credits={courseInfo.credits}
             descr={courseInfo.descr}
             preReqs={courseInfo.preReq}
             restrict={courseInfo.restrict}

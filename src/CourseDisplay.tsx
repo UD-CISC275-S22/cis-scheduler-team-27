@@ -11,7 +11,7 @@ export function CourseDisplay({
     if (chosenCourse === undefined) {
         return (
             <div>
-                <p>Invalid Course</p>
+                <p></p>
             </div>
         );
     } else {
