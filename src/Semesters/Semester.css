@@ -24,6 +24,10 @@
     color: #61dafb;
 }
 
+.CourseDropArea {
+    padding-bottom: 25px;
+}
+
 @keyframes Semester-logo-spin {
     from {
         transform: rotate(0deg);

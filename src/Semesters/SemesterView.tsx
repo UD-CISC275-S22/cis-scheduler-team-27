@@ -38,6 +38,9 @@ export function SemesterView({
     }
     */
     const [courseList, setCourseList] = useState<Course[]>([]);
+    function clearClasses() {
+        setCourseList([]);
+    }
     const [, drop] = useDrop({
         accept: "course",
         drop: (course: Course) =>
@@ -67,17 +70,26 @@ export function SemesterView({
                 {/*Semester Displays Here*/}
                 <div ref={drop}>
                     <h3>Courses</h3>
-                    <div></div>
+                    <div className="CourseDropArea"></div>
                     {courseList.map((course) => (
                         <CourseCard
                             key={course.code}
                             course={course}
                         ></CourseCard>
                     ))}
+                    <div className="CourseDropArea"></div>
                 </div>
                 <Button onClick={changeEditing} data-testid="edit-sem-button">
                     Edit Semester
                 </Button>
+                {courseList.length !== 0 && (
+                    <Button
+                        onClick={clearClasses}
+                        data-testid="clear-courses-button"
+                    >
+                        Clear Courses
+                    </Button>
+                )}
             </Col>
         </Container>
     );
