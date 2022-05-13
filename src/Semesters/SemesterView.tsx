@@ -17,6 +17,13 @@ export function SemesterView({
     deleteSemester: (title: string) => void;
     editSemester: (title: string, newSemester: Semester) => void;
 }): JSX.Element {
+    const addCourseToSem = (course: Course) => {
+        semester.courses.filter((newCourse) => course === newCourse);
+        editSemester(semester.name, {
+            ...semester,
+            courses: [...semester.courses, course]
+        });
+    };
     const [editing, setEditing] = useState<boolean>(false);
     function changeEditing() {
         setEditing(!editing);
@@ -39,16 +46,14 @@ export function SemesterView({
     */
     const [courseList, setCourseList] = useState<Course[]>([]);
     function clearClasses() {
-        setCourseList([]);
+        editSemester(semester.name, {
+            ...semester,
+            courses: []
+        });
     }
     const [, drop] = useDrop({
         accept: "course",
-        drop: (course: Course) =>
-            setCourseList((courseList) =>
-                !courseList.includes(course)
-                    ? [...courseList, course]
-                    : courseList
-            ),
+        drop: (course: Course) => addCourseToSem(course),
         collect: (monitor) => ({
             isOver: monitor.isOver()
         })
@@ -66,12 +71,12 @@ export function SemesterView({
         <Container className="Semester">
             <Col>
                 <h5>{semester.name}</h5>
-                <Row>Number of Courses: {courseList.length}</Row>
+                <Row>Number of Courses: {semester.courses.length}</Row>
                 {/*Semester Displays Here*/}
                 <div ref={drop}>
                     <h3>Courses</h3>
                     <div className="CourseDropArea"></div>
-                    {courseList.map((course) => (
+                    {semester.courses.map((course) => (
                         <CourseCard
                             key={course.code}
                             course={course}
@@ -82,7 +87,7 @@ export function SemesterView({
                 <Button onClick={changeEditing} data-testid="edit-sem-button">
                     Edit Semester
                 </Button>
-                {courseList.length !== 0 && (
+                {semester.courses.length !== 0 && (
                     <Button
                         onClick={clearClasses}
                         data-testid="clear-courses-button"
