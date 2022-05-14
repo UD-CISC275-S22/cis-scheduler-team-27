@@ -17,21 +17,24 @@ export function SemesterView({
     deleteSemester: (title: string) => void;
     editSemester: (title: string, newSemester: Semester) => void;
 }): JSX.Element {
-    const addCourseToSem = (course: Course) => {
-        semester.courses.filter((newCourse) => course === newCourse);
-        editSemester(semester.name, {
-            ...semester,
-            courses: [...semester.courses, course]
-        });
+    const addCourseToSem = (newCourse: Course) => {
+        !semester.courses.includes(newCourse) &&
+            editSemester(semester.name, {
+                ...semester,
+                courses: [...semester.courses, newCourse]
+            });
     };
     const [editing, setEditing] = useState<boolean>(false);
     function changeEditing() {
         setEditing(!editing);
     }
-    function editClasses(id: string, courseList: Course[]) {
-        setCourseList(
-            courseList.filter((course: Course): boolean => id !== course.code)
-        );
+    function editClasses(id: string) {
+        editSemester(semester.name, {
+            ...semester,
+            courses: semester.courses.filter(
+                (course: Course): boolean => id !== course.code
+            )
+        });
     }
 
     /*
@@ -44,7 +47,7 @@ export function SemesterView({
         }
     }
     */
-    const [courseList, setCourseList] = useState<Course[]>([]);
+    //const [courseList, setCourseList] = useState<Course[]>([]);
     function clearClasses() {
         editSemester(semester.name, {
             ...semester,
@@ -64,7 +67,7 @@ export function SemesterView({
             semester={semester}
             editSemester={editSemester}
             deleteSemester={deleteSemester}
-            courseList={courseList}
+            courseList={semester.courses}
             editClasses={editClasses}
         ></SemesterEditor>
     ) : (

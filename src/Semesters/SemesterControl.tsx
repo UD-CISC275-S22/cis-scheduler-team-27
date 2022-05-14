@@ -1,44 +1,60 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
+import { Plan } from "../interfaces/Plan";
 import { Semester } from "../interfaces/Semester";
 import { AddSemester } from "./AddSemester";
 import { SemesterList } from "./SemesterList";
 
-export function SemesterControl(): JSX.Element {
-    const [semesters, setSemesters] = useState<Semester[]>([]);
+export function SemesterControl({
+    plan,
+    editPlan
+}: {
+    plan: Plan;
+    editPlan: (planName: string, newPlan: Plan) => void;
+}): JSX.Element {
+    //const [semesters, setSemesters] = useState<Semester[]>([]);
     const [show, setShow] = useState<boolean>(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     function deleteSemester(name: string) {
-        setSemesters(
-            semesters?.filter(
+        editPlan(plan.title, {
+            ...plan,
+            semesters: plan.semesters?.filter(
                 (semester: Semester): boolean => semester.name != name
             )
-        );
+        });
     }
     function editSemester(name: string, newSemester: Semester) {
-        setSemesters(
-            semesters?.map((semester: Semester) =>
+        editPlan(plan.title, {
+            ...plan,
+            semesters: plan.semesters?.map((semester: Semester) =>
                 semester.name === name ? newSemester : semester
             )
-        );
+        });
     }
     function addSemester(newSemester: Semester) {
-        const existing = semesters?.find(
+        const existing = plan.semesters?.find(
             (semester: Semester): boolean => semester.name === newSemester.name
         );
         if (existing === undefined) {
-            setSemesters([...semesters, newSemester]);
+            editPlan(plan.title, {
+                ...plan,
+                semesters: [...plan.semesters, newSemester]
+            });
         }
     }
+
     function clearSemesters() {
-        setSemesters([]);
+        editPlan(plan.title, {
+            ...plan,
+            semesters: []
+        });
     }
     return (
         <div>
             <div>
                 <SemesterList
-                    semesters={semesters}
+                    semesters={plan.semesters}
                     editSemester={editSemester}
                     deleteSemester={deleteSemester}
                 ></SemesterList>
@@ -47,7 +63,7 @@ export function SemesterControl(): JSX.Element {
                 <Button onClick={handleShow} data-testid="AddSemButton">
                     Add New Semester
                 </Button>
-                {semesters.length !== 0 && (
+                {plan.semesters.length !== 0 && (
                     <Button
                         onClick={clearSemesters}
                         data-testid="clear-all-sems"

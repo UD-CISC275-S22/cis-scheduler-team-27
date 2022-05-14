@@ -36,7 +36,8 @@ export function SemesterEditor({
             ...semester,
             name: name,
             year: year,
-            season: season
+            season: season,
+            courses: semester.courses
         });
         changeEditing();
     }

@@ -20,7 +20,8 @@ export function PlanEditor({
         editPlan(plan.title, {
             ...plan,
             title: title,
-            description: desc
+            description: desc,
+            semesters: plan.semesters
         });
         changeEditing();
     }

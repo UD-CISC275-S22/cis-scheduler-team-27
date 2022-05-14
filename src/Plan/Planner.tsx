@@ -6,15 +6,15 @@ import { Button } from "react-bootstrap";
 import "../Course/course.css";
 
 export function Planner(): JSX.Element {
-    const [plans, setPlan] = useState<Plan[]>([]);
+    const [plans, setPlans] = useState<Plan[]>([]);
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     function deletePlan(title: string) {
-        setPlan(plans.filter((plan: Plan): boolean => plan.title !== title));
+        setPlans(plans.filter((plan: Plan): boolean => plan.title !== title));
     }
     function editPlan(title: string, newPlan: Plan) {
-        setPlan(
+        setPlans(
             plans.map(
                 (plan: Plan): Plan => (plan.title === title ? newPlan : plan)
             )
@@ -25,11 +25,11 @@ export function Planner(): JSX.Element {
             (plan: Plan): boolean => plan.title === newPlan.title
         );
         if (existing === undefined) {
-            setPlan([...plans, newPlan]);
+            setPlans([...plans, newPlan]);
         }
     }
     function clearPlans() {
-        setPlan([]);
+        setPlans([]);
     }
     return (
         <div>
