@@ -36,7 +36,10 @@ export function PlanView({
                         </Col>
                         <Button onClick={changeEditing}>Edit Plan</Button>
                         {/*Semester Goes Here */}
-                        <SemesterControl></SemesterControl>
+                        <SemesterControl
+                            plan={plan}
+                            editPlan={editPlan}
+                        ></SemesterControl>
                     </span>
                 </Col>
             </Container>
