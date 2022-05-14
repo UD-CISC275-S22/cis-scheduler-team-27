@@ -13,6 +13,7 @@ export function AddSemester({
 }) {
     const [season, setSeason] = useState<string>("");
     const [year, setYear] = useState<string>("");
+
     function saveChanges() {
         addSemester({
             name: season + " " + year.toString(),
