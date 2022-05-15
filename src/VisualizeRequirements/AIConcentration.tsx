@@ -177,6 +177,15 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
                             <span>ENGL312/410: ❌</span>
                         )}
                     </div>
+                    <div>
+                        {CISC355 !== undefined ? (
+                            <div>
+                                <span>CISC355: ✔️</span>
+                            </div>
+                        ) : (
+                            <span>CISC355: ❌</span>
+                        )}
+                    </div>
                 </div>
             )}
         </div>
