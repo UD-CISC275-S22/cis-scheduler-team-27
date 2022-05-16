@@ -1,14 +1,7 @@
 import React from "react";
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { Planner } from "../Plan/Planner";
 import userEvent from "@testing-library/user-event";
-
-function dragAndDrop(course: HTMLElement, cell: HTMLElement) {
-    fireEvent.dragStart(course);
-    fireEvent.dragEnter(cell);
-    fireEvent.dragOver(cell);
-    fireEvent.drop(cell);
-}
 
 describe("Visualize Requirements Test", () => {
     beforeEach(() => {
