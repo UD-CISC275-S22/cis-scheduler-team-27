@@ -62,6 +62,7 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
     return (
         <div>
             <Button
+                data-testid="requirements-button"
                 onClick={() => {
                     showRequirements();
                 }}

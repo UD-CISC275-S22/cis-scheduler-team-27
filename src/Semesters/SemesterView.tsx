@@ -76,7 +76,7 @@ export function SemesterView({
                 <h5>{semester.name}</h5>
                 <Row>Number of Courses: {semester.courses.length}</Row>
                 {/*Semester Displays Here*/}
-                <div ref={drop}>
+                <div ref={drop} data-testid={semester.name}>
                     <h3>Courses</h3>
                     <div className="CourseDropArea"></div>
                     {semester.courses.map((course) => (

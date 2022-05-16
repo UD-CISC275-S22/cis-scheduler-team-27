@@ -34,7 +34,12 @@ export function PlanView({
                             <h3>{plan.title}</h3>
                             <p> Description: {plan.description}</p>
                         </Col>
-                        <Button onClick={changeEditing}>Edit Plan</Button>
+                        <Button
+                            onClick={changeEditing}
+                            data-testid="edit-plan-button"
+                        >
+                            Edit Plan
+                        </Button>
                         {/*Semester Goes Here */}
                         <SemesterControl
                             plan={plan}
