@@ -96,6 +96,7 @@ export function CourseEditor({
                             onClick={save}
                             variant="success"
                             className="me-4"
+                            data-testid="save-course-button"
                         >
                             Save
                         </Button>
@@ -103,6 +104,7 @@ export function CourseEditor({
                             onClick={cancel}
                             variant="warning"
                             className="me-5"
+                            data-testid="cancel-course-button"
                         >
                             Cancel
                         </Button>

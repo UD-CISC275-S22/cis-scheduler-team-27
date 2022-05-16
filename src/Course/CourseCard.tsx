@@ -11,7 +11,7 @@ export const CourseCard = ({ course }: { course: Course }) => {
         })
     });
     return (
-        <div className="boxed" ref={drag}>
+        <div className="boxed" ref={drag} data-testid={course.code}>
             <span>
                 <h5>{course.name}</h5>
                 <p>Course Code: {course.code}</p>

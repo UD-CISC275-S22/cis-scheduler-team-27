@@ -42,9 +42,11 @@ export function Planner(): JSX.Element {
                     ></PlanList>
                 </div>
                 <div className="PlanView">
-                    <Button onClick={handleShow}>Add New Plan</Button>
+                    <Button onClick={handleShow} data-testid="AddPlanButton">
+                        Add New Plan
+                    </Button>
                     {plans.length !== 0 && (
-                        <Button onClick={clearPlans} data-testid="AddSemButton">
+                        <Button onClick={clearPlans} data-testid="clear-plans">
                             Clear Plans
                         </Button>
                     )}
