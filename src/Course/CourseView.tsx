@@ -61,7 +61,6 @@ export function CourseView(): JSX.Element {
             preReqs={courseInfo.preReq}
             restrict={courseInfo.restrict}
             breadth={courseInfo.breadth}
-            typ={courseInfo.typ}
             editCourse={editCourse}
             changeEditMode={changeEditMode}
         ></CourseEditor>

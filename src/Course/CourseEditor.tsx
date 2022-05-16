@@ -2,17 +2,6 @@ import React, { useState } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { Course } from "../interfaces/Course";
 
-const REQS = [
-    "Creative Arts and Humanities",
-    "History and Cultural Change",
-    "Social and Behavioral Sciences",
-    "Math, Natural Sciences and Technology",
-    "Restrictive Elective",
-    "Concentration Elective",
-    "Lab Seq 1",
-    "Lab Seq 2",
-    "Solo Lab"
-];
 export function CourseEditor({
     code,
     name,
@@ -21,7 +10,6 @@ export function CourseEditor({
     preReqs,
     restrict,
     breadth,
-    typ,
     editCourse,
     changeEditMode
 }: {
@@ -32,7 +20,6 @@ export function CourseEditor({
     preReqs: string;
     restrict: string;
     breadth: string;
-    typ: string;
     editCourse: (id: string, newCourse: Course) => void;
     changeEditMode: () => void;
 }): JSX.Element {
