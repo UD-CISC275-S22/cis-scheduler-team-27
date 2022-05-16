@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/Course/MoveCourses.test.tsx (46.043 s)
+PASS src/Course/MoveCourses.test.tsx (64.409 s)
 PASS src/Plan/Plan.test.tsx
 PASS src/Semesters/Semester.test.tsx
   ● Console
@@ -53,7 +53,7 @@ PASS src/Semesters/Semester.test.tsx
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
 PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx
-PASS src/Course/EditCourse.test.tsx (8.505 s)
+PASS src/Course/EditCourse.test.tsx (12.194 s)
   ● Console
 
     console.error
@@ -80,21 +80,21 @@ PASS src/Course/EditCourse.test.tsx (8.505 s)
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
-PASS src/Course/CourseView.test.tsx (8.417 s)
-PASS src/Course/Course.test.tsx (6.465 s)
+PASS src/Course/CourseView.test.tsx (11.999 s)
+PASS src/Course/Course.test.tsx (9.492 s)
 PASS src/Welcome.test.tsx
 ---------------------------|---------|----------|---------|---------|-------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------|---------|----------|---------|---------|-------------------
-All files                  |   90.69 |    45.58 |   86.79 |    90.3 |                   
+All files                  |    88.2 |    44.28 |   85.18 |   88.23 |                   
  src                       |     100 |      100 |     100 |     100 |                   
   App.tsx                  |     100 |      100 |     100 |     100 |                   
   interfaces.tsx           |       0 |        0 |       0 |       0 |                   
   openingInstruction.tsx   |     100 |      100 |     100 |     100 |                   
- src/Course                |   83.72 |       75 |   80.76 |   83.33 |                   
+ src/Course                |   75.51 |    64.28 |      75 |   76.59 |                   
   CourseCard.tsx           |     100 |      100 |     100 |     100 |                   
   CourseDisplay.tsx        |   66.66 |       50 |     100 |   66.66 | 12                
-  CourseEditor.tsx         |   81.81 |       50 |   66.66 |   81.81 | 48,78             
+  CourseEditor.tsx         |   58.82 |       25 |      50 |    62.5 | 47-54,85          
   CoursePool.tsx           |     100 |       50 |     100 |     100 | 14                
   CourseView.tsx           |   76.47 |      100 |   72.72 |      75 | 35-38,88          
  src/Plan                  |    92.1 |       80 |    87.5 |   91.42 |                   
@@ -120,5 +120,5 @@ All files                  |   90.69 |    45.58 |   86.79 |    90.3 |
 Test Suites: 8 passed, 8 total
 Tests:       29 passed, 29 total
 Snapshots:   0 total
-Time:        75.027 s
+Time:        106.074 s
 Ran all test suites.
