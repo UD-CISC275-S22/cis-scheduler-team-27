@@ -70,7 +70,11 @@ export function CourseView(): JSX.Element {
             <h3>Courses</h3>
             <Form.Group controlId="chosenClass">
                 <Form.Label>Choose a Course</Form.Label>
-                <Form.Select value={chosenCourse} onChange={updateCourse}>
+                <Form.Select
+                    value={chosenCourse}
+                    onChange={updateCourse}
+                    data-testid="course-dropdown"
+                >
                     {courseList.map((course: Course) => (
                         <option key={course.code} value={course.code}>
                             {course.code}
@@ -81,10 +85,15 @@ export function CourseView(): JSX.Element {
             <DndProvider backend={HTML5Backend}>
                 <CourseDisplay chosenCourse={courseInfo}></CourseDisplay>
             </DndProvider>
-            <Button onClick={() => deleteCourse(chosenCourse)}>
+            <Button
+                onClick={() => deleteCourse(chosenCourse)}
+                data-testid="delete-course-button"
+            >
                 Delete Course
             </Button>
-            <Button onClick={changeEditMode}>Edit Course</Button>
+            <Button onClick={changeEditMode} data-testid="edit-course-button">
+                Edit Course
+            </Button>
         </div>
     );
 }

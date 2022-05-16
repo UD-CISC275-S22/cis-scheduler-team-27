@@ -28,6 +28,7 @@ export function PlanList({
                         <Form.Group controlId="favoriteColors">
                             <Form.Label>Select Concentration</Form.Label>
                             <Form.Select
+                                data-testid="concentration-dropdown"
                                 value={concentration}
                                 onChange={updateConcentration}
                             >

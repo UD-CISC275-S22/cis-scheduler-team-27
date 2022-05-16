@@ -100,6 +100,7 @@ export function SemesterEditor({
                                 onClick={() =>
                                     editClasses(course.code, courseList)
                                 }
+                                data-testid="delete-course-from-sem"
                             >
                                 Delete
                             </Button>

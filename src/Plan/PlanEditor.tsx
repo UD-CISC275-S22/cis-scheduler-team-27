@@ -53,8 +53,15 @@ export function PlanEditor({
                     </Col>
                 </Form.Group>
             </Col>
-            <Button onClick={save}>Save</Button>
-            <Button onClick={() => deletePlan(plan.title)}>Delete</Button>
+            <Button onClick={save} data-testid="edit-plan-save-button">
+                Save
+            </Button>
+            <Button
+                onClick={() => deletePlan(plan.title)}
+                data-testid="delete-plan-button"
+            >
+                Delete
+            </Button>
         </Container>
     );
 }
