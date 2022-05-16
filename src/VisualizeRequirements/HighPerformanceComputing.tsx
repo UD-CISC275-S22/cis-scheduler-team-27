@@ -4,7 +4,11 @@ import { Course } from "../interfaces/Course";
 import { Plan } from "../interfaces/Plan";
 import { Button, Col } from "react-bootstrap";
 
-export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
+export function HighPerformanceComputing({
+    plan
+}: {
+    plan: Plan;
+}): JSX.Element {
     const courseList = plan.semesters.map(
         (semester: Semester): Course[] => semester.courses
     );
@@ -190,7 +194,7 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
                         </div>
                     </Col>
                     <Col>
-                        <p>A.I. and Robotics Concentration Requirements:</p>
+                        <p>High Performance Computing Requirements:</p>
                     </Col>
                 </div>
             )}

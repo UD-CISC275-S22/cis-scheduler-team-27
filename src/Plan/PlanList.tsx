@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 import { Plan } from "../interfaces/Plan";
 import { AIConcentration } from "../VisualizeRequirements/AIConcentration";
+import { Bioinformatics } from "../VisualizeRequirements/Bioinformatics";
+import { Cybersecurity } from "../VisualizeRequirements/Cybersecurity";
+import { DataScience } from "../VisualizeRequirements/DataScience";
+import { HighPerformanceComputing } from "../VisualizeRequirements/HighPerformanceComputing";
+import { SystemsNetworks } from "../VisualizeRequirements/SystemsNetworks";
+import { TheoryComputation } from "../VisualizeRequirements/TheoryComputation";
+
 import { PlanView } from "./PlanView";
 
 export function PlanList({
@@ -13,7 +20,15 @@ export function PlanList({
     deletePlan: (title: string) => void;
     editPlan: (title: string, newPlan: Plan) => void;
 }): JSX.Element {
-    const concentrations = ["AI Robotics", "Bioinformatics", "Data Science"];
+    const concentrations = [
+        "AI Robotics",
+        "Bioinformatics",
+        "Cybersecurity",
+        "Data Science",
+        "High Performance Computing",
+        "Systems and Networks",
+        "Theory and Computation"
+    ];
     const [concentration, setConcentration] = useState<string>(
         concentrations[0]
     );
@@ -51,6 +66,26 @@ export function PlanList({
                     <div></div>
                     {concentration === "AI Robotics" && (
                         <AIConcentration plan={plan}></AIConcentration>
+                    )}
+                    {concentration === "Bioinformatics" && (
+                        <Bioinformatics plan={plan}></Bioinformatics>
+                    )}
+                    {concentration === "Cybersecurity" && (
+                        <Cybersecurity plan={plan}></Cybersecurity>
+                    )}
+                    {concentration === "Data Science" && (
+                        <DataScience plan={plan}></DataScience>
+                    )}
+                    {concentration === "High Performance Computing" && (
+                        <HighPerformanceComputing
+                            plan={plan}
+                        ></HighPerformanceComputing>
+                    )}
+                    {concentration === "Systems and Networks" && (
+                        <SystemsNetworks plan={plan}></SystemsNetworks>
+                    )}
+                    {concentration === "Theory and Computation" && (
+                        <TheoryComputation plan={plan}></TheoryComputation>
                     )}
                 </div>
             ))}
