@@ -21,7 +21,6 @@ function App(): JSX.Element {
                 <OpeningInstruction></OpeningInstruction>
                 <p>Sara Noor, Riley Johnson, and Sydney Segear</p>
             </header>
-            <p>Sara Noor, Riley Johnson, and Sydney Segear</p>
             <div>
                 <Container>
                     <Row>
