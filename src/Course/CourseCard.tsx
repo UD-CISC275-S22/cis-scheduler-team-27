@@ -17,6 +17,7 @@ export const CourseCard = ({ course }: { course: Course }) => {
                 <p>Course Code: {course.code}</p>
                 <p>Credits: {course.credits}</p>
                 <p>Required PreReqs: {course.preReq}</p>
+                <p>Chosen Requirement Fufillment: {course.typ.split("  ")}</p>
             </span>
         </div>
     );

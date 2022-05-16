@@ -19,7 +19,7 @@ const COURSES = Object.values(catalog).map((info) => ({
     preReq: info.preReq,
     restrict: info.restrict,
     breadth: info.breadth,
-    typ: info.typ
+    typ: ""
 }));
 
 export function CourseView(): JSX.Element {
@@ -51,6 +51,7 @@ export function CourseView(): JSX.Element {
             )
         );
     }
+
     return editing && courseInfo ? (
         <CourseEditor
             code={courseInfo.code}
