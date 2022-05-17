@@ -423,7 +423,8 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
                                     <div>
                                         {lab1.length > 0 &&
                                         lab2.length > 0 &&
-                                        lab1Creds + lab2Creds >= 8 ? (
+                                        lab1Creds + lab2Creds + labSoloCreds >=
+                                            8 ? (
                                             <div>
                                                 <span>
                                                     Lab Sciences 8/8: ✔️
@@ -432,7 +433,9 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
                                         ) : (
                                             <span>
                                                 Lab Sciences{" "}
-                                                {lab1Creds + lab2Creds}
+                                                {lab1Creds +
+                                                    lab2Creds +
+                                                    labSoloCreds}
                                                 /8: ❌
                                             </span>
                                         )}

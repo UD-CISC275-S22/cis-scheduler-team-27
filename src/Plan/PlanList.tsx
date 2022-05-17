@@ -8,7 +8,7 @@ import { DataScience } from "../VisualizeRequirements/DataScience";
 import { HighPerformanceComputing } from "../VisualizeRequirements/HighPerformanceComputing";
 import { SystemsNetworks } from "../VisualizeRequirements/SystemsNetworks";
 import { TheoryComputation } from "../VisualizeRequirements/TheoryComputation";
-
+import { Traditional } from "../VisualizeRequirements/Traditional";
 import { PlanView } from "./PlanView";
 
 export function PlanList({
@@ -27,7 +27,8 @@ export function PlanList({
         "Data Science",
         "High Performance Computing",
         "Systems and Networks",
-        "Theory and Computation"
+        "Theory and Computation",
+        "Traditional with Custom Focus Area"
     ];
     const [concentration, setConcentration] = useState<string>(
         concentrations[0]
@@ -86,6 +87,9 @@ export function PlanList({
                     )}
                     {concentration === "Theory and Computation" && (
                         <TheoryComputation plan={plan}></TheoryComputation>
+                    )}
+                    {concentration === "Traditional with Custom Focus Area" && (
+                        <Traditional plan={plan}></Traditional>
                     )}
                 </div>
             ))}
