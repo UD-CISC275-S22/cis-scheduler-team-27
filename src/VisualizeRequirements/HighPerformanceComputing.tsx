@@ -434,7 +434,8 @@ export function HighPerformanceComputing({
                                     <div>
                                         {lab1.length > 0 &&
                                         lab2.length > 0 &&
-                                        lab1Creds + lab2Creds >= 8 ? (
+                                        lab1Creds + lab2Creds + labSoloCreds >=
+                                            8 ? (
                                             <div>
                                                 <span>
                                                     Lab Sciences 8/8: ✔️
@@ -443,7 +444,9 @@ export function HighPerformanceComputing({
                                         ) : (
                                             <span>
                                                 Lab Sciences{" "}
-                                                {lab1Creds + lab2Creds}
+                                                {lab1Creds +
+                                                    lab2Creds +
+                                                    labSoloCreds}
                                                 /8: ❌
                                             </span>
                                         )}
