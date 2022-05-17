@@ -433,9 +433,9 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                                     </div>
                                     <p></p>
                                     <div>
-                                        {lab1.length >= 2 ||
-                                        lab2.length >= 2 ||
-                                        labSolo.length >= 1 ? (
+                                        {lab1.length > 0 &&
+                                        lab2.length > 0 &&
+                                        lab1Creds + lab2Creds >= 8 ? (
                                             <div>
                                                 <span>
                                                     Lab Sciences 8/8: ✔️
@@ -444,9 +444,7 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                                         ) : (
                                             <span>
                                                 Lab Sciences{" "}
-                                                {lab1Creds +
-                                                    lab2Creds +
-                                                    labSoloCreds}
+                                                {lab1Creds + lab2Creds}
                                                 /8: ❌
                                             </span>
                                         )}
@@ -666,9 +664,7 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                                 {restrictedCreds >= 6 ? (
                                     <div>
                                         <span>
-                                            Restricted Electives{" "}
-                                            {restrictedCreds}
-                                            /6: ✔️
+                                            Restricted Electives 6 /6: ✔️
                                         </span>
                                     </div>
                                 ) : (

@@ -181,6 +181,24 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
     );
     /* Lab Sciences */
     /*Major Requirements */
+    const CISC361 = courseCodes.find(
+        (course: string): boolean => course === "CISC 361"
+    );
+    const CISC372 = courseCodes.find(
+        (course: string): boolean => course === "CISC 372"
+    );
+    const CISC450 = courseCodes.find(
+        (course: string): boolean => course === "CISC 450"
+    );
+    const CISC464 = courseCodes.find(
+        (course: string): boolean => course === "CISC 464"
+    );
+    const CPEG465 = courseCodes.find(
+        (course: string): boolean => course === "CPEG 465"
+    );
+    const CPEG494 = courseCodes.find(
+        (course: string): boolean => course === "CPEG 494"
+    );
     const [visible, setVisible] = useState<boolean>(false);
     function showRequirements(): void {
         setVisible(!visible);
@@ -403,9 +421,9 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
                                     </div>
                                     <p></p>
                                     <div>
-                                        {lab1.length >= 2 ||
-                                        lab2.length >= 2 ||
-                                        labSolo.length >= 1 ? (
+                                        {lab1.length > 0 &&
+                                        lab2.length > 0 &&
+                                        lab1Creds + lab2Creds >= 8 ? (
                                             <div>
                                                 <span>
                                                     Lab Sciences 8/8: ✔️
@@ -414,9 +432,7 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
                                         ) : (
                                             <span>
                                                 Lab Sciences{" "}
-                                                {lab1Creds +
-                                                    lab2Creds +
-                                                    labSoloCreds}
+                                                {lab1Creds + lab2Creds}
                                                 /8: ❌
                                             </span>
                                         )}
@@ -519,14 +535,83 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
                         </Col>
                         <Col>
                             <div>Concentration Requirements:</div>
+                            <div>
+                                {CISC361 !== undefined ? (
+                                    <div>
+                                        <span>CISC361 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC361 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC372 !== undefined ? (
+                                    <div>
+                                        <span>CISC372 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC372 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC450 !== undefined ? (
+                                    <div>
+                                        <span>CISC450 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC450 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC464 !== undefined ? (
+                                    <div>
+                                        <span>CISC464 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC464 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CPEG465 !== undefined ? (
+                                    <div>
+                                        <span>CPEG465 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CPEG465 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CPEG494 !== undefined ? (
+                                    <div>
+                                        <span>CPEG494 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CPEG494 0/3: ❌</span>
+                                )}
+                            </div>
+                            <p></p>
+                            <div>
+                                {conElectiveCreds >= 6 ? (
+                                    <div>
+                                        <span>
+                                            Advanced Cybersecurity Requirement 6
+                                            /6: ✔️
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <span>
+                                        Advanced Cybersecurity Requirement{" "}
+                                        {conElectiveCreds}
+                                        /6: ❌
+                                    </span>
+                                )}
+                            </div>
                             <p></p>
                             <div>
                                 {restrictedCreds >= 6 ? (
                                     <div>
                                         <span>
-                                            Restricted Electives{" "}
-                                            {restrictedCreds}
-                                            /6: ✔️
+                                            Restricted Electives 6 /6: ✔️
                                         </span>
                                     </div>
                                 ) : (

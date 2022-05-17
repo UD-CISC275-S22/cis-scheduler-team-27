@@ -181,6 +181,58 @@ export function Bioinformatics({ plan }: { plan: Plan }): JSX.Element {
     );
     /* Lab Sciences */
     /*Major Requirements */
+    const BISC207 = courseCodes.find(
+        (course: string): boolean => course === "BISC 207"
+    );
+    const BISC208 = courseCodes.find(
+        (course: string): boolean => course === "BISC 208"
+    );
+    const BISC401 = courseCodes.find(
+        (course: string): boolean => course === "BISC 401"
+    );
+    const CHEM103 = courseCodes.find(
+        (course: string): boolean => course === "CHEM 103"
+    );
+    const CHEM133 = courseCodes.find(
+        (course: string): boolean => course === "CHEM 133"
+    );
+    const CHEM104 = courseCodes.find(
+        (course: string): boolean => course === "CHEM 104"
+    );
+    const CHEM134 = courseCodes.find(
+        (course: string): boolean => course === "CHEM 134"
+    );
+    const CISC372 = courseCodes.find(
+        (course: string): boolean => course === "CISC 372"
+    );
+    const CISC436 = courseCodes.find(
+        (course: string): boolean => course === "CISC 436"
+    );
+    const MATH242 = courseCodes.find(
+        (course: string): boolean => course === "MATH 242"
+    );
+    const MATH349 = courseCodes.find(
+        (course: string): boolean => course === "MATH 349"
+    );
+    const CHEM213 = courseCodes.find(
+        (course: string): boolean => course === "CHEM 213"
+    );
+    const CHEM215 = courseCodes.find(
+        (course: string): boolean => course === "CHEM 215"
+    );
+    const CHEM321 = courseCodes.find(
+        (course: string): boolean => course === "CHEM 321"
+    );
+    const CHEM325 = courseCodes.find(
+        (course: string): boolean => course === "CHEM 325"
+    );
+    const CISC483 = courseCodes.find(
+        (course: string): boolean => course === "CISC 483"
+    );
+    const CISC484 = courseCodes.find(
+        (course: string): boolean => course === "CISC 484"
+    );
+
     const [visible, setVisible] = useState<boolean>(false);
     function showRequirements(): void {
         setVisible(!visible);
@@ -403,9 +455,9 @@ export function Bioinformatics({ plan }: { plan: Plan }): JSX.Element {
                                     </div>
                                     <p></p>
                                     <div>
-                                        {lab1.length >= 2 ||
-                                        lab2.length >= 2 ||
-                                        labSolo.length >= 1 ? (
+                                        {lab1.length > 0 &&
+                                        lab2.length > 0 &&
+                                        lab1Creds + lab2Creds >= 8 ? (
                                             <div>
                                                 <span>
                                                     Lab Sciences 8/8: ✔️
@@ -414,9 +466,7 @@ export function Bioinformatics({ plan }: { plan: Plan }): JSX.Element {
                                         ) : (
                                             <span>
                                                 Lab Sciences{" "}
-                                                {lab1Creds +
-                                                    lab2Creds +
-                                                    labSoloCreds}
+                                                {lab1Creds + lab2Creds}
                                                 /8: ❌
                                             </span>
                                         )}
@@ -519,7 +569,165 @@ export function Bioinformatics({ plan }: { plan: Plan }): JSX.Element {
                         </Col>
                         <Col>
                             <div>Concentration Requirements:</div>
+                            <div>
+                                {BISC207 !== undefined ? (
+                                    <div>
+                                        <span>BISC207 4/4: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>BISC207 0/4: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {BISC208 !== undefined ? (
+                                    <div>
+                                        <span>BISC208 4/4: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>BISC208 0/4: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {BISC401 !== undefined ? (
+                                    <div>
+                                        <span>BISC401 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>BISC401 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CHEM103 !== undefined ? (
+                                    <div>
+                                        <span>CHEM103 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CHEM103 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CHEM133 !== undefined ? (
+                                    <div>
+                                        <span>CHEM133 1/1: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CHEM133 0/1: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CHEM104 !== undefined ? (
+                                    <div>
+                                        <span>CHEM104 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CHEM104 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CHEM134 !== undefined ? (
+                                    <div>
+                                        <span>CHEM134 1/1: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CHEM134 0/1: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC372 !== undefined ? (
+                                    <div>
+                                        <span>CISC372 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC372 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC436 !== undefined ? (
+                                    <div>
+                                        <span>CISC436 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC436 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH242 !== undefined ? (
+                                    <div>
+                                        <span>MATH242 4/4: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH242 0/4: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH349 !== undefined ? (
+                                    <div>
+                                        <span>MATH349 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH349 0/3: ❌</span>
+                                )}
+                            </div>
                             <p></p>
+                            <div>Organic Chemistry Sequence:</div>
+                            <div>
+                                {CHEM213 !== undefined ? (
+                                    <div>
+                                        <span>CHEM213 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CHEM213 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CHEM215 !== undefined ? (
+                                    <div>
+                                        <span>CHEM215 1/1: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CHEM215 0/1: ❌</span>
+                                )}
+                            </div>
+                            <div>or</div>
+                            <div>
+                                {CHEM321 !== undefined ? (
+                                    <div>
+                                        <span>CHEM321 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CHEM321 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CHEM325 !== undefined ? (
+                                    <div>
+                                        <span>CHEM325 1/1: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CHEM325 0/1: ❌</span>
+                                )}
+                            </div>
+                            <p></p>
+                            <div>Data Analysis Requirement:</div>
+                            <div>
+                                {CISC483 !== undefined ? (
+                                    <div>
+                                        <span>CISC483 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC483 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>or</div>
+                            <div>
+                                {CISC484 !== undefined ? (
+                                    <div>
+                                        <span>CISC484 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC484 0/3: ❌</span>
+                                )}
+                            </div>
                             <div>
                                 {restrictedCreds >= 6 ? (
                                     <div>
@@ -536,19 +744,7 @@ export function Bioinformatics({ plan }: { plan: Plan }): JSX.Element {
                                     </span>
                                 )}
                             </div>
-                            <p></p>
-                            <div>
-                                {CISCElectiveCreds >= 3 ? (
-                                    <div>
-                                        <span>CISC Elective 3/3: ✔️</span>
-                                    </div>
-                                ) : (
-                                    <span>
-                                        CISC Elective {CISCElectiveCreds}
-                                        /3: ❌
-                                    </span>
-                                )}
-                            </div>
+
                             <p></p>
                         </Col>
                     </Row>

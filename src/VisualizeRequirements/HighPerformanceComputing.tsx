@@ -92,14 +92,6 @@ export function HighPerformanceComputing({
     for (let i = 0; i < conElective.length; i++) {
         conElectiveCreds = conElectiveCreds + parseInt(conElective[i].credits);
     }
-    const CISCElective = merged.filter(
-        (course: Course): boolean => course.typ === "CISC Elective"
-    );
-    let CISCElectiveCreds = 0;
-    for (let i = 0; i < CISCElective.length; i++) {
-        CISCElectiveCreds =
-            CISCElectiveCreds + parseInt(CISCElective[i].credits);
-    }
     const lab1 = merged.filter(
         (course: Course): boolean => course.typ === "Lab Sequence 1"
     );
@@ -440,9 +432,9 @@ export function HighPerformanceComputing({
                                     </div>
                                     <p></p>
                                     <div>
-                                        {lab1.length >= 2 ||
-                                        lab2.length >= 2 ||
-                                        labSolo.length >= 1 ? (
+                                        {lab1.length > 0 &&
+                                        lab2.length > 0 &&
+                                        lab1Creds + lab2Creds >= 8 ? (
                                             <div>
                                                 <span>
                                                     Lab Sciences 8/8: ✔️
@@ -451,9 +443,7 @@ export function HighPerformanceComputing({
                                         ) : (
                                             <span>
                                                 Lab Sciences{" "}
-                                                {lab1Creds +
-                                                    lab2Creds +
-                                                    labSoloCreds}
+                                                {lab1Creds + lab2Creds}
                                                 /8: ❌
                                             </span>
                                         )}
@@ -644,8 +634,7 @@ export function HighPerformanceComputing({
                                     <div>
                                         <span>
                                             Applied Math Track Restricted
-                                            Electives {restrictedCreds}
-                                            /5: ✔️
+                                            Electives 5 /5: ✔️
                                         </span>
                                     </div>
                                 ) : (
@@ -689,8 +678,7 @@ export function HighPerformanceComputing({
                                 {restrictedCreds >= 5 ? (
                                     <div>
                                         <span>
-                                            Data Track Restricted Electives{" "}
-                                            {restrictedCreds}
+                                            Data Track Restricted Electives 5
                                             /5: ✔️
                                         </span>
                                     </div>
@@ -699,19 +687,6 @@ export function HighPerformanceComputing({
                                         Data Track Restricted Electives{" "}
                                         {restrictedCreds}
                                         /5: ❌
-                                    </span>
-                                )}
-                            </div>
-                            <p></p>
-                            <div>
-                                {CISCElectiveCreds >= 3 ? (
-                                    <div>
-                                        <span>CISC Elective 3/3: ✔️</span>
-                                    </div>
-                                ) : (
-                                    <span>
-                                        CISC Elective {CISCElectiveCreds}
-                                        /3: ❌
                                     </span>
                                 )}
                             </div>

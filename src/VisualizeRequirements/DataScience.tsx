@@ -181,6 +181,27 @@ export function DataScience({ plan }: { plan: Plan }): JSX.Element {
     );
     /* Lab Sciences */
     /*Major Requirements */
+    const CISC372 = courseCodes.find(
+        (course: string): boolean => course === "CISC 372"
+    );
+    const CISC304 = courseCodes.find(
+        (course: string): boolean => course === "CISC 304"
+    );
+    const CISC437 = courseCodes.find(
+        (course: string): boolean => course === "CISC 437"
+    );
+    const CISC481 = courseCodes.find(
+        (course: string): boolean => course === "CISC 481"
+    );
+    const MATH242 = courseCodes.find(
+        (course: string): boolean => course === "MATH 242"
+    );
+    const MATH243 = courseCodes.find(
+        (course: string): boolean => course === "MATH 243"
+    );
+    const MATH349 = courseCodes.find(
+        (course: string): boolean => course === "MATH 349"
+    );
     const [visible, setVisible] = useState<boolean>(false);
     function showRequirements(): void {
         setVisible(!visible);
@@ -403,9 +424,9 @@ export function DataScience({ plan }: { plan: Plan }): JSX.Element {
                                     </div>
                                     <p></p>
                                     <div>
-                                        {lab1.length >= 2 ||
-                                        lab2.length >= 2 ||
-                                        labSolo.length >= 1 ? (
+                                        {lab1.length > 0 &&
+                                        lab2.length > 0 &&
+                                        lab1Creds + lab2Creds >= 8 ? (
                                             <div>
                                                 <span>
                                                     Lab Sciences 8/8: ✔️
@@ -414,9 +435,7 @@ export function DataScience({ plan }: { plan: Plan }): JSX.Element {
                                         ) : (
                                             <span>
                                                 Lab Sciences{" "}
-                                                {lab1Creds +
-                                                    lab2Creds +
-                                                    labSoloCreds}
+                                                {lab1Creds + lab2Creds}
                                                 /8: ❌
                                             </span>
                                         )}
@@ -519,20 +538,109 @@ export function DataScience({ plan }: { plan: Plan }): JSX.Element {
                         </Col>
                         <Col>
                             <div>Concentration Requirements:</div>
+                            <div>
+                                {CISC304 !== undefined ? (
+                                    <div>
+                                        <span>CISC304 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC304 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC372 !== undefined ? (
+                                    <div>
+                                        <span>CISC372 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC372 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC437 !== undefined ? (
+                                    <div>
+                                        <span>CISC437 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC437 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC481 !== undefined ? (
+                                    <div>
+                                        <span>CISC481 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC481 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH205 !== undefined ? (
+                                    <div>
+                                        <span>MATH205 4/4: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH205 0/4: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH242 !== undefined ? (
+                                    <div>
+                                        <span>MATH242 4/4: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH242 0/4: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH243 !== undefined ? (
+                                    <div>
+                                        <span>MATH243 4/4: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH243 0/4: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH349 !== undefined ? (
+                                    <div>
+                                        <span>MATH349 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH349 0/3: ❌</span>
+                                )}
+                            </div>
                             <p></p>
                             <div>
-                                {restrictedCreds >= 6 ? (
+                                {conElectiveCreds >= 6 ? (
                                     <div>
                                         <span>
-                                            Restricted Electives{" "}
-                                            {restrictedCreds}
-                                            /6: ✔️
+                                            Advanced Math Requirement and
+                                            Advance Data Science Requirement
+                                            6/6: ✔️
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <span>
+                                        Advanced Math Requirement and Advance
+                                        Data Science Requirement{" "}
+                                        {conElectiveCreds}
+                                        /6: ❌
+                                    </span>
+                                )}
+                            </div>
+                            <p></p>
+                            <div>
+                                {restrictedCreds >= 3 ? (
+                                    <div>
+                                        <span>
+                                            Restricted Electives 3 /3: ✔️
                                         </span>
                                     </div>
                                 ) : (
                                     <span>
                                         Restricted Electives {restrictedCreds}
-                                        /6: ❌
+                                        /3: ❌
                                     </span>
                                 )}
                             </div>
