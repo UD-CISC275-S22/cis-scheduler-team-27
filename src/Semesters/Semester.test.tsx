@@ -18,27 +18,31 @@ describe("Semester Component tests", () => {
         const addSemBut = screen.getByTestId("AddSemButton");
         addSemBut.click();
         const SemInput = screen.queryAllByRole("textbox");
-        expect(SemInput).toHaveLength(2);
+        expect(SemInput).toHaveLength(1);
     });
     test("Save Button saves input", () => {
         const addSemBut = screen.getByTestId("AddSemButton");
         addSemBut.click();
-        const SemInput = screen.queryAllByRole("textbox");
-        const inputBox = SemInput[1];
+        const SemInputSeason = screen.getByTestId("semSeasonDropdown");
+        userEvent.selectOptions(SemInputSeason, "Winter");
+        const SemInput2 = screen.queryAllByRole("textbox");
+        const inputYear = SemInput2[0];
         const saveButton = screen.getByTestId("save-button");
-        userEvent.type(inputBox, "2030");
-        saveButton.click();
-        expect(screen.getByText(/2030/)).toBeInTheDocument();
+        userEvent.type(inputYear, "2023");
+        userEvent.click(saveButton);
+        expect(screen.getByText(/Winter 2023/)).toBeInTheDocument();
     });
     test("Cancel Button doesn't save input", () => {
         const yearsList = screen.queryAllByText(/2022/);
         expect(yearsList).toHaveLength(0);
         const addSemBut = screen.getByTestId("AddSemButton");
         addSemBut.click();
-        const SemInput = screen.queryAllByRole("textbox");
-        const inputBox = SemInput[0];
         const cancelButton = screen.getByTestId("cancel-button");
-        userEvent.type(inputBox, "2022");
+        const SemInputSeason = screen.getByTestId("semSeasonDropdown");
+        userEvent.selectOptions(SemInputSeason, "Fall");
+        const SemInput2 = screen.queryAllByRole("textbox");
+        const inputYear = SemInput2[0];
+        userEvent.type(inputYear, "2022");
         cancelButton.click();
         const yearsList2 = screen.queryAllByText(/2022/);
         expect(yearsList2).toHaveLength(0);
@@ -51,7 +55,7 @@ describe("Semester Component tests", () => {
         const editSemester = screen.getByTestId("edit-sem-button");
         expect(editSemester).toBeInTheDocument();
     });
-    test("Edit Button creates three textboxes", () => {
+    test("Edit Button creates 1 textbox", () => {
         const addSemBut = screen.getByTestId("AddSemButton");
         addSemBut.click();
         const saveSemBut = screen.getByTestId("save-button");
@@ -59,7 +63,7 @@ describe("Semester Component tests", () => {
         const editSemBut = screen.getByTestId("edit-sem-button");
         editSemBut.click();
         const SemInput = screen.queryAllByRole("textbox");
-        expect(SemInput).toHaveLength(3);
+        expect(SemInput).toHaveLength(1);
     });
     test("Save button in edit mode saves changes", () => {
         const addSemBut = screen.getByTestId("AddSemButton");

@@ -50,7 +50,7 @@ describe("Plan Component tests", () => {
         const editPlan = screen.getByTestId("edit-plan-button");
         expect(editPlan).toBeInTheDocument();
     });
-    test("Edit Button creates two textboxes", () => {
+    test("Edit Button creates one textboxes", () => {
         render(<Planner />);
         const addPlanBut = screen.getByTestId("AddPlanButton");
         addPlanBut.click();
@@ -59,7 +59,7 @@ describe("Plan Component tests", () => {
         const editPlanBut = screen.getByTestId("edit-plan-button");
         editPlanBut.click();
         const planInput = screen.queryAllByRole("textbox");
-        expect(planInput).toHaveLength(2);
+        expect(planInput).toHaveLength(1);
     });
     test("Save button in edit mode saves changes", () => {
         render(<Planner />);

@@ -23,11 +23,11 @@ describe("Visualize Requirements Test", () => {
         savePlanButton.click();
         const addSemBut = screen.getByTestId("AddSemButton");
         addSemBut.click();
-        const SemInput = screen.queryAllByRole("textbox");
-        const inputSeason = SemInput[0];
-        const inputYear = SemInput[1];
+        const SemInputSeason = screen.getByTestId("semSeasonDropdown");
+        userEvent.selectOptions(SemInputSeason, "Fall");
+        const SemInput2 = screen.queryAllByRole("textbox");
+        const inputYear = SemInput2[0];
         const saveButton = screen.getByTestId("save-button");
-        userEvent.type(inputSeason, "Fall");
         userEvent.type(inputYear, "2022");
         saveButton.click();
     });

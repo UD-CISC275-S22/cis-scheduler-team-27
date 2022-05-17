@@ -21,10 +21,10 @@ export function AddSemester({
     function saveChanges() {
         addSemester({
             name: season + " " + year,
-            year: year,
             season: season,
-            courses: [],
-            credits: 0
+            year: year,
+            credits: 0,
+            courses: []
         });
         handleClose();
     }
