@@ -120,6 +120,37 @@ export function CourseEditor({
                     <Form.Check
                         type="checkbox"
                         id="Req-Check-Creative"
+                        label="First Year Experience"
+                        name="Reqs"
+                        value="First Year Experience"
+                        checked={chosenReq.includes("First Year Experience")}
+                        onChange={updateReqs}
+                    />
+                    <Form.Check
+                        type="checkbox"
+                        id="Req-Check-Creative"
+                        label="Multicultural Requirement"
+                        name="Reqs"
+                        value="Multicultural Requirement"
+                        checked={chosenReq.includes(
+                            "Multicultural Requirement"
+                        )}
+                        onChange={updateReqs}
+                    />
+                    <Form.Check
+                        type="checkbox"
+                        id="Req-Check-Creative"
+                        label="Discovey Learning Experience"
+                        name="Reqs"
+                        value="Discovey Learning Experience"
+                        checked={chosenReq.includes(
+                            "Discovey Learning Experience"
+                        )}
+                        onChange={updateReqs}
+                    />
+                    <Form.Check
+                        type="checkbox"
+                        id="Req-Check-Creative"
                         label="Creative Arts and Humanities"
                         name="Reqs"
                         value="Creative Arts and Humanities"
@@ -181,11 +212,20 @@ export function CourseEditor({
                     />
                     <Form.Check
                         type="checkbox"
+                        id="Req-Check-Concentration"
+                        label="CISC Elective"
+                        name="Reqs"
+                        value="CISC Elective"
+                        checked={chosenReq.includes("CISC Elective")}
+                        onChange={updateReqs}
+                    />
+                    <Form.Check
+                        type="checkbox"
                         id="Req-Check-LAB1"
                         label="Lab Seq 1"
                         name="Reqs"
                         value="Lab Seq 1"
-                        checked={chosenReq.includes("Lab Seq 1")}
+                        checked={chosenReq.includes("Lab Sequence 1")}
                         onChange={updateReqs}
                     />
                     <Form.Check
@@ -194,7 +234,7 @@ export function CourseEditor({
                         label="Lab Seq 2"
                         name="Reqs"
                         value="Lab Seq 2"
-                        checked={chosenReq.includes("Lab Seq 2")}
+                        checked={chosenReq.includes("Lab Sequence 2")}
                         onChange={updateReqs}
                     />
                     <Form.Check
