@@ -19,8 +19,12 @@ export function SemesterEditor({
     editClasses: (id: string, courseList: Course[]) => void;
     courseList: Course[];
 }): JSX.Element {
+    const seasons = ["Fall", "Winter", "Spring", "Summer"];
+    const [season, setSeason] = useState<string>(seasons[0]);
+    function updateSeason(event: React.ChangeEvent<HTMLSelectElement>) {
+        setSeason(event.target.value);
+    }
     const [year, setYear] = useState<string>(semester.year);
-    const [season, setSeason] = useState<string>(semester.season);
     /*
     const [credits, setCredits] = useState<number>(semester.credits);
     
@@ -45,14 +49,17 @@ export function SemesterEditor({
             <Col>
                 <Form.Group controlId="semesterSeason">
                     <Form.Label>Season:</Form.Label>
-                    <Col>
-                        <Form.Control
-                            value={season}
-                            onChange={(
-                                event: React.ChangeEvent<HTMLInputElement>
-                            ) => setSeason(event.target.value)}
-                        />
-                    </Col>
+                    <Form.Select
+                        data-testid="semSeasonDropdown"
+                        value={season}
+                        onChange={updateSeason}
+                    >
+                        {seasons.map((concentration: string) => (
+                            <option key={concentration} value={concentration}>
+                                {concentration}
+                            </option>
+                        ))}
+                    </Form.Select>
                 </Form.Group>
             </Col>
             <Col>
