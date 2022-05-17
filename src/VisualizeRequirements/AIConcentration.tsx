@@ -11,6 +11,47 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
     );
     const merged = Array.prototype.concat.apply([], courseList);
     const courseCodes = merged.map((course: Course): string => course.code);
+
+    const breadthA = merged.filter(
+        (course: Course): boolean =>
+            course.typ === "Creative Arts and Humanities"
+    );
+
+    const breadthB = merged.filter(
+        (course: Course): boolean =>
+            course.typ === "History and Cultural Change"
+    );
+
+    const breadthC = merged.filter(
+        (course: Course): boolean =>
+            course.typ === "Social and Behavioral Sciences"
+    );
+
+    const breadthD = merged.filter(
+        (course: Course): boolean =>
+            course.typ === "Math, Natural Sciences and Technology"
+    );
+
+    const RestrictedElective = merged.filter(
+        (course: Course): boolean => course.typ === "Restrictive Elective"
+    );
+
+    const CISCElective = merged.filter(
+        (course: Course): boolean => course.typ === "Concentration Elective"
+    );
+
+    const lab1 = merged.filter(
+        (course: Course): boolean => course.typ === "Lab Seq 1"
+    );
+
+    const lab2 = merged.filter(
+        (course: Course): boolean => course.typ === "Lab Seq 2"
+    );
+
+    const labSolo = merged.filter(
+        (course: Course): boolean => course.typ === "Solo Lab"
+    );
+
     const CISC108 = courseCodes.find(
         (course: string): boolean => course === "CISC 108"
     );
@@ -70,42 +111,6 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
         (course: string): boolean => course === "UNIV 402"
     );
     /* Lab Sciences */
-    const BISC207 = courseCodes.find(
-        (course: string): boolean => course === "BISC 207"
-    );
-    const BISC208 = courseCodes.find(
-        (course: string): boolean => course === "BISC 208"
-    );
-    const CHEM103 = courseCodes.find(
-        (course: string): boolean => course === "CHEM 103"
-    );
-    const CHEM133 = courseCodes.find(
-        (course: string): boolean => course === "CHEM 133"
-    );
-    const CHEM104 = courseCodes.find(
-        (course: string): boolean => course === "CHEM 104"
-    );
-    const CHEM134 = courseCodes.find(
-        (course: string): boolean => course === "CHEM 134"
-    );
-    const GEOL105 = courseCodes.find(
-        (course: string): boolean => course === "GEOL 105"
-    );
-    const GEOL115 = courseCodes.find(
-        (course: string): boolean => course === "GEOL 115"
-    );
-    const GEOL107 = courseCodes.find(
-        (course: string): boolean => course === "GEOL 107"
-    );
-    const PHYS207 = courseCodes.find(
-        (course: string): boolean => course === "PHYS 207"
-    );
-    const PHYS208 = courseCodes.find(
-        (course: string): boolean => course === "PHYS 208"
-    );
-    const CISC367 = courseCodes.find(
-        (course: string): boolean => course === "CISC 367"
-    );
     /*Major Requirements */
     const CISC361 = courseCodes.find(
         (course: string): boolean => course === "CISC 361"
@@ -267,7 +272,7 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
                             <p></p>
                             <p> CISC Elective:</p>
                             <div>
-                                {CISC367 !== undefined ? (
+                                {CISCElective.length > 0 ? (
                                     <div>
                                         <span>
                                             Any 3-4 Credit CISC300+ Course: ✔️
@@ -323,77 +328,19 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
                                     {" "}
                                     <p></p>
                                     <p>Lab Science Requirement:</p>
-                                    {BISC207 !== undefined ? (
-                                        <div>
-                                            <span>BISC207: ✔️</span>
-                                        </div>
-                                    ) : (
-                                        <span>BISC207: ❌</span>
-                                    )}
                                     <div>
-                                        {BISC208 !== undefined ? (
+                                        {lab1.length >= 2 ||
+                                        lab2.length >= 2 ||
+                                        labSolo.length >= 1 ? (
                                             <div>
-                                                <span>BISC208: ✔️</span>
+                                                <span>
+                                                    One of 5 Sequences Taken: ✔️
+                                                </span>
                                             </div>
                                         ) : (
-                                            <span>BISC208: ❌</span>
-                                        )}
-                                    </div>
-                                    <p> or </p>
-                                    <div>
-                                        {CHEM103 !== undefined && CHEM133 ? (
-                                            <div>
-                                                <span>CHEM103/133: ✔️</span>
-                                            </div>
-                                        ) : (
-                                            <span>CHEM103/133: ❌</span>
-                                        )}
-                                    </div>
-                                    <div>
-                                        {CHEM104 !== undefined && CHEM134 ? (
-                                            <div>
-                                                <span>CHEM104 and 134: ✔️</span>
-                                            </div>
-                                        ) : (
-                                            <span>CHEM104 and 134: ❌</span>
-                                        )}
-                                    </div>
-                                    <p> or </p>
-                                    <div>
-                                        {GEOL105 !== undefined && GEOL115 ? (
-                                            <div>
-                                                <span>GEOL105 and 115: ✔️</span>
-                                            </div>
-                                        ) : (
-                                            <span>GEOL105 and 115: ❌</span>
-                                        )}
-                                    </div>
-                                    <div>
-                                        {GEOL107 !== undefined ? (
-                                            <div>
-                                                <span>GEOL107: ✔️</span>
-                                            </div>
-                                        ) : (
-                                            <span>GEOL107: ❌</span>
-                                        )}
-                                    </div>
-                                    <p> or </p>
-                                    <div>
-                                        {PHYS207 !== undefined ? (
-                                            <div>
-                                                <span>PHYS207/227: ✔️</span>
-                                            </div>
-                                        ) : (
-                                            <span>PHYS207/227: ❌</span>
-                                        )}
-                                    </div>
-                                    <div>
-                                        {PHYS208 !== undefined ? (
-                                            <div>
-                                                <span>PHYS208/228: ✔️</span>
-                                            </div>
-                                        ) : (
-                                            <span>PHYS208/228: ❌</span>
+                                            <span>
+                                                One of 5 Sequences Taken: ❌
+                                            </span>
                                         )}
                                     </div>
                                 </div>
@@ -454,6 +401,61 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
                                     </div>
                                 ) : (
                                     <span>CISC484: ❌</span>
+                                )}
+                            </div>
+                        </Col>
+                        <Col>
+                            <p> Breadth Requirements</p>
+                            <div>
+                                {breadthA.length > 0 ? (
+                                    <div>
+                                        <span>
+                                            Creative Arts and Humanities: ✔️
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <span>
+                                        Creative Arts and Humanities: ❌
+                                    </span>
+                                )}
+                            </div>
+                            <div>
+                                {breadthB.length > 0 ? (
+                                    <div>
+                                        <span>
+                                            History and Cultural Change: ✔️
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <span>History and Cultural Change: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {breadthC.length > 0 ? (
+                                    <div>
+                                        <span>
+                                            Social and Behavioral Sciences: ✔️
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <span>
+                                        Social and Behavioral Sciences: ❌
+                                    </span>
+                                )}
+                            </div>
+                            <div>
+                                {breadthD.length > 0 ? (
+                                    <div>
+                                        <span>
+                                            Math, Natural Sciences and
+                                            Technology: ✔️
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <span>
+                                        Math, Natural Sciences and Technology:
+                                        ❌
+                                    </span>
                                 )}
                             </div>
                         </Col>
