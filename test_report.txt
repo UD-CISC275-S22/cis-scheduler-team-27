@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/Course/MoveCourses.test.tsx (63.706 s)
+PASS src/Course/MoveCourses.test.tsx (51.635 s)
 PASS src/Plan/Plan.test.tsx
 PASS src/Semesters/Semester.test.tsx
   ● Console
@@ -53,7 +53,7 @@ PASS src/Semesters/Semester.test.tsx
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
 PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx
-PASS src/Course/EditCourse.test.tsx (12.072 s)
+PASS src/Course/EditCourse.test.tsx (10.272 s)
   ● Console
 
     console.error
@@ -80,13 +80,13 @@ PASS src/Course/EditCourse.test.tsx (12.072 s)
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
-PASS src/Course/CourseView.test.tsx (12.47 s)
-PASS src/Course/Course.test.tsx (7.681 s)
+PASS src/Course/CourseView.test.tsx (9.582 s)
+PASS src/Course/Course.test.tsx (6.165 s)
 PASS src/Welcome.test.tsx
 -------------------------------|---------|----------|---------|---------|-----------------------------------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                             
 -------------------------------|---------|----------|---------|---------|-----------------------------------------------
-All files                      |   21.05 |     5.63 |   27.65 |   21.29 |                                               
+All files                      |   18.85 |     5.19 |   25.16 |   19.09 |                                               
  src                           |     100 |      100 |     100 |     100 |                                               
   App.tsx                      |     100 |      100 |     100 |     100 |                                               
   interfaces.tsx               |       0 |        0 |       0 |       0 |                                               
@@ -97,10 +97,10 @@ All files                      |   21.05 |     5.63 |   27.65 |   21.29 |
   CourseEditor.tsx             |   58.82 |       25 |      50 |    62.5 | 47-54,85                                      
   CoursePool.tsx               |     100 |       50 |     100 |     100 | 14                                            
   CourseView.tsx               |   76.47 |      100 |   72.72 |      75 | 35-38,88                                      
- src/Plan                      |    92.1 |    63.63 |    87.5 |   91.42 |                                               
+ src/Plan                      |    92.1 |     62.5 |    87.5 |   91.42 |                                               
   AddPlan.tsx                  |     100 |      100 |     100 |     100 |                                               
   PlanEditor.tsx               |    87.5 |      100 |      80 |    87.5 | 51                                            
-  PlanList.tsx                 |     100 |    57.14 |     100 |     100 | 70-87                                         
+  PlanList.tsx                 |     100 |    56.25 |     100 |     100 | 71-91                                         
   PlanView.tsx                 |     100 |      100 |     100 |     100 |                                               
   Planner.tsx                  |    87.5 |    66.66 |      80 |   84.61 | 25,32                                         
  src/Semesters                 |   91.66 |    91.66 |   87.87 |    91.3 |                                               
@@ -109,7 +109,7 @@ All files                      |   21.05 |     5.63 |   27.65 |   21.29 |
   SemesterEditor.tsx           |   83.33 |      100 |      75 |   83.33 | 68-81                                         
   SemesterList.tsx             |     100 |      100 |     100 |     100 |                                               
   SemesterView.tsx             |   91.66 |      100 |   88.88 |   91.66 | 52                                            
- src/VisualizeRequirements     |   12.11 |     0.16 |   12.83 |   11.95 |                                               
+ src/VisualizeRequirements     |   10.69 |     0.14 |    11.4 |   10.56 |                                               
   AIConcentration.tsx          |   89.78 |     1.23 |   95.55 |    88.7 | 24,33,42,50,58,66,73,81,89,97,104,111,201,207 
   Bioinformatics.tsx           |       0 |        0 |       0 |       0 | 9-244                                         
   Cybersecurity.tsx            |       0 |        0 |       0 |       0 | 9-210                                         
@@ -117,6 +117,7 @@ All files                      |   21.05 |     5.63 |   27.65 |   21.29 |
   HighPerformanceComputing.tsx |       0 |        0 |       0 |       0 | 13-221                                        
   SystemsNetworks.tsx          |       0 |        0 |       0 |       0 | 9-207                                         
   TheoryComputation.tsx        |       0 |        0 |       0 |       0 | 9-222                                         
+  Traditional.tsx              |       0 |        0 |       0 |       0 | 9-201                                         
  src/interfaces                |       0 |        0 |       0 |       0 |                                               
   Course.ts                    |       0 |        0 |       0 |       0 |                                               
   Plan.tsx                     |       0 |        0 |       0 |       0 |                                               
@@ -126,5 +127,5 @@ All files                      |   21.05 |     5.63 |   27.65 |   21.29 |
 Test Suites: 8 passed, 8 total
 Tests:       29 passed, 29 total
 Snapshots:   0 total
-Time:        102.997 s
+Time:        83.596 s
 Ran all test suites.
