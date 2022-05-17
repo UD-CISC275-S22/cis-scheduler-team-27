@@ -3,7 +3,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { Planner } from "../Plan/Planner";
 import userEvent from "@testing-library/user-event";
 import { CourseView } from "../Course/CourseView";
-/*test*/
+
 function dragAndDrop(course: HTMLElement, cell: HTMLElement) {
     fireEvent.dragStart(course);
     fireEvent.dragEnter(cell);
