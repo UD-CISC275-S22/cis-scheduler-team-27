@@ -1,4 +1,5 @@
 /* eslint-disable indent */
+
 import React, { useState } from "react";
 import { Semester } from "../interfaces/Semester";
 import { Course } from "../interfaces/Course";
@@ -206,6 +207,7 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
     return (
         <div>
             <Button
+                data-testid="Cyber-Requirements"
                 onClick={() => {
                     showRequirements();
                 }}
