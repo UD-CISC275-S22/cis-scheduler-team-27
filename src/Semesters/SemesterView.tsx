@@ -6,6 +6,7 @@ import "../Course/course.css";
 import { Course } from "../interfaces/Course";
 import { useDrop } from "react-dnd";
 import { CourseCard } from "../Course/CourseCard";
+
 import "./Semester.css";
 
 export function SemesterView({
@@ -73,7 +74,7 @@ export function SemesterView({
     ) : (
         <Container className="Semester">
             <Col>
-                <h5>{semester.name}</h5>
+                <h5>{semester.season + " " + semester.year}</h5>
                 <Row>Number of Courses: {semester.courses.length}</Row>
                 {/*Semester Displays Here*/}
                 <div ref={drop} data-testid={semester.name}>

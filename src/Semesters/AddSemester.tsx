@@ -16,8 +16,8 @@ export function AddSemester({
 
     function saveChanges() {
         addSemester({
-            name: season + " " + year.toString(),
-            year: parseInt(year),
+            name: season + " " + year,
+            year: year,
             season: season,
             courses: [],
             credits: 0

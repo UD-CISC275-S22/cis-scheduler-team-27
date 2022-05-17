@@ -3,6 +3,6 @@ export interface Semester {
     name: string;
     courses: Course[];
     credits: number;
-    year: number;
+    year: string;
     season: string;
 }
