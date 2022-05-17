@@ -2,8 +2,84 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx (64.34 s)
+FAIL src/VisualizeRequirements/VisualizeRequirements.test.tsx (51.196 s)
   ● Console
+
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/VisualizeRequirements/VisualizeRequirements.test.tsx:31:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusHook (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:181:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:148:5)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
+
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/VisualizeRequirements/VisualizeRequirements.test.tsx:31:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusHook (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:181:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:148:5)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
+
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/VisualizeRequirements/VisualizeRequirements.test.tsx:31:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusHook (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:181:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:148:5)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
+
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/VisualizeRequirements/VisualizeRequirements.test.tsx:31:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusHook (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:181:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:148:5)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
 
     console.error
       Warning: React does not recognize the `controlID` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `controlid` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
@@ -29,7 +105,1562 @@ PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx (64.34 s)
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
-PASS src/Course/MoveCourses.test.tsx (39.447 s)
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/VisualizeRequirements/VisualizeRequirements.test.tsx:31:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusHook (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:181:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:148:5)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
+
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/VisualizeRequirements/VisualizeRequirements.test.tsx:31:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusHook (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:181:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:148:5)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
+
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/VisualizeRequirements/VisualizeRequirements.test.tsx:31:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusHook (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:181:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:148:5)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
+
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/VisualizeRequirements/VisualizeRequirements.test.tsx:31:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusHook (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:181:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:148:5)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
+  ● Visualize Requirements Test › Core degree requirements can be filled
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="Fall 2022"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-label"[39m
+                        [33mfor[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [0mSelect Concentration[0m
+                      [36m</label>[39m
+                      [36m<select[39m
+                        [33mclass[39m=[32m"form-select"[39m
+                        [33mdata-testid[39m=[32m"concentration-dropdown"[39m
+                        [33mid[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"AI Robotics"[39m
+                        [36m>[39m
+                          [0mAI Robotics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Bioinformatics"[39m
+                        [36m>[39m
+                          [0mBioinformatics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Cybersecurity"[39m
+                        [36m>[39m
+                          [0mCybersecurity[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Data Science"[39m
+                        [36m>[39m
+                          [0mData Science[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"High Performance Computing"[39m
+                        [36m>[39m
+                          [0mHigh Performance Computing[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Systems and Networks"[39m
+                        [36m>[39m
+                          [0mSystems and Networks[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Theory and Computation"[39m
+                        [36m>[39m
+                          [0mTheory and Computation[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Traditional with Custom Focus Area"[39m
+                        [36m>[39m
+                          [0mTraditional with Custom Focus Area[0m
+                        [36m</option>[39m
+                      [36m</select>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<span>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"PlanView col"[39m
+                          [36m>[39m
+                            [36m<h3>[39m
+                              [0mPlan Name[0m
+                            [36m</h3>[39m
+                            [36m<p>[39m
+                              [0m Description: [0m
+                              [0m[0m
+                            [36m</p>[39m
+                          [36m</div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"btn btn-primary"[39m
+                            [33mdata-testid[39m=[32m"edit-plan-button"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0mEdit Plan[0m
+                          [36m</button>[39m
+                          [36m<div>[39m
+                            [36m<div>[39m
+                              [36m<div>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"Semester container"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<h5>[39m
+                                        [0mFall Fall[0m
+                                      [36m</h5>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [0mNumber of Courses: [0m
+                                        [0m0[0m
+                                      [36m</div>[39m
+                                      [36m<div[39m
+                                        [33mdata-testid[39m=[32m"Fall Fall"[39m
+                                      [36m>[39m
+                                        [36m<h3>[39m
+                                          [0mCourses[0m
+                                        [36m</h3>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                      [36m</div>[39m
+                                      [36m<button[39m
+                                        [33mclass[39m=[32m"btn btn-primary"[39m
+                                        [33mdata-testid[39m=[32m"edit-sem-button"[39m
+                                        [33mtype[39m=[32m"button"[39m
+                                      [36m>[39m
+                                        [0mEdit Semester[0m
+                                      [36m</button>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                            [36m<div>[39m
+                              [36m<button[39m
+                                [33mclass[39m=[32m"btn btn-primary"[39m
+                                [33mdata-testid[39m=[32m"AddSemButton"[39m
+                                [33mtype[39m=[32m"button"[39m
+                              [36m>[39m
+                                [0mAdd New Semester[...
+
+      53 |         const courseDropdown = screen.getByTestId("course-dropdown");
+      54 |         userEvent.selectOptions(courseDropdown, "CISC 181");
+    > 55 |         const dropArea = screen.getByTestId("Fall 2022");
+         |                                 ^
+      56 |         const CISC181card = screen.getByTestId("CISC 181");
+      57 |         dragAndDrop(CISC181card, dropArea);
+      58 |         userEvent.selectOptions(courseDropdown, "CISC 210");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/VisualizeRequirements/VisualizeRequirements.test.tsx:55:33)
+
+  ● Visualize Requirements Test › Creative breadth electives can established and filled
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="Fall 2022"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-label"[39m
+                        [33mfor[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [0mSelect Concentration[0m
+                      [36m</label>[39m
+                      [36m<select[39m
+                        [33mclass[39m=[32m"form-select"[39m
+                        [33mdata-testid[39m=[32m"concentration-dropdown"[39m
+                        [33mid[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"AI Robotics"[39m
+                        [36m>[39m
+                          [0mAI Robotics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Bioinformatics"[39m
+                        [36m>[39m
+                          [0mBioinformatics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Cybersecurity"[39m
+                        [36m>[39m
+                          [0mCybersecurity[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Data Science"[39m
+                        [36m>[39m
+                          [0mData Science[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"High Performance Computing"[39m
+                        [36m>[39m
+                          [0mHigh Performance Computing[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Systems and Networks"[39m
+                        [36m>[39m
+                          [0mSystems and Networks[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Theory and Computation"[39m
+                        [36m>[39m
+                          [0mTheory and Computation[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Traditional with Custom Focus Area"[39m
+                        [36m>[39m
+                          [0mTraditional with Custom Focus Area[0m
+                        [36m</option>[39m
+                      [36m</select>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<span>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"PlanView col"[39m
+                          [36m>[39m
+                            [36m<h3>[39m
+                              [0mPlan Name[0m
+                            [36m</h3>[39m
+                            [36m<p>[39m
+                              [0m Description: [0m
+                              [0m[0m
+                            [36m</p>[39m
+                          [36m</div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"btn btn-primary"[39m
+                            [33mdata-testid[39m=[32m"edit-plan-button"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0mEdit Plan[0m
+                          [36m</button>[39m
+                          [36m<div>[39m
+                            [36m<div>[39m
+                              [36m<div>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"Semester container"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<h5>[39m
+                                        [0mFall Fall[0m
+                                      [36m</h5>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [0mNumber of Courses: [0m
+                                        [0m0[0m
+                                      [36m</div>[39m
+                                      [36m<div[39m
+                                        [33mdata-testid[39m=[32m"Fall Fall"[39m
+                                      [36m>[39m
+                                        [36m<h3>[39m
+                                          [0mCourses[0m
+                                        [36m</h3>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                      [36m</div>[39m
+                                      [36m<button[39m
+                                        [33mclass[39m=[32m"btn btn-primary"[39m
+                                        [33mdata-testid[39m=[32m"edit-sem-button"[39m
+                                        [33mtype[39m=[32m"button"[39m
+                                      [36m>[39m
+                                        [0mEdit Semester[0m
+                                      [36m</button>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                            [36m<div>[39m
+                              [36m<button[39m
+                                [33mclass[39m=[32m"btn btn-primary"[39m
+                                [33mdata-testid[39m=[32m"AddSemButton"[39m
+                                [33mtype[39m=[32m"button"[39m
+                              [36m>[39m
+                                [0mAdd New Semester[...
+
+      77 |         const saveCourse = screen.getByTestId("save-course-button");
+      78 |         userEvent.click(saveCourse);
+    > 79 |         const dropArea = screen.getByTestId("Fall 2022");
+         |                                 ^
+      80 |         const CISC181card = screen.getByTestId("CISC 181");
+      81 |         dragAndDrop(CISC181card, dropArea);
+      82 |         dragAndDrop(CISC181card, dropArea);
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/VisualizeRequirements/VisualizeRequirements.test.tsx:79:33)
+
+  ● Visualize Requirements Test › History breadth electives can established and filled
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="Fall 2022"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-label"[39m
+                        [33mfor[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [0mSelect Concentration[0m
+                      [36m</label>[39m
+                      [36m<select[39m
+                        [33mclass[39m=[32m"form-select"[39m
+                        [33mdata-testid[39m=[32m"concentration-dropdown"[39m
+                        [33mid[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"AI Robotics"[39m
+                        [36m>[39m
+                          [0mAI Robotics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Bioinformatics"[39m
+                        [36m>[39m
+                          [0mBioinformatics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Cybersecurity"[39m
+                        [36m>[39m
+                          [0mCybersecurity[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Data Science"[39m
+                        [36m>[39m
+                          [0mData Science[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"High Performance Computing"[39m
+                        [36m>[39m
+                          [0mHigh Performance Computing[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Systems and Networks"[39m
+                        [36m>[39m
+                          [0mSystems and Networks[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Theory and Computation"[39m
+                        [36m>[39m
+                          [0mTheory and Computation[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Traditional with Custom Focus Area"[39m
+                        [36m>[39m
+                          [0mTraditional with Custom Focus Area[0m
+                        [36m</option>[39m
+                      [36m</select>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<span>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"PlanView col"[39m
+                          [36m>[39m
+                            [36m<h3>[39m
+                              [0mPlan Name[0m
+                            [36m</h3>[39m
+                            [36m<p>[39m
+                              [0m Description: [0m
+                              [0m[0m
+                            [36m</p>[39m
+                          [36m</div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"btn btn-primary"[39m
+                            [33mdata-testid[39m=[32m"edit-plan-button"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0mEdit Plan[0m
+                          [36m</button>[39m
+                          [36m<div>[39m
+                            [36m<div>[39m
+                              [36m<div>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"Semester container"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<h5>[39m
+                                        [0mFall Fall[0m
+                                      [36m</h5>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [0mNumber of Courses: [0m
+                                        [0m0[0m
+                                      [36m</div>[39m
+                                      [36m<div[39m
+                                        [33mdata-testid[39m=[32m"Fall Fall"[39m
+                                      [36m>[39m
+                                        [36m<h3>[39m
+                                          [0mCourses[0m
+                                        [36m</h3>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                      [36m</div>[39m
+                                      [36m<button[39m
+                                        [33mclass[39m=[32m"btn btn-primary"[39m
+                                        [33mdata-testid[39m=[32m"edit-sem-button"[39m
+                                        [33mtype[39m=[32m"button"[39m
+                                      [36m>[39m
+                                        [0mEdit Semester[0m
+                                      [36m</button>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                            [36m<div>[39m
+                              [36m<button[39m
+                                [33mclass[39m=[32m"btn btn-primary"[39m
+                                [33mdata-testid[39m=[32m"AddSemButton"[39m
+                                [33mtype[39m=[32m"button"[39m
+                              [36m>[39m
+                                [0mAdd New Semester[...
+
+      100 |         const saveCourse = screen.getByTestId("save-course-button");
+      101 |         userEvent.click(saveCourse);
+    > 102 |         const dropArea = screen.getByTestId("Fall 2022");
+          |                                 ^
+      103 |         const ARAB305card = screen.getByTestId("ARAB 305");
+      104 |         dragAndDrop(ARAB305card, dropArea);
+      105 |         dragAndDrop(ARAB305card, dropArea);
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/VisualizeRequirements/VisualizeRequirements.test.tsx:102:33)
+
+  ● Visualize Requirements Test › Breadth requirement no longer filled if courses are cleared
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="Fall 2022"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-label"[39m
+                        [33mfor[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [0mSelect Concentration[0m
+                      [36m</label>[39m
+                      [36m<select[39m
+                        [33mclass[39m=[32m"form-select"[39m
+                        [33mdata-testid[39m=[32m"concentration-dropdown"[39m
+                        [33mid[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"AI Robotics"[39m
+                        [36m>[39m
+                          [0mAI Robotics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Bioinformatics"[39m
+                        [36m>[39m
+                          [0mBioinformatics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Cybersecurity"[39m
+                        [36m>[39m
+                          [0mCybersecurity[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Data Science"[39m
+                        [36m>[39m
+                          [0mData Science[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"High Performance Computing"[39m
+                        [36m>[39m
+                          [0mHigh Performance Computing[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Systems and Networks"[39m
+                        [36m>[39m
+                          [0mSystems and Networks[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Theory and Computation"[39m
+                        [36m>[39m
+                          [0mTheory and Computation[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Traditional with Custom Focus Area"[39m
+                        [36m>[39m
+                          [0mTraditional with Custom Focus Area[0m
+                        [36m</option>[39m
+                      [36m</select>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<span>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"PlanView col"[39m
+                          [36m>[39m
+                            [36m<h3>[39m
+                              [0mPlan Name[0m
+                            [36m</h3>[39m
+                            [36m<p>[39m
+                              [0m Description: [0m
+                              [0m[0m
+                            [36m</p>[39m
+                          [36m</div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"btn btn-primary"[39m
+                            [33mdata-testid[39m=[32m"edit-plan-button"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0mEdit Plan[0m
+                          [36m</button>[39m
+                          [36m<div>[39m
+                            [36m<div>[39m
+                              [36m<div>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"Semester container"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<h5>[39m
+                                        [0mFall Fall[0m
+                                      [36m</h5>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [0mNumber of Courses: [0m
+                                        [0m0[0m
+                                      [36m</div>[39m
+                                      [36m<div[39m
+                                        [33mdata-testid[39m=[32m"Fall Fall"[39m
+                                      [36m>[39m
+                                        [36m<h3>[39m
+                                          [0mCourses[0m
+                                        [36m</h3>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                      [36m</div>[39m
+                                      [36m<button[39m
+                                        [33mclass[39m=[32m"btn btn-primary"[39m
+                                        [33mdata-testid[39m=[32m"edit-sem-button"[39m
+                                        [33mtype[39m=[32m"button"[39m
+                                      [36m>[39m
+                                        [0mEdit Semester[0m
+                                      [36m</button>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                            [36m<div>[39m
+                              [36m<button[39m
+                                [33mclass[39m=[32m"btn btn-primary"[39m
+                                [33mdata-testid[39m=[32m"AddSemButton"[39m
+                                [33mtype[39m=[32m"button"[39m
+                              [36m>[39m
+                                [0mAdd New Semester[...
+
+      123 |         const saveCourse = screen.getByTestId("save-course-button");
+      124 |         userEvent.click(saveCourse);
+    > 125 |         const dropArea = screen.getByTestId("Fall 2022");
+          |                                 ^
+      126 |         const ARAB305card = screen.getByTestId("ARAB 305");
+      127 |         dragAndDrop(ARAB305card, dropArea);
+      128 |         dragAndDrop(ARAB305card, dropArea);
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/VisualizeRequirements/VisualizeRequirements.test.tsx:125:33)
+
+  ● Visualize Requirements Test › Core degree requirements no longer filled if courses are cleared
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="Fall 2022"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-label"[39m
+                        [33mfor[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [0mSelect Concentration[0m
+                      [36m</label>[39m
+                      [36m<select[39m
+                        [33mclass[39m=[32m"form-select"[39m
+                        [33mdata-testid[39m=[32m"concentration-dropdown"[39m
+                        [33mid[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"AI Robotics"[39m
+                        [36m>[39m
+                          [0mAI Robotics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Bioinformatics"[39m
+                        [36m>[39m
+                          [0mBioinformatics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Cybersecurity"[39m
+                        [36m>[39m
+                          [0mCybersecurity[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Data Science"[39m
+                        [36m>[39m
+                          [0mData Science[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"High Performance Computing"[39m
+                        [36m>[39m
+                          [0mHigh Performance Computing[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Systems and Networks"[39m
+                        [36m>[39m
+                          [0mSystems and Networks[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Theory and Computation"[39m
+                        [36m>[39m
+                          [0mTheory and Computation[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Traditional with Custom Focus Area"[39m
+                        [36m>[39m
+                          [0mTraditional with Custom Focus Area[0m
+                        [36m</option>[39m
+                      [36m</select>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<span>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"PlanView col"[39m
+                          [36m>[39m
+                            [36m<h3>[39m
+                              [0mPlan Name[0m
+                            [36m</h3>[39m
+                            [36m<p>[39m
+                              [0m Description: [0m
+                              [0m[0m
+                            [36m</p>[39m
+                          [36m</div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"btn btn-primary"[39m
+                            [33mdata-testid[39m=[32m"edit-plan-button"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0mEdit Plan[0m
+                          [36m</button>[39m
+                          [36m<div>[39m
+                            [36m<div>[39m
+                              [36m<div>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"Semester container"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<h5>[39m
+                                        [0mFall Fall[0m
+                                      [36m</h5>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [0mNumber of Courses: [0m
+                                        [0m0[0m
+                                      [36m</div>[39m
+                                      [36m<div[39m
+                                        [33mdata-testid[39m=[32m"Fall Fall"[39m
+                                      [36m>[39m
+                                        [36m<h3>[39m
+                                          [0mCourses[0m
+                                        [36m</h3>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                      [36m</div>[39m
+                                      [36m<button[39m
+                                        [33mclass[39m=[32m"btn btn-primary"[39m
+                                        [33mdata-testid[39m=[32m"edit-sem-button"[39m
+                                        [33mtype[39m=[32m"button"[39m
+                                      [36m>[39m
+                                        [0mEdit Semester[0m
+                                      [36m</button>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                            [36m<div>[39m
+                              [36m<button[39m
+                                [33mclass[39m=[32m"btn btn-primary"[39m
+                                [33mdata-testid[39m=[32m"AddSemButton"[39m
+                                [33mtype[39m=[32m"button"[39m
+                              [36m>[39m
+                                [0mAdd New Semester[...
+
+      144 |         const courseDropdown = screen.getByTestId("course-dropdown");
+      145 |         userEvent.selectOptions(courseDropdown, "CISC 181");
+    > 146 |         const dropArea = screen.getByTestId("Fall 2022");
+          |                                 ^
+      147 |         const CISC181card = screen.getByTestId("CISC 181");
+      148 |         dragAndDrop(CISC181card, dropArea);
+      149 |         userEvent.selectOptions(courseDropdown, "CISC 210");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/VisualizeRequirements/VisualizeRequirements.test.tsx:146:33)
+
+  ● Visualize Requirements Test › Core degree requirements can be filled for another concentration
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="Fall 2022"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-label"[39m
+                        [33mfor[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [0mSelect Concentration[0m
+                      [36m</label>[39m
+                      [36m<select[39m
+                        [33mclass[39m=[32m"form-select"[39m
+                        [33mdata-testid[39m=[32m"concentration-dropdown"[39m
+                        [33mid[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"AI Robotics"[39m
+                        [36m>[39m
+                          [0mAI Robotics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Bioinformatics"[39m
+                        [36m>[39m
+                          [0mBioinformatics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Cybersecurity"[39m
+                        [36m>[39m
+                          [0mCybersecurity[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Data Science"[39m
+                        [36m>[39m
+                          [0mData Science[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"High Performance Computing"[39m
+                        [36m>[39m
+                          [0mHigh Performance Computing[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Systems and Networks"[39m
+                        [36m>[39m
+                          [0mSystems and Networks[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Theory and Computation"[39m
+                        [36m>[39m
+                          [0mTheory and Computation[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Traditional with Custom Focus Area"[39m
+                        [36m>[39m
+                          [0mTraditional with Custom Focus Area[0m
+                        [36m</option>[39m
+                      [36m</select>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<span>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"PlanView col"[39m
+                          [36m>[39m
+                            [36m<h3>[39m
+                              [0mPlan Name[0m
+                            [36m</h3>[39m
+                            [36m<p>[39m
+                              [0m Description: [0m
+                              [0m[0m
+                            [36m</p>[39m
+                          [36m</div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"btn btn-primary"[39m
+                            [33mdata-testid[39m=[32m"edit-plan-button"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0mEdit Plan[0m
+                          [36m</button>[39m
+                          [36m<div>[39m
+                            [36m<div>[39m
+                              [36m<div>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"Semester container"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<h5>[39m
+                                        [0mFall Fall[0m
+                                      [36m</h5>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [0mNumber of Courses: [0m
+                                        [0m0[0m
+                                      [36m</div>[39m
+                                      [36m<div[39m
+                                        [33mdata-testid[39m=[32m"Fall Fall"[39m
+                                      [36m>[39m
+                                        [36m<h3>[39m
+                                          [0mCourses[0m
+                                        [36m</h3>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                      [36m</div>[39m
+                                      [36m<button[39m
+                                        [33mclass[39m=[32m"btn btn-primary"[39m
+                                        [33mdata-testid[39m=[32m"edit-sem-button"[39m
+                                        [33mtype[39m=[32m"button"[39m
+                                      [36m>[39m
+                                        [0mEdit Semester[0m
+                                      [36m</button>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                            [36m<div>[39m
+                              [36m<button[39m
+                                [33mclass[39m=[32m"btn btn-primary"[39m
+                                [33mdata-testid[39m=[32m"AddSemButton"[39m
+                                [33mtype[39m=[32m"button"[39m
+                              [36m>[39m
+                                [0mAdd New Semester[...
+
+      165 |         const courseDropdown = screen.getByTestId("course-dropdown");
+      166 |         userEvent.selectOptions(courseDropdown, "CISC 181");
+    > 167 |         const dropArea = screen.getByTestId("Fall 2022");
+          |                                 ^
+      168 |         const CISC181card = screen.getByTestId("CISC 181");
+      169 |         dragAndDrop(CISC181card, dropArea);
+      170 |         userEvent.selectOptions(courseDropdown, "CISC 210");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/VisualizeRequirements/VisualizeRequirements.test.tsx:167:33)
+
+FAIL src/Course/MoveCourses.test.tsx (22.245 s)
+  ● Console
+
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Course/MoveCourses.test.tsx:32:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusHook (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:181:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:148:5)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
+
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Course/MoveCourses.test.tsx:32:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusHook (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:181:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:148:5)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
+
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Course/MoveCourses.test.tsx:32:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusHook (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:181:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:148:5)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
+
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Course/MoveCourses.test.tsx:32:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusHook (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:181:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:148:5)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
+
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Course/MoveCourses.test.tsx:32:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusHook (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:181:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:148:5)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
+  ● Moving and Deleting Courses Tests › dragging a course adds it to a semester's courses
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="Fall 2022"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-label"[39m
+                        [33mfor[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [0mSelect Concentration[0m
+                      [36m</label>[39m
+                      [36m<select[39m
+                        [33mclass[39m=[32m"form-select"[39m
+                        [33mdata-testid[39m=[32m"concentration-dropdown"[39m
+                        [33mid[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"AI Robotics"[39m
+                        [36m>[39m
+                          [0mAI Robotics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Bioinformatics"[39m
+                        [36m>[39m
+                          [0mBioinformatics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Cybersecurity"[39m
+                        [36m>[39m
+                          [0mCybersecurity[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Data Science"[39m
+                        [36m>[39m
+                          [0mData Science[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"High Performance Computing"[39m
+                        [36m>[39m
+                          [0mHigh Performance Computing[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Systems and Networks"[39m
+                        [36m>[39m
+                          [0mSystems and Networks[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Theory and Computation"[39m
+                        [36m>[39m
+                          [0mTheory and Computation[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Traditional with Custom Focus Area"[39m
+                        [36m>[39m
+                          [0mTraditional with Custom Focus Area[0m
+                        [36m</option>[39m
+                      [36m</select>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<span>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"PlanView col"[39m
+                          [36m>[39m
+                            [36m<h3>[39m
+                              [0mPlan Name[0m
+                            [36m</h3>[39m
+                            [36m<p>[39m
+                              [0m Description: [0m
+                              [0m[0m
+                            [36m</p>[39m
+                          [36m</div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"btn btn-primary"[39m
+                            [33mdata-testid[39m=[32m"edit-plan-button"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0mEdit Plan[0m
+                          [36m</button>[39m
+                          [36m<div>[39m
+                            [36m<div>[39m
+                              [36m<div>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"Semester container"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<h5>[39m
+                                        [0mFall Fall[0m
+                                      [36m</h5>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [0mNumber of Courses: [0m
+                                        [0m0[0m
+                                      [36m</div>[39m
+                                      [36m<div[39m
+                                        [33mdata-testid[39m=[32m"Fall Fall"[39m
+                                      [36m>[39m
+                                        [36m<h3>[39m
+                                          [0mCourses[0m
+                                        [36m</h3>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                      [36m</div>[39m
+                                      [36m<button[39m
+                                        [33mclass[39m=[32m"btn btn-primary"[39m
+                                        [33mdata-testid[39m=[32m"edit-sem-button"[39m
+                                        [33mtype[39m=[32m"button"[39m
+                                      [36m>[39m
+                                        [0mEdit Semester[0m
+                                      [36m</button>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                            [36m<div>[39m
+                              [36m<button[39m
+                                [33mclass[39m=[32m"btn btn-primary"[39m
+                                [33mdata-testid[39m=[32m"AddSemButton"[39m
+                                [33mtype[39m=[32m"button"[39m
+                              [36m>[39m
+                                [0mAdd New Semester[...
+
+      38 |         userEvent.selectOptions(courseDropdown, "CISC 181");
+      39 |         const CISC181card = screen.getByTestId("CISC 181");
+    > 40 |         const dropArea1 = screen.getByTestId("Fall 2022");
+         |                                  ^
+      41 |         dragAndDrop(CISC181card, dropArea1);
+      42 |         expect(screen.getByTestId("Fall 2022")).toHaveTextContent(
+      43 |             "Course Code: CISC 181"
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Course/MoveCourses.test.tsx:40:34)
+
+  ● Moving and Deleting Courses Tests › a new semester can also accept courses
+
+    TypeError: Cannot read properties of undefined (reading 'namespaceURI')
+
+      58 |         const saveButton = screen.getByTestId("save-button");
+      59 |         userEvent.clear(inputSemBoxSeason);
+    > 60 |         userEvent.clear(inputSemBoxYear);
+         |                   ^
+      61 |         userEvent.type(inputSemBoxSeason, "Spring");
+      62 |         userEvent.type(inputSemBoxYear, "2023");
+      63 |         saveButton.click();
+
+      at isElementType (node_modules/@testing-library/user-event/dist/utils/misc/isElementType.js:9:15)
+      at Object.clear (node_modules/@testing-library/user-event/dist/clear.js:15:8)
+      at Object.<anonymous> (src/Course/MoveCourses.test.tsx:60:19)
+
+  ● Moving and Deleting Courses Tests › delete button deletes course from a semester
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="Fall 2022"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-label"[39m
+                        [33mfor[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [0mSelect Concentration[0m
+                      [36m</label>[39m
+                      [36m<select[39m
+                        [33mclass[39m=[32m"form-select"[39m
+                        [33mdata-testid[39m=[32m"concentration-dropdown"[39m
+                        [33mid[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"AI Robotics"[39m
+                        [36m>[39m
+                          [0mAI Robotics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Bioinformatics"[39m
+                        [36m>[39m
+                          [0mBioinformatics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Cybersecurity"[39m
+                        [36m>[39m
+                          [0mCybersecurity[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Data Science"[39m
+                        [36m>[39m
+                          [0mData Science[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"High Performance Computing"[39m
+                        [36m>[39m
+                          [0mHigh Performance Computing[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Systems and Networks"[39m
+                        [36m>[39m
+                          [0mSystems and Networks[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Theory and Computation"[39m
+                        [36m>[39m
+                          [0mTheory and Computation[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Traditional with Custom Focus Area"[39m
+                        [36m>[39m
+                          [0mTraditional with Custom Focus Area[0m
+                        [36m</option>[39m
+                      [36m</select>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<span>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"PlanView col"[39m
+                          [36m>[39m
+                            [36m<h3>[39m
+                              [0mPlan Name[0m
+                            [36m</h3>[39m
+                            [36m<p>[39m
+                              [0m Description: [0m
+                              [0m[0m
+                            [36m</p>[39m
+                          [36m</div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"btn btn-primary"[39m
+                            [33mdata-testid[39m=[32m"edit-plan-button"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0mEdit Plan[0m
+                          [36m</button>[39m
+                          [36m<div>[39m
+                            [36m<div>[39m
+                              [36m<div>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"Semester container"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<h5>[39m
+                                        [0mFall Fall[0m
+                                      [36m</h5>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [0mNumber of Courses: [0m
+                                        [0m0[0m
+                                      [36m</div>[39m
+                                      [36m<div[39m
+                                        [33mdata-testid[39m=[32m"Fall Fall"[39m
+                                      [36m>[39m
+                                        [36m<h3>[39m
+                                          [0mCourses[0m
+                                        [36m</h3>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                      [36m</div>[39m
+                                      [36m<button[39m
+                                        [33mclass[39m=[32m"btn btn-primary"[39m
+                                        [33mdata-testid[39m=[32m"edit-sem-button"[39m
+                                        [33mtype[39m=[32m"button"[39m
+                                      [36m>[39m
+                                        [0mEdit Semester[0m
+                                      [36m</button>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                            [36m<div>[39m
+                              [36m<button[39m
+                                [33mclass[39m=[32m"btn btn-primary"[39m
+                                [33mdata-testid[39m=[32m"AddSemButton"[39m
+                                [33mtype[39m=[32m"button"[39m
+                              [36m>[39m
+                                [0mAdd New Semester[...
+
+      122 |         userEvent.selectOptions(courseDropdown, "CISC 275");
+      123 |         const CISC275card = screen.getByTestId("CISC 275");
+    > 124 |         const semCourses = screen.getByTestId("Fall 2022");
+          |                                   ^
+      125 |         dragAndDrop(CISC275card, semCourses);
+      126 |         userEvent.selectOptions(courseDropdown, "CISC 320");
+      127 |         const CISC320card = screen.getByTestId("CISC 320");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Course/MoveCourses.test.tsx:124:35)
+
 FAIL src/Plan/Plan.test.tsx
   ● Plan Component tests › Edit Button creates two textboxes
 
@@ -50,13 +1681,274 @@ FAIL src/Plan/Plan.test.tsx
       at Object.<anonymous> (src/Plan/Plan.test.tsx:62:27)
 
 FAIL src/Semesters/Semester.test.tsx
+  ● Console
+
+    console.error
+      TypeError: Cannot read properties of undefined (reading 'disabled')
+          at typeImplementation (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:23:15)
+          at Object.type (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/@testing-library/user-event/dist/type/index.js:27:17)
+          at Object.<anonymous> (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Semesters/Semester.test.tsx:29:19)
+          at Promise.then.completed (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+          at _runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:81:19)
+          at runTestInternal (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:313:16)
+          at runTest (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:383:7)
+
+  ● Semester Component tests › Add Semester Modal Pops up
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 2
+    Received length: 1
+    Received array:  [<input class="form-control" id="AddSemester" value="" />]
+
+      19 |         addSemBut.click();
+      20 |         const SemInput = screen.queryAllByRole("textbox");
+    > 21 |         expect(SemInput).toHaveLength(2);
+         |                          ^
+      22 |     });
+      23 |     test("Save Button saves input", () => {
+      24 |         const addSemBut = screen.getByTestId("AddSemButton");
+
+      at Object.<anonymous> (src/Semesters/Semester.test.tsx:21:26)
+
+  ● Semester Component tests › Save Button saves input
+
+    TestingLibraryElementError: Unable to find an element with the text: /2030/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"planViewer"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"Plan"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-label"[39m
+                        [33mfor[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [0mSelect Concentration[0m
+                      [36m</label>[39m
+                      [36m<select[39m
+                        [33mclass[39m=[32m"form-select"[39m
+                        [33mdata-testid[39m=[32m"concentration-dropdown"[39m
+                        [33mid[39m=[32m"favoriteColors"[39m
+                      [36m>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"AI Robotics"[39m
+                        [36m>[39m
+                          [0mAI Robotics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Bioinformatics"[39m
+                        [36m>[39m
+                          [0mBioinformatics[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Cybersecurity"[39m
+                        [36m>[39m
+                          [0mCybersecurity[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Data Science"[39m
+                        [36m>[39m
+                          [0mData Science[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"High Performance Computing"[39m
+                        [36m>[39m
+                          [0mHigh Performance Computing[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Systems and Networks"[39m
+                        [36m>[39m
+                          [0mSystems and Networks[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Theory and Computation"[39m
+                        [36m>[39m
+                          [0mTheory and Computation[0m
+                        [36m</option>[39m
+                        [36m<option[39m
+                          [33mvalue[39m=[32m"Traditional with Custom Focus Area"[39m
+                        [36m>[39m
+                          [0mTraditional with Custom Focus Area[0m
+                        [36m</option>[39m
+                      [36m</select>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<span>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"PlanView col"[39m
+                          [36m>[39m
+                            [36m<h3>[39m
+                              [0mPlan Name[0m
+                            [36m</h3>[39m
+                            [36m<p>[39m
+                              [0m Description: [0m
+                              [0m[0m
+                            [36m</p>[39m
+                          [36m</div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"btn btn-primary"[39m
+                            [33mdata-testid[39m=[32m"edit-plan-button"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0mEdit Plan[0m
+                          [36m</button>[39m
+                          [36m<div>[39m
+                            [36m<div>[39m
+                              [36m<div>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"Semester container"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<h5>[39m
+                                        [0mFall [0m
+                                      [36m</h5>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [0mNumber of Courses: [0m
+                                        [0m0[0m
+                                      [36m</div>[39m
+                                      [36m<div[39m
+                                        [33mdata-testid[39m=[32m"Fall "[39m
+                                      [36m>[39m
+                                        [36m<h3>[39m
+                                          [0mCourses[0m
+                                        [36m</h3>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"CourseDropArea"[39m
+                                        [36m/>[39m
+                                      [36m</div>[39m
+                                      [36m<button[39m
+                                        [33mclass[39m=[32m"btn btn-primary"[39m
+                                        [33mdata-testid[39m=[32m"edit-sem-button"[39m
+                                        [33mtype[39m=[32m"button"[39m
+                                      [36m>[39m
+                                        [0mEdit Semester[0m
+                                      [36m</button>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                            [36m<div>[39m
+                              [36m<button[39m
+                                [33mclass[39m=[32m"btn btn-primary"[39m
+                                [33mdata-testid[39m=[32m"AddSemButton"[39m
+                                [33mtype[39m=[32m"button"[39m
+                              [36m>[39m
+                                [0mAdd New Semester[0m
+                              [36m</button>[39m
+                              [36m<button[39m
+                                [33mclass[39m=[32m"btn btn-primary"[39m
+                                [33mdata-testid[39m=[32m"clear-all-sems"[39m
+                                [33mtype[39m=[32m"button"[39m
+                              [36m>[39m
+                                [0mClear Semesters[0m
+                              [36m</button>[39m
+                              [36m<div />[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</span>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div />[39m
+                  [36m<div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mdata-testid[39m=[32m"AI-Requirements"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mDisplay requirements[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"PlanView"[39m
+            [36m>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"AddPlanButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Plan[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"clear-plans"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mClear Plans[0m
+              [36m</button>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      29 |         userEvent.type(inputBox, "2030");
+      30 |         saveButton.click();
+    > 31 |         expect(screen.getByText(/2030/)).toBeInTheDocument();
+         |                       ^
+      32 |     });
+      33 |     test("Cancel Button doesn't save input", () => {
+      34 |         const yearsList = screen.queryAllByText(/2022/);
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Semesters/Semester.test.tsx:31:23)
+
   ● Semester Component tests › Edit Button creates three textboxes
 
     expect(received).toHaveLength(expected)
 
     Expected length: 3
-    Received length: 2
-    Received array:  [<input class="form-control" id="semesterSeason" value="" />, <input class="form-control" id="semesterYear" value="" />]
+    Received length: 1
+    Received array:  [<input class="form-control" id="semesterYear" value="" />]
 
       60 |         editSemBut.click();
       61 |         const SemInput = screen.queryAllByRole("textbox");
@@ -68,7 +1960,7 @@ FAIL src/Semesters/Semester.test.tsx
 
       at Object.<anonymous> (src/Semesters/Semester.test.tsx:62:26)
 
-PASS src/Course/EditCourse.test.tsx (9.989 s)
+PASS src/Course/EditCourse.test.tsx (8.887 s)
   ● Console
 
     console.error
@@ -95,52 +1987,52 @@ PASS src/Course/EditCourse.test.tsx (9.989 s)
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
-PASS src/Course/CourseView.test.tsx (9.226 s)
-PASS src/Course/Course.test.tsx (7.242 s)
+PASS src/Course/CourseView.test.tsx (8.458 s)
+PASS src/Course/Course.test.tsx (6.793 s)
 PASS src/Welcome.test.tsx
--------------------------------|---------|----------|---------|---------|-------------------------------------------
-File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                         
--------------------------------|---------|----------|---------|---------|-------------------------------------------
-All files                      |   29.49 |     18.3 |   36.06 |   29.59 |                                           
- src                           |     100 |      100 |     100 |     100 |                                           
-  App.tsx                      |     100 |      100 |     100 |     100 |                                           
-  interfaces.tsx               |       0 |        0 |       0 |       0 |                                           
-  openingInstruction.tsx       |     100 |      100 |     100 |     100 |                                           
- src/Course                    |   81.63 |    71.42 |   78.57 |   82.97 |                                           
-  CourseCard.tsx               |     100 |      100 |     100 |     100 |                                           
-  CourseDisplay.tsx            |   66.66 |       50 |     100 |   66.66 | 12                                        
-  CourseEditor.tsx             |   76.47 |       50 |    62.5 |   81.25 | 47,52,85                                  
-  CoursePool.tsx               |     100 |       50 |     100 |     100 | 14                                        
-  CourseView.tsx               |   76.47 |      100 |   72.72 |      75 | 35-38,88                                  
- src/Plan                      |   94.44 |    66.66 |    91.3 |   93.93 |                                           
-  AddPlan.tsx                  |     100 |      100 |     100 |     100 |                                           
-  PlanEditor.tsx               |     100 |      100 |     100 |     100 |                                           
-  PlanList.tsx                 |     100 |     62.5 |     100 |     100 | 71-74,80-91                               
-  PlanView.tsx                 |     100 |      100 |     100 |     100 |                                           
-  Planner.tsx                  |    87.5 |    66.66 |      80 |   84.61 | 25,32                                     
- src/Semesters                 |   95.65 |    91.66 |   93.75 |   95.45 |                                           
-  AddSemester.tsx              |     100 |      100 |     100 |     100 |                                           
-  SemesterControl.tsx          |   93.33 |    83.33 |      90 |    92.3 | 48                                        
-  SemesterEditor.tsx           |      90 |      100 |   85.71 |      90 | 66                                        
-  SemesterList.tsx             |     100 |      100 |     100 |     100 |                                           
-  SemesterView.tsx             |     100 |      100 |     100 |     100 |                                           
- src/VisualizeRequirements     |   22.34 |    13.97 |   24.13 |   22.09 |                                           
-  AIConcentration.tsx          |    92.7 |    59.25 |     100 |   91.93 | 24,33,58,66,73,81,89,97,104,111           
-  Bioinformatics.tsx           |       0 |        0 |       0 |       0 | 9-245                                     
-  Cybersecurity.tsx            |       0 |        0 |       0 |       0 | 9-211                                     
-  DataScience.tsx              |    90.9 |    55.29 |     100 |   89.92 | 24,33,42,50,58,66,73,81,89,96,104,111,118 
-  HighPerformanceComputing.tsx |       0 |        0 |       0 |       0 | 13-222                                    
-  SystemsNetworks.tsx          |       0 |        0 |       0 |       0 | 9-208                                     
-  TheoryComputation.tsx        |       0 |        0 |       0 |       0 | 9-223                                     
-  Traditional.tsx              |       0 |        0 |       0 |       0 | 9-201                                     
- src/interfaces                |       0 |        0 |       0 |       0 |                                           
-  Course.ts                    |       0 |        0 |       0 |       0 |                                           
-  Plan.tsx                     |       0 |        0 |       0 |       0 |                                           
-  Semester.tsx                 |       0 |        0 |       0 |       0 |                                           
--------------------------------|---------|----------|---------|---------|-------------------------------------------
+-------------------------------|---------|----------|---------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                                                                                                                                                  
+-------------------------------|---------|----------|---------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+All files                      |   22.34 |    16.93 |   16.34 |    21.9 |                                                                                                                                                                                                    
+ src                           |     100 |      100 |     100 |     100 |                                                                                                                                                                                                    
+  App.tsx                      |     100 |      100 |     100 |     100 |                                                                                                                                                                                                    
+  interfaces.tsx               |       0 |        0 |       0 |       0 |                                                                                                                                                                                                    
+  openingInstruction.tsx       |     100 |      100 |     100 |     100 |                                                                                                                                                                                                    
+ src/Course                    |   81.63 |    71.42 |   78.57 |   82.97 |                                                                                                                                                                                                    
+  CourseCard.tsx               |     100 |      100 |     100 |     100 |                                                                                                                                                                                                    
+  CourseDisplay.tsx            |   66.66 |       50 |     100 |   66.66 | 12                                                                                                                                                                                                 
+  CourseEditor.tsx             |   76.47 |       50 |    62.5 |   81.25 | 47,52,85                                                                                                                                                                                           
+  CoursePool.tsx               |     100 |       50 |     100 |     100 | 14                                                                                                                                                                                                 
+  CourseView.tsx               |   76.47 |      100 |   72.72 |      75 | 35-38,88                                                                                                                                                                                           
+ src/Plan                      |   94.44 |    66.66 |    91.3 |   93.93 |                                                                                                                                                                                                    
+  AddPlan.tsx                  |     100 |      100 |     100 |     100 |                                                                                                                                                                                                    
+  PlanEditor.tsx               |     100 |      100 |     100 |     100 |                                                                                                                                                                                                    
+  PlanList.tsx                 |     100 |     62.5 |     100 |     100 | 71-74,80-91                                                                                                                                                                                        
+  PlanView.tsx                 |     100 |      100 |     100 |     100 |                                                                                                                                                                                                    
+  Planner.tsx                  |    87.5 |    66.66 |      80 |   84.61 | 25,32                                                                                                                                                                                              
+ src/Semesters                 |      76 |    58.33 |    64.7 |      75 |                                                                                                                                                                                                    
+  AddSemester.tsx              |   88.88 |      100 |      80 |   88.88 | 17                                                                                                                                                                                                 
+  SemesterControl.tsx          |   86.66 |    66.66 |      80 |   84.61 | 37,48                                                                                                                                                                                              
+  SemesterEditor.tsx           |      75 |      100 |    62.5 |      75 | 25,86-93                                                                                                                                                                                           
+  SemesterList.tsx             |     100 |      100 |     100 |     100 |                                                                                                                                                                                                    
+  SemesterView.tsx             |      50 |       50 |   33.33 |      50 | 22,33-53,60,84                                                                                                                                                                                     
+ src/VisualizeRequirements     |   14.95 |    13.08 |    2.12 |   14.12 |                                                                                                                                                                                                    
+  AIConcentration.tsx          |   61.31 |    54.32 |    8.88 |   58.06 | 16,20,24,29,33,38,42,46,50,54,58,62,66,69,73,77,81,85,89,93,97,100,104,107,111,115,118,121,124,127,130,133,136,139,142,145,148,151,154,157,160,164,167,170,173,178,181,184,187,190,193,196         
+  Bioinformatics.tsx           |       0 |        0 |       0 |       0 | 9-245                                                                                                                                                                                              
+  Cybersecurity.tsx            |       0 |        0 |       0 |       0 | 9-211                                                                                                                                                                                              
+  DataScience.tsx              |   61.53 |    52.94 |    8.69 |   58.13 | 16,20,24,29,33,38,42,46,50,54,58,62,66,69,73,77,81,85,89,92,96,100,104,107,111,114,118,122,125,128,131,134,137,140,143,146,149,152,155,158,161,164,167,171,174,177,180,185,188,191,194,197,200,203 
+  HighPerformanceComputing.tsx |       0 |        0 |       0 |       0 | 13-222                                                                                                                                                                                             
+  SystemsNetworks.tsx          |       0 |        0 |       0 |       0 | 9-208                                                                                                                                                                                              
+  TheoryComputation.tsx        |       0 |        0 |       0 |       0 | 9-223                                                                                                                                                                                              
+  Traditional.tsx              |       0 |        0 |       0 |       0 | 9-201                                                                                                                                                                                              
+ src/interfaces                |       0 |        0 |       0 |       0 |                                                                                                                                                                                                    
+  Course.ts                    |       0 |        0 |       0 |       0 |                                                                                                                                                                                                    
+  Plan.tsx                     |       0 |        0 |       0 |       0 |                                                                                                                                                                                                    
+  Semester.tsx                 |       0 |        0 |       0 |       0 |                                                                                                                                                                                                    
+-------------------------------|---------|----------|---------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Test Suites: 2 failed, 6 passed, 8 total
-Tests:       2 failed, 33 passed, 35 total
+Test Suites: 4 failed, 4 passed, 8 total
+Tests:       13 failed, 22 passed, 35 total
 Snapshots:   0 total
-Time:        134.715 s
+Time:        101.91 s
 Ran all test suites.
