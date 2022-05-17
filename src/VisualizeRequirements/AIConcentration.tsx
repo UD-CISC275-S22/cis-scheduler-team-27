@@ -32,10 +32,15 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
             course.typ === "Math, Natural Sciences and Technology"
     );
 
-    /*const RestrictedElective = merged.filter(
+    const RestrictedElective = merged.filter(
         (course: Course): boolean => course.typ === "Restrictive Elective"
     );
-*/
+    let restrictedCreds = 0;
+    for (let i = 0; i < RestrictedElective.length; i++) {
+        restrictedCreds =
+            restrictedCreds + parseInt(RestrictedElective[i].credits);
+    }
+
     const CISCElective = merged.filter(
         (course: Course): boolean => course.typ === "Concentration Elective"
     );
@@ -401,6 +406,23 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
                                     </div>
                                 ) : (
                                     <span>CISC484: ❌</span>
+                                )}
+                            </div>
+                            <p> Restricted Electives</p>
+                            <div>
+                                {restrictedCreds > 12 ? (
+                                    <div>
+                                        <span>
+                                            Restricted Elective{" "}
+                                            {restrictedCreds}
+                                            /12: ✔️
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <span>
+                                        Restricted Elective {restrictedCreds}
+                                        /12: ❌
+                                    </span>
                                 )}
                             </div>
                         </Col>
