@@ -32,10 +32,10 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
             course.typ === "Math, Natural Sciences and Technology"
     );
 
-    const RestrictedElective = merged.filter(
+    /*const RestrictedElective = merged.filter(
         (course: Course): boolean => course.typ === "Restrictive Elective"
     );
-
+*/
     const CISCElective = merged.filter(
         (course: Course): boolean => course.typ === "Concentration Elective"
     );
