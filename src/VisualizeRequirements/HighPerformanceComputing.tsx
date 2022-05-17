@@ -15,7 +15,10 @@ export function HighPerformanceComputing({
     );
     const merged = Array.prototype.concat.apply([], courseList);
     const courseCodes = merged.map((course: Course): string => course.code);
-
+    let totalCreds = 0;
+    for (let i = 0; i < merged.length; i++) {
+        totalCreds = totalCreds + parseInt(merged[i].credits);
+    }
     const FYEcourses = merged.filter(
         (course: Course): boolean => course.typ === "First Year Experience"
     );
@@ -696,6 +699,21 @@ export function HighPerformanceComputing({
                             </div>
                             <p></p>
                         </Col>
+                    </Row>
+                    <p></p>
+                    <Row>
+                        <div>
+                            {totalCreds >= 124 ? (
+                                <div>
+                                    <h5>Total Credits 124/124: ✔️</h5>
+                                </div>
+                            ) : (
+                                <h5>
+                                    Total Credits {totalCreds}
+                                    /124: ❌
+                                </h5>
+                            )}
+                        </div>
                     </Row>
                 </Container>
             )}
