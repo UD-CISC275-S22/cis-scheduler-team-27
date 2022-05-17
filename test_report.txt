@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/Course/MoveCourses.test.tsx (54.609 s)
+PASS src/Course/MoveCourses.test.tsx (53.74 s)
 PASS src/Plan/Plan.test.tsx
 PASS src/Semesters/Semester.test.tsx
   ● Console
@@ -53,7 +53,7 @@ PASS src/Semesters/Semester.test.tsx
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
 PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx
-PASS src/Course/EditCourse.test.tsx (10.235 s)
+PASS src/Course/EditCourse.test.tsx (10.007 s)
   ● Console
 
     console.error
@@ -80,51 +80,51 @@ PASS src/Course/EditCourse.test.tsx (10.235 s)
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
-PASS src/Course/CourseView.test.tsx (10.841 s)
-PASS src/Course/Course.test.tsx (7.324 s)
+PASS src/Course/CourseView.test.tsx (10.724 s)
+PASS src/Course/Course.test.tsx (6.847 s)
 PASS src/Welcome.test.tsx
--------------------------------|---------|----------|---------|---------|------------------------------------
-File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                  
--------------------------------|---------|----------|---------|---------|------------------------------------
-All files                      |    45.9 |    11.82 |   45.16 |   44.73 |                                    
- src                           |     100 |      100 |     100 |     100 |                                    
-  App.tsx                      |     100 |      100 |     100 |     100 |                                    
-  interfaces.tsx               |       0 |        0 |       0 |       0 |                                    
-  openingInstruction.tsx       |     100 |      100 |     100 |     100 |                                    
- src/Course                    |   75.51 |    64.28 |      75 |   76.59 |                                    
-  CourseCard.tsx               |     100 |      100 |     100 |     100 |                                    
-  CourseDisplay.tsx            |   66.66 |       50 |     100 |   66.66 | 12                                 
-  CourseEditor.tsx             |   58.82 |       25 |      50 |    62.5 | 47-54,85                           
-  CoursePool.tsx               |     100 |       50 |     100 |     100 | 14                                 
-  CourseView.tsx               |   76.47 |      100 |   72.72 |      75 | 35-38,88                           
- src/Plan                      |    92.1 |    63.63 |    87.5 |   91.42 |                                    
-  AddPlan.tsx                  |     100 |      100 |     100 |     100 |                                    
-  PlanEditor.tsx               |    87.5 |      100 |      80 |    87.5 | 51                                 
-  PlanList.tsx                 |     100 |    57.14 |     100 |     100 | 70-87                              
-  PlanView.tsx                 |     100 |      100 |     100 |     100 |                                    
-  Planner.tsx                  |    87.5 |    66.66 |      80 |   84.61 | 25,32                              
- src/Semesters                 |   91.66 |    91.66 |   87.87 |    91.3 |                                    
-  AddSemester.tsx              |     100 |      100 |     100 |     100 |                                    
-  SemesterControl.tsx          |   93.33 |    83.33 |      90 |    92.3 | 48                                 
-  SemesterEditor.tsx           |   83.33 |      100 |      75 |   83.33 | 68-81                              
-  SemesterList.tsx             |     100 |      100 |     100 |     100 |                                    
-  SemesterView.tsx             |   91.66 |      100 |   88.88 |   91.66 | 52                                 
- src/VisualizeRequirements     |   29.79 |     0.38 |   23.75 |   28.22 |                                    
-  AIConcentration.tsx          |   90.43 |      1.4 |      95 |   89.52 | 21,29,37,45,52,60,67,74,81,168,174 
-  Bioinformatics.tsx           |       0 |        0 |       0 |       0 | 8-66                               
-  Cybersecurity.tsx            |       0 |        0 |       0 |       0 | 8-66                               
-  DataScience.tsx              |       0 |        0 |       0 |       0 | 8-66                               
-  HighPerformanceComputing.tsx |       0 |        0 |       0 |       0 | 12-70                              
-  SystemsNetworks.tsx          |       0 |        0 |       0 |       0 | 8-66                               
-  TheoryComputation.tsx        |       0 |        0 |       0 |       0 | 8-66                               
- src/interfaces                |       0 |        0 |       0 |       0 |                                    
-  Course.ts                    |       0 |        0 |       0 |       0 |                                    
-  Plan.tsx                     |       0 |        0 |       0 |       0 |                                    
-  Semester.tsx                 |       0 |        0 |       0 |       0 |                                    
--------------------------------|---------|----------|---------|---------|------------------------------------
+-------------------------------|---------|----------|---------|---------|-----------------------------------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                             
+-------------------------------|---------|----------|---------|---------|-----------------------------------------------
+All files                      |   47.64 |    11.45 |   46.24 |   46.28 |                                               
+ src                           |     100 |      100 |     100 |     100 |                                               
+  App.tsx                      |     100 |      100 |     100 |     100 |                                               
+  interfaces.tsx               |       0 |        0 |       0 |       0 |                                               
+  openingInstruction.tsx       |     100 |      100 |     100 |     100 |                                               
+ src/Course                    |   75.51 |    64.28 |      75 |   76.59 |                                               
+  CourseCard.tsx               |     100 |      100 |     100 |     100 |                                               
+  CourseDisplay.tsx            |   66.66 |       50 |     100 |   66.66 | 12                                            
+  CourseEditor.tsx             |   58.82 |       25 |      50 |    62.5 | 47-54,85                                      
+  CoursePool.tsx               |     100 |       50 |     100 |     100 | 14                                            
+  CourseView.tsx               |   76.47 |      100 |   72.72 |      75 | 35-38,88                                      
+ src/Plan                      |    92.1 |    63.63 |    87.5 |   91.42 |                                               
+  AddPlan.tsx                  |     100 |      100 |     100 |     100 |                                               
+  PlanEditor.tsx               |    87.5 |      100 |      80 |    87.5 | 51                                            
+  PlanList.tsx                 |     100 |    57.14 |     100 |     100 | 70-87                                         
+  PlanView.tsx                 |     100 |      100 |     100 |     100 |                                               
+  Planner.tsx                  |    87.5 |    66.66 |      80 |   84.61 | 25,32                                         
+ src/Semesters                 |   91.66 |    91.66 |   87.87 |    91.3 |                                               
+  AddSemester.tsx              |     100 |      100 |     100 |     100 |                                               
+  SemesterControl.tsx          |   93.33 |    83.33 |      90 |    92.3 | 48                                            
+  SemesterEditor.tsx           |   83.33 |      100 |      75 |   83.33 | 68-81                                         
+  SemesterList.tsx             |     100 |      100 |     100 |     100 |                                               
+  SemesterView.tsx             |   91.66 |      100 |   88.88 |   91.66 | 52                                            
+ src/VisualizeRequirements     |   33.15 |     0.36 |   26.06 |   31.25 |                                               
+  AIConcentration.tsx          |   89.78 |     1.23 |   95.55 |    88.7 | 24,33,42,50,58,66,73,81,88,96,103,110,200,206 
+  Bioinformatics.tsx           |       0 |        0 |       0 |       0 | 8-66                                          
+  Cybersecurity.tsx            |       0 |        0 |       0 |       0 | 8-66                                          
+  DataScience.tsx              |       0 |        0 |       0 |       0 | 8-66                                          
+  HighPerformanceComputing.tsx |       0 |        0 |       0 |       0 | 12-70                                         
+  SystemsNetworks.tsx          |       0 |        0 |       0 |       0 | 8-66                                          
+  TheoryComputation.tsx        |       0 |        0 |       0 |       0 | 8-66                                          
+ src/interfaces                |       0 |        0 |       0 |       0 |                                               
+  Course.ts                    |       0 |        0 |       0 |       0 |                                               
+  Plan.tsx                     |       0 |        0 |       0 |       0 |                                               
+  Semester.tsx                 |       0 |        0 |       0 |       0 |                                               
+-------------------------------|---------|----------|---------|---------|-----------------------------------------------
 
 Test Suites: 8 passed, 8 total
 Tests:       29 passed, 29 total
 Snapshots:   0 total
-Time:        89.016 s
+Time:        87.258 s
 Ran all test suites.
