@@ -12,6 +12,27 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
     const merged = Array.prototype.concat.apply([], courseList);
     const courseCodes = merged.map((course: Course): string => course.code);
 
+    const FYEcourses = merged.filter(
+        (course: Course): boolean => course.typ === "First Year Experience"
+    );
+
+    const multiCultural = merged.filter(
+        (course: Course): boolean => course.typ === "Multicultural Requirement"
+    );
+    let MCCredits = 0;
+    for (let i = 0; i < multiCultural.length; i++) {
+        MCCredits = MCCredits + parseInt(multiCultural[i].credits);
+    }
+
+    const DLECourses = merged.filter(
+        (course: Course): boolean =>
+            course.typ === "Discovey Learning Experience"
+    );
+    let DLECredits = 0;
+    for (let i = 0; i < DLECourses.length; i++) {
+        DLECredits = DLECredits + parseInt(DLECourses[i].credits);
+    }
+
     const breadthA = merged.filter(
         (course: Course): boolean =>
             course.typ === "Creative Arts and Humanities"
@@ -59,15 +80,23 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
     for (let i = 0; i < conElective.length; i++) {
         conElectiveCreds = conElectiveCreds + parseInt(conElective[i].credits);
     }
+    const CISCElective = merged.filter(
+        (course: Course): boolean => course.typ === "CISC Elective"
+    );
+    let CISCElectiveCreds = 0;
+    for (let i = 0; i < CISCElective.length; i++) {
+        CISCElectiveCreds =
+            CISCElectiveCreds + parseInt(CISCElective[i].credits);
+    }
     const lab1 = merged.filter(
-        (course: Course): boolean => course.typ === "Lab Seq 1"
+        (course: Course): boolean => course.typ === "Lab Sequence 1"
     );
     let lab1Creds = 0;
     for (let i = 0; i < lab1.length; i++) {
         lab1Creds = lab1Creds + parseInt(lab1[i].credits);
     }
     const lab2 = merged.filter(
-        (course: Course): boolean => course.typ === "Lab Seq 2"
+        (course: Course): boolean => course.typ === "Lab Sequence 2"
     );
     let lab2Creds = 0;
     for (let i = 0; i < lab2.length; i++) {
@@ -81,6 +110,9 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
         labSoloCreds = labSoloCreds + parseInt(labSolo[i].credits);
     }
 
+    const ENGL110 = courseCodes.find(
+        (course: string): boolean => course === "ENGL 110"
+    );
     const CISC108 = courseCodes.find(
         (course: string): boolean => course === "CISC 108"
     );
@@ -180,14 +212,25 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
                 <Container>
                     <Row>
                         <Col>
-                            <p>Core Requirements:</p>
-                            {CISC108 !== undefined ? (
-                                <div>
-                                    <span>CISC108 3/3: ✔️</span>
-                                </div>
-                            ) : (
-                                <span>CISC108 0/3: ❌</span>
-                            )}
+                            <div>Core Requirements:</div>
+                            <div>
+                                {ENGL110 !== undefined ? (
+                                    <div>
+                                        <span>ENGL110 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>ENGL110 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC108 !== undefined ? (
+                                    <div>
+                                        <span>CISC108 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC108 0/3: ❌</span>
+                                )}
+                            </div>
                             <div>
                                 {CISC181 !== undefined ? (
                                     <div>
@@ -299,77 +342,92 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
                                 )}
                             </div>
                             <p></p>
-                            <div>
-                                {conElectiveCreds > 9 ? (
-                                    <div>
-                                        <span>
-                                            Upper Level Breadths 9/9: ✔️
-                                        </span>
-                                    </div>
-                                ) : (
-                                    <span>
-                                        Upper Level Breadths {conElectiveCreds}
-                                        /9: ❌
-                                    </span>
-                                )}
-                            </div>
                         </Col>
 
                         <Col>
                             <div>
-                                <p>Capstone Requirements:</p>
+                                <div>Capstone Requirements:</div>
                                 {CISC498 !== undefined ? (
                                     <div>
-                                        <span>CISC498: ✔️</span>
+                                        <span>CISC498 3/3: ✔️</span>
                                     </div>
                                 ) : (
-                                    <span>CISC498: ❌</span>
+                                    <span>CISC498 0/3: ❌</span>
                                 )}
                                 <div>
                                     {CISC499 !== undefined ? (
                                         <div>
-                                            <span>CISC499: ✔️</span>
+                                            <span>CISC499 3/3: ✔️</span>
                                         </div>
                                     ) : (
-                                        <span>CISC499: ❌</span>
+                                        <span>CISC499 0/3: ❌</span>
                                     )}
                                 </div>
-                                <p>or</p>
+                                <div>or</div>
                                 <div>
                                     {UNIV401 !== undefined ? (
                                         <div>
-                                            <span>UNIV401: ✔️</span>
+                                            <span>UNIV401 3/3: ✔️</span>
                                         </div>
                                     ) : (
-                                        <span>UNIV401: ❌</span>
+                                        <span>UNIV401 0/3: ❌</span>
                                     )}
                                     <div>
                                         {UNIV402 !== undefined ? (
                                             <div>
-                                                <span>UNIV401: ✔️</span>
+                                                <span>UNIV402 3/3: ✔️</span>
                                             </div>
                                         ) : (
-                                            <span>UNIV402: ❌</span>
+                                            <span>UNIV402 0/3: ❌</span>
                                         )}
                                     </div>
                                 </div>
                                 <div>
                                     {" "}
                                     <p></p>
-                                    <p>Lab Science Requirement:</p>
+                                    <div>
+                                        {FYEcourses.length > 0 ? (
+                                            <div>
+                                                <span>
+                                                    First Year Experience 1/1:
+                                                    ✔️
+                                                </span>
+                                            </div>
+                                        ) : (
+                                            <span>
+                                                First Year Experience 0/1: ❌
+                                            </span>
+                                        )}
+                                    </div>
+                                    <p></p>
+                                    <div>
+                                        {MCCredits >= 3 ? (
+                                            <div>
+                                                <span>
+                                                    MultiCultural Requirement
+                                                    3/3: ✔️
+                                                </span>
+                                            </div>
+                                        ) : (
+                                            <span>
+                                                MultiCultural Requirement{" "}
+                                                {MCCredits}/3: ❌
+                                            </span>
+                                        )}
+                                    </div>
+                                    <p></p>
                                     <div>
                                         {lab1.length >= 2 ||
                                         lab2.length >= 2 ||
                                         labSolo.length >= 1 ? (
                                             <div>
                                                 <span>
-                                                    Lab Science Requirement 8/8:
-                                                    ✔️
+                                                    Lab Sciences 8/8: ✔️
                                                 </span>
                                             </div>
                                         ) : (
                                             <span>
-                                                Lab Science Requirement{" "}
+                                                Lab Sciences{" "}
                                                 {lab1Creds +
                                                     lab2Creds +
                                                     labSoloCreds}
@@ -381,83 +439,9 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
                             </div>
                         </Col>
                         <Col>
-                            <p>A.I. and Robotics Concentration Requirements:</p>
+                            <div> Breadth Requirements:</div>
                             <div>
-                                {CISC361 !== undefined ||
-                                CISC372 !== undefined ? (
-                                    <div>
-                                        <span>CISC361/CISC372: ✔️</span>
-                                    </div>
-                                ) : (
-                                    <span>CISC361/CISC372: ❌</span>
-                                )}
-                            </div>
-                            <div>
-                                {CISC304 !== undefined ? (
-                                    <div>
-                                        <span>CISC304: ✔️</span>
-                                    </div>
-                                ) : (
-                                    <span>CISC304: ❌</span>
-                                )}
-                            </div>
-                            <div>
-                                {CISC442 !== undefined ? (
-                                    <div>
-                                        <span>CISC442: ✔️</span>
-                                    </div>
-                                ) : (
-                                    <span>CISC442: ❌</span>
-                                )}
-                            </div>
-                            <div>
-                                {CISC481 !== undefined ? (
-                                    <div>
-                                        <span>CISC481: ✔️</span>
-                                    </div>
-                                ) : (
-                                    <span>CISC481: ❌</span>
-                                )}
-                            </div>
-                            <div>
-                                {CISC483 !== undefined ? (
-                                    <div>
-                                        <span>CISC483: ✔️</span>
-                                    </div>
-                                ) : (
-                                    <span>CISC483: ❌</span>
-                                )}
-                            </div>
-                            <div>
-                                {CISC484 !== undefined ? (
-                                    <div>
-                                        <span>CISC484: ✔️</span>
-                                    </div>
-                                ) : (
-                                    <span>CISC484: ❌</span>
-                                )}
-                            </div>
-                            <div>
-                                {restrictedCreds > 12 ? (
-                                    <div>
-                                        <span>
-                                            Restricted Electives{" "}
-                                            {restrictedCreds}
-                                            /12: ✔️
-                                        </span>
-                                    </div>
-                                ) : (
-                                    <span>
-                                        Restricted Electives {restrictedCreds}
-                                        /12: ❌
-                                    </span>
-                                )}
-                            </div>
-                        </Col>
-                        <Col>
-                            <p> Breadth Requirements</p>
-                            <div>
-                                {breadthA.length > 0 ? (
+                                {breadthACreds >= 3 ? (
                                     <div>
                                         <span>
                                             Creative Arts and Humanities 3/3: ✔️
@@ -471,7 +455,7 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
                                 )}
                             </div>
                             <div>
-                                {breadthB.length > 0 ? (
+                                {breadthBCreds >= 3 ? (
                                     <div>
                                         <span>
                                             History and Cultural Change 3/3: ✔️
@@ -485,7 +469,7 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
                                 )}
                             </div>
                             <div>
-                                {breadthC.length > 0 ? (
+                                {breadthCCreds >= 3 ? (
                                     <div>
                                         <span>
                                             Social and Behavioral Sciences 3/3:
@@ -500,7 +484,7 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
                                 )}
                             </div>
                             <div>
-                                {breadthDCreds > 3 ? (
+                                {breadthDCreds >= 3 ? (
                                     <div>
                                         <span>
                                             Math, Natural Sciences and
@@ -512,6 +496,128 @@ export function AIConcentration({ plan }: { plan: Plan }): JSX.Element {
                                         Math, Natural Sciences and Technology{" "}
                                         {breadthDCreds}/3: ❌
                                     </span>
+                                )}
+                            </div>
+                            <p></p>
+                            <div>
+                                {conElectiveCreds >= 9 ? (
+                                    <div>
+                                        <span>
+                                            Upper Level Breadths 9/9: ✔️
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <span>
+                                        Upper Level Breadths {conElectiveCreds}
+                                        /9: ❌
+                                    </span>
+                                )}
+                            </div>
+                            <p></p>
+                            <div>
+                                {DLECredits >= 3 ? (
+                                    <div>
+                                        <span>
+                                            Discovery Learning Experience 3/3:
+                                            ✔️
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <span>
+                                        Discovery Learning Experience{" "}
+                                        {DLECredits}
+                                        /3: ❌
+                                    </span>
+                                )}
+                            </div>
+                        </Col>
+                        <Col>
+                            <div>Concentration Requirements:</div>
+                            <div>
+                                {CISC304 !== undefined ? (
+                                    <div>
+                                        <span>CISC304 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC304 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC442 !== undefined ? (
+                                    <div>
+                                        <span>CISC442 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC442 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC481 !== undefined ? (
+                                    <div>
+                                        <span>CISC481 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC481 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC483 !== undefined ? (
+                                    <div>
+                                        <span>CISC483 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC483 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC484 !== undefined ? (
+                                    <div>
+                                        <span>CISC484 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC484 0/3: ❌</span>
+                                )}
+                            </div>
+                            <p></p>
+                            <div>
+                                {restrictedCreds >= 12 ? (
+                                    <div>
+                                        <span>
+                                            Restricted Electives{" "}
+                                            {restrictedCreds}
+                                            /12: ✔️
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <span>
+                                        Restricted Electives {restrictedCreds}
+                                        /12: ❌
+                                    </span>
+                                )}
+                            </div>
+                            <p></p>
+                            <div>
+                                {CISCElectiveCreds >= 3 ? (
+                                    <div>
+                                        <span>CISC Elective 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>
+                                        CISC Elective {CISCElectiveCreds}
+                                        /3: ❌
+                                    </span>
+                                )}
+                            </div>
+                            <p></p>
+                            <div>Systems Requirement:</div>
+                            <div>
+                                {CISC361 !== undefined ||
+                                CISC372 !== undefined ? (
+                                    <div>
+                                        <span>CISC361/CISC372 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC361/CISC372 0/3: ❌</span>
                                 )}
                             </div>
                         </Col>
