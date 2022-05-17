@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col, Form, Modal, Row } from "react-bootstrap";
+import { Button, Form, Modal, Row } from "react-bootstrap";
 import { Semester } from "../interfaces/Semester";
 
 export function AddSemester({
@@ -11,7 +11,11 @@ export function AddSemester({
     handleClose: () => void;
     addSemester: (newSemester: Semester) => void;
 }) {
-    const [season, setSeason] = useState<string>("");
+    const seasons = ["Fall", "Winter", "Spring", "Summer"];
+    const [season, setSeason] = useState<string>(seasons[0]);
+    function updateSeason(event: React.ChangeEvent<HTMLSelectElement>) {
+        setSeason(event.target.value);
+    }
     const [year, setYear] = useState<string>("");
 
     function saveChanges() {
@@ -32,28 +36,28 @@ export function AddSemester({
                 </Modal.Header>
                 <Modal.Body>
                     <Form.Group controlId="AddSemester" as={Row}>
-                        <Form.Label column sm={3}>
-                            Semester Season:
-                        </Form.Label>
-                        <Col>
-                            <Form.Control
-                                value={season}
-                                onChange={(
-                                    event: React.ChangeEvent<HTMLInputElement>
-                                ) => setSeason(event.target.value)}
-                            />
-                        </Col>
-                        <Form.Label column sm={3}>
-                            Semester Year:
-                        </Form.Label>
-                        <Col>
-                            <Form.Control
-                                value={year}
-                                onChange={(
-                                    event: React.ChangeEvent<HTMLInputElement>
-                                ) => setYear(event.target.value)}
-                            />
-                        </Col>
+                        <Form.Label>Semester Season:</Form.Label>
+                        <Form.Select
+                            data-testid="semSeasonDropdown"
+                            value={season}
+                            onChange={updateSeason}
+                        >
+                            {seasons.map((concentration: string) => (
+                                <option
+                                    key={concentration}
+                                    value={concentration}
+                                >
+                                    {concentration}
+                                </option>
+                            ))}
+                        </Form.Select>
+                        <Form.Label>Semester Year:</Form.Label>
+                        <Form.Control
+                            value={year}
+                            onChange={(
+                                event: React.ChangeEvent<HTMLInputElement>
+                            ) => setYear(event.target.value)}
+                        />
                     </Form.Group>
                 </Modal.Body>
                 <Modal.Footer>
