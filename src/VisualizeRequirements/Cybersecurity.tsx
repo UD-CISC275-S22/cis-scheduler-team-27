@@ -1,5 +1,4 @@
 /* eslint-disable indent */
-
 import React, { useState } from "react";
 import { Semester } from "../interfaces/Semester";
 import { Course } from "../interfaces/Course";
