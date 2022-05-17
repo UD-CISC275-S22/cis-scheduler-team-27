@@ -11,7 +11,10 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
     );
     const merged = Array.prototype.concat.apply([], courseList);
     const courseCodes = merged.map((course: Course): string => course.code);
-
+    let totalCreds = 0;
+    for (let i = 0; i < merged.length; i++) {
+        totalCreds = totalCreds + parseInt(merged[i].credits);
+    }
     const FYEcourses = merged.filter(
         (course: Course): boolean => course.typ === "First Year Experience"
     );
@@ -218,7 +221,6 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
     return (
         <div>
             <Button
-                data-testid="Theory-Requirements"
                 onClick={() => {
                     showRequirements();
                 }}
@@ -436,7 +438,8 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                                     <div>
                                         {lab1.length > 0 &&
                                         lab2.length > 0 &&
-                                        lab1Creds + lab2Creds >= 8 ? (
+                                        lab1Creds + lab2Creds + labSoloCreds >=
+                                            8 ? (
                                             <div>
                                                 <span>
                                                     Lab Sciences 8/8: ✔️
@@ -445,7 +448,9 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                                         ) : (
                                             <span>
                                                 Lab Sciences{" "}
-                                                {lab1Creds + lab2Creds}
+                                                {lab1Creds +
+                                                    lab2Creds +
+                                                    labSoloCreds}
                                                 /8: ❌
                                             </span>
                                         )}
@@ -690,6 +695,21 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                             </div>
                             <p></p>
                         </Col>
+                    </Row>
+                    <p></p>
+                    <Row>
+                        <div>
+                            {totalCreds >= 124 ? (
+                                <div>
+                                    <h5>Total Credits 124/124: ✔️</h5>
+                                </div>
+                            ) : (
+                                <h5>
+                                    Total Credits {totalCreds}
+                                    /124: ❌
+                                </h5>
+                            )}
+                        </div>
                     </Row>
                 </Container>
             )}

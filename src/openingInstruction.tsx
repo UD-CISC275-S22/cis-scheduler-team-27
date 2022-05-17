@@ -20,8 +20,10 @@ export function OpeningInstruction(): JSX.Element {
             </Button>
             {isMessageVisible && (
                 <p>
-                    Add courses and make mock semesters to see how you can
-                    graduate on time.
+                    Use buttons to add, edit, and delete plans, semesters, and
+                    courses. Drag and drop courses from the menu to create
+                    degree plans, compare concentration requirements, and pick
+                    the right classes for your success at UD.
                 </p>
             )}
         </div>
