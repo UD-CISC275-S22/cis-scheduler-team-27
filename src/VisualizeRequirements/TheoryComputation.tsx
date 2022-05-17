@@ -26,7 +26,7 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
 
     const DLECourses = merged.filter(
         (course: Course): boolean =>
-            course.typ === "Discovey Learning Experience"
+            course.typ === "Discovery Learning Experience"
     );
     let DLECredits = 0;
     for (let i = 0; i < DLECourses.length; i++) {
@@ -73,12 +73,13 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
         restrictedCreds =
             restrictedCreds + parseInt(RestrictedElective[i].credits);
     }
-    const conElective = merged.filter(
-        (course: Course): boolean => course.typ === "Concentration Elective"
+    const upperBreadthElectives = merged.filter(
+        (course: Course): boolean => course.typ === "Upper Level BREADTH"
     );
-    let conElectiveCreds = 0;
-    for (let i = 0; i < conElective.length; i++) {
-        conElectiveCreds = conElectiveCreds + parseInt(conElective[i].credits);
+    let upperBreadthCreds = 0;
+    for (let i = 0; i < upperBreadthElectives.length; i++) {
+        upperBreadthCreds =
+            upperBreadthCreds + parseInt(upperBreadthElectives[i].credits);
     }
     const CISCElective = merged.filter(
         (course: Course): boolean => course.typ === "CISC Elective"
@@ -454,7 +455,7 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                             </div>
                         </Col>
                         <Col>
-                            <div> Breadth Requirements:</div>
+                            <div> BREADTH Requirements:</div>
                             <div>
                                 {breadthACreds >= 3 ? (
                                     <div>
@@ -515,7 +516,7 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                             </div>
                             <p></p>
                             <div>
-                                {conElectiveCreds >= 9 ? (
+                                {upperBreadthCreds >= 9 ? (
                                     <div>
                                         <span>
                                             Upper Level Breadths 9/9: ✔️
@@ -523,7 +524,7 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                                     </div>
                                 ) : (
                                     <span>
-                                        Upper Level Breadths {conElectiveCreds}
+                                        Upper Level Breadths {upperBreadthCreds}
                                         /9: ❌
                                     </span>
                                 )}

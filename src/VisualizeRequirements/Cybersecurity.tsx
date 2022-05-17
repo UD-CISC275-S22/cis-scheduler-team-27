@@ -26,44 +26,44 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
 
     const DLECourses = merged.filter(
         (course: Course): boolean =>
-            course.typ === "Discovey Learning Experience"
+            course.typ === "Discovery Learning Experience"
     );
     let DLECredits = 0;
     for (let i = 0; i < DLECourses.length; i++) {
         DLECredits = DLECredits + parseInt(DLECourses[i].credits);
     }
 
-    const breadthA = merged.filter(
+    const BREADTHA = merged.filter(
         (course: Course): boolean =>
             course.typ === "Creative Arts and Humanities"
     );
-    let breadthACreds = 0;
-    for (let i = 0; i < breadthA.length; i++) {
-        breadthACreds = breadthACreds + parseInt(breadthA[i].credits);
+    let BREADTHACreds = 0;
+    for (let i = 0; i < BREADTHA.length; i++) {
+        BREADTHACreds = BREADTHACreds + parseInt(BREADTHA[i].credits);
     }
-    const breadthB = merged.filter(
+    const BREADTHB = merged.filter(
         (course: Course): boolean =>
             course.typ === "History and Cultural Change"
     );
-    let breadthBCreds = 0;
-    for (let i = 0; i < breadthB.length; i++) {
-        breadthBCreds = breadthBCreds + parseInt(breadthB[i].credits);
+    let BREADTHBCreds = 0;
+    for (let i = 0; i < BREADTHB.length; i++) {
+        BREADTHBCreds = BREADTHBCreds + parseInt(BREADTHB[i].credits);
     }
-    const breadthC = merged.filter(
+    const BREADTHC = merged.filter(
         (course: Course): boolean =>
             course.typ === "Social and Behavioral Sciences"
     );
-    let breadthCCreds = 0;
-    for (let i = 0; i < breadthC.length; i++) {
-        breadthCCreds = breadthCCreds + parseInt(breadthC[i].credits);
+    let BREADTHCCreds = 0;
+    for (let i = 0; i < BREADTHC.length; i++) {
+        BREADTHCCreds = BREADTHCCreds + parseInt(BREADTHC[i].credits);
     }
-    const breadthD = merged.filter(
+    const BREADTHD = merged.filter(
         (course: Course): boolean =>
             course.typ === "Math, Natural Sciences and Technology"
     );
-    let breadthDCreds = 0;
-    for (let i = 0; i < breadthD.length; i++) {
-        breadthDCreds = breadthDCreds + parseInt(breadthD[i].credits);
+    let BREADTHDCreds = 0;
+    for (let i = 0; i < BREADTHD.length; i++) {
+        BREADTHDCreds = BREADTHDCreds + parseInt(BREADTHD[i].credits);
     }
     const RestrictedElective = merged.filter(
         (course: Course): boolean => course.typ === "Restrictive Elective"
@@ -72,6 +72,14 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
     for (let i = 0; i < RestrictedElective.length; i++) {
         restrictedCreds =
             restrictedCreds + parseInt(RestrictedElective[i].credits);
+    }
+    const upperBREADTHElectives = merged.filter(
+        (course: Course): boolean => course.typ === "Upper Level BREADTH"
+    );
+    let upperBREADTHCreds = 0;
+    for (let i = 0; i < upperBREADTHElectives.length; i++) {
+        upperBREADTHCreds =
+            upperBREADTHCreds + parseInt(upperBREADTHElectives[i].credits);
     }
     const conElective = merged.filter(
         (course: Course): boolean => course.typ === "Concentration Elective"
@@ -417,9 +425,9 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
                             </div>
                         </Col>
                         <Col>
-                            <div> Breadth Requirements:</div>
+                            <div> BREADTH Requirements:</div>
                             <div>
-                                {breadthACreds >= 3 ? (
+                                {BREADTHACreds >= 3 ? (
                                     <div>
                                         <span>
                                             Creative Arts and Humanities 3/3: ✔️
@@ -428,12 +436,12 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
                                 ) : (
                                     <span>
                                         Creative Arts and Humanities{" "}
-                                        {breadthACreds}/3: ❌
+                                        {BREADTHACreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <div>
-                                {breadthBCreds >= 3 ? (
+                                {BREADTHBCreds >= 3 ? (
                                     <div>
                                         <span>
                                             History and Cultural Change 3/3: ✔️
@@ -442,12 +450,12 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
                                 ) : (
                                     <span>
                                         History and Cultural Change{" "}
-                                        {breadthBCreds}/3: ❌
+                                        {BREADTHBCreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <div>
-                                {breadthCCreds >= 3 ? (
+                                {BREADTHCCreds >= 3 ? (
                                     <div>
                                         <span>
                                             Social and Behavioral Sciences 3/3:
@@ -457,12 +465,12 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
                                 ) : (
                                     <span>
                                         Social and Behavioral Sciences{" "}
-                                        {breadthCCreds}/3: ❌
+                                        {BREADTHCCreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <div>
-                                {breadthDCreds >= 3 ? (
+                                {BREADTHDCreds >= 3 ? (
                                     <div>
                                         <span>
                                             Math, Natural Sciences and
@@ -472,21 +480,21 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
                                 ) : (
                                     <span>
                                         Math, Natural Sciences and Technology{" "}
-                                        {breadthDCreds}/3: ❌
+                                        {BREADTHDCreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <p></p>
                             <div>
-                                {conElectiveCreds >= 9 ? (
+                                {upperBREADTHCreds >= 9 ? (
                                     <div>
                                         <span>
-                                            Upper Level Breadths 9/9: ✔️
+                                            Upper Level BREADTHs 9/9: ✔️
                                         </span>
                                     </div>
                                 ) : (
                                     <span>
-                                        Upper Level Breadths {conElectiveCreds}
+                                        Upper Level BREADTHs {upperBREADTHCreds}
                                         /9: ❌
                                     </span>
                                 )}
@@ -513,18 +521,18 @@ export function Cybersecurity({ plan }: { plan: Plan }): JSX.Element {
                             <div>Concentration Requirements:</div>
                             <p></p>
                             <div>
-                                {restrictedCreds >= 12 ? (
+                                {restrictedCreds >= 6 ? (
                                     <div>
                                         <span>
                                             Restricted Electives{" "}
                                             {restrictedCreds}
-                                            /12: ✔️
+                                            /6: ✔️
                                         </span>
                                     </div>
                                 ) : (
                                     <span>
                                         Restricted Electives {restrictedCreds}
-                                        /12: ❌
+                                        /6: ❌
                                     </span>
                                 )}
                             </div>

@@ -30,44 +30,44 @@ export function HighPerformanceComputing({
 
     const DLECourses = merged.filter(
         (course: Course): boolean =>
-            course.typ === "Discovey Learning Experience"
+            course.typ === "Discovery Learning Experience"
     );
     let DLECredits = 0;
     for (let i = 0; i < DLECourses.length; i++) {
         DLECredits = DLECredits + parseInt(DLECourses[i].credits);
     }
 
-    const breadthA = merged.filter(
+    const BREADTHA = merged.filter(
         (course: Course): boolean =>
             course.typ === "Creative Arts and Humanities"
     );
-    let breadthACreds = 0;
-    for (let i = 0; i < breadthA.length; i++) {
-        breadthACreds = breadthACreds + parseInt(breadthA[i].credits);
+    let BREADTHACreds = 0;
+    for (let i = 0; i < BREADTHA.length; i++) {
+        BREADTHACreds = BREADTHACreds + parseInt(BREADTHA[i].credits);
     }
-    const breadthB = merged.filter(
+    const BREADTHB = merged.filter(
         (course: Course): boolean =>
             course.typ === "History and Cultural Change"
     );
-    let breadthBCreds = 0;
-    for (let i = 0; i < breadthB.length; i++) {
-        breadthBCreds = breadthBCreds + parseInt(breadthB[i].credits);
+    let BREADTHBCreds = 0;
+    for (let i = 0; i < BREADTHB.length; i++) {
+        BREADTHBCreds = BREADTHBCreds + parseInt(BREADTHB[i].credits);
     }
-    const breadthC = merged.filter(
+    const BREADTHC = merged.filter(
         (course: Course): boolean =>
             course.typ === "Social and Behavioral Sciences"
     );
-    let breadthCCreds = 0;
-    for (let i = 0; i < breadthC.length; i++) {
-        breadthCCreds = breadthCCreds + parseInt(breadthC[i].credits);
+    let BREADTHCCreds = 0;
+    for (let i = 0; i < BREADTHC.length; i++) {
+        BREADTHCCreds = BREADTHCCreds + parseInt(BREADTHC[i].credits);
     }
-    const breadthD = merged.filter(
+    const BREADTHD = merged.filter(
         (course: Course): boolean =>
             course.typ === "Math, Natural Sciences and Technology"
     );
-    let breadthDCreds = 0;
-    for (let i = 0; i < breadthD.length; i++) {
-        breadthDCreds = breadthDCreds + parseInt(breadthD[i].credits);
+    let BREADTHDCreds = 0;
+    for (let i = 0; i < BREADTHD.length; i++) {
+        BREADTHDCreds = BREADTHDCreds + parseInt(BREADTHD[i].credits);
     }
     const RestrictedElective = merged.filter(
         (course: Course): boolean => course.typ === "Restrictive Elective"
@@ -76,6 +76,14 @@ export function HighPerformanceComputing({
     for (let i = 0; i < RestrictedElective.length; i++) {
         restrictedCreds =
             restrictedCreds + parseInt(RestrictedElective[i].credits);
+    }
+    const upperBREADTHElectives = merged.filter(
+        (course: Course): boolean => course.typ === "Upper Level BREADTH"
+    );
+    let upperBREADTHCreds = 0;
+    for (let i = 0; i < upperBREADTHElectives.length; i++) {
+        upperBREADTHCreds =
+            upperBREADTHCreds + parseInt(upperBREADTHElectives[i].credits);
     }
     const conElective = merged.filter(
         (course: Course): boolean => course.typ === "Concentration Elective"
@@ -177,7 +185,39 @@ export function HighPerformanceComputing({
     );
     /* Lab Sciences */
     /*Major Requirements */
-
+    const CISC360 = courseCodes.find(
+        (course: string): boolean => course === "CISC 360"
+    );
+    const CISC361 = courseCodes.find(
+        (course: string): boolean => course === "CISC 361"
+    );
+    const CISC372 = courseCodes.find(
+        (course: string): boolean => course === "CISC 372"
+    );
+    const CISC450 = courseCodes.find(
+        (course: string): boolean => course === "CISC 450"
+    );
+    const CISC471 = courseCodes.find(
+        (course: string): boolean => course === "CISC 471"
+    );
+    const MATH242 = courseCodes.find(
+        (course: string): boolean => course === "MATH 242"
+    );
+    const MATH243 = courseCodes.find(
+        (course: string): boolean => course === "MATH 242"
+    );
+    const MATH351 = courseCodes.find(
+        (course: string): boolean => course === "MATH 351"
+    );
+    const MATH428 = courseCodes.find(
+        (course: string): boolean => course === "MATH 428"
+    );
+    const CISC437 = courseCodes.find(
+        (course: string): boolean => course === "CISC 437"
+    );
+    const MATH450 = courseCodes.find(
+        (course: string): boolean => course === "MATH 450"
+    );
     const [visible, setVisible] = useState<boolean>(false);
     function showRequirements(): void {
         setVisible(!visible);
@@ -422,9 +462,9 @@ export function HighPerformanceComputing({
                             </div>
                         </Col>
                         <Col>
-                            <div> Breadth Requirements:</div>
+                            <div> BREADTH Requirements:</div>
                             <div>
-                                {breadthACreds >= 3 ? (
+                                {BREADTHACreds >= 3 ? (
                                     <div>
                                         <span>
                                             Creative Arts and Humanities 3/3: ✔️
@@ -433,12 +473,12 @@ export function HighPerformanceComputing({
                                 ) : (
                                     <span>
                                         Creative Arts and Humanities{" "}
-                                        {breadthACreds}/3: ❌
+                                        {BREADTHACreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <div>
-                                {breadthBCreds >= 3 ? (
+                                {BREADTHBCreds >= 3 ? (
                                     <div>
                                         <span>
                                             History and Cultural Change 3/3: ✔️
@@ -447,12 +487,12 @@ export function HighPerformanceComputing({
                                 ) : (
                                     <span>
                                         History and Cultural Change{" "}
-                                        {breadthBCreds}/3: ❌
+                                        {BREADTHBCreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <div>
-                                {breadthCCreds >= 3 ? (
+                                {BREADTHCCreds >= 3 ? (
                                     <div>
                                         <span>
                                             Social and Behavioral Sciences 3/3:
@@ -462,12 +502,12 @@ export function HighPerformanceComputing({
                                 ) : (
                                     <span>
                                         Social and Behavioral Sciences{" "}
-                                        {breadthCCreds}/3: ❌
+                                        {BREADTHCCreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <div>
-                                {breadthDCreds >= 3 ? (
+                                {BREADTHDCreds >= 3 ? (
                                     <div>
                                         <span>
                                             Math, Natural Sciences and
@@ -477,21 +517,21 @@ export function HighPerformanceComputing({
                                 ) : (
                                     <span>
                                         Math, Natural Sciences and Technology{" "}
-                                        {breadthDCreds}/3: ❌
+                                        {BREADTHDCreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <p></p>
                             <div>
-                                {conElectiveCreds >= 9 ? (
+                                {upperBREADTHCreds >= 9 ? (
                                     <div>
                                         <span>
-                                            Upper Level Breadths 9/9: ✔️
+                                            Upper Level BREADTHs 9/9: ✔️
                                         </span>
                                     </div>
                                 ) : (
                                     <span>
-                                        Upper Level Breadths {conElectiveCreds}
+                                        Upper Level BREADTHs {upperBREADTHCreds}
                                         /9: ❌
                                     </span>
                                 )}
@@ -516,20 +556,149 @@ export function HighPerformanceComputing({
                         </Col>
                         <Col>
                             <div>Concentration Requirements:</div>
-                            <p></p>
                             <div>
-                                {restrictedCreds >= 12 ? (
+                                {CISC360 !== undefined ? (
+                                    <div>
+                                        <span>CISC360 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC360 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC361 !== undefined ? (
+                                    <div>
+                                        <span>CISC361 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC361 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC372 !== undefined ? (
+                                    <div>
+                                        <span>CISC372 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC372 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC450 !== undefined ? (
+                                    <div>
+                                        <span>CISC450 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC450 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC471 !== undefined ? (
+                                    <div>
+                                        <span>CISC471 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC471 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH242 !== undefined ? (
+                                    <div>
+                                        <span>MATH242 4/4: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH242 0/4: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH243 !== undefined ? (
+                                    <div>
+                                        <span>MATH243 4/4: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH243 0/4: ❌</span>
+                                )}
+                            </div>
+                            <p></p>
+                            <div>Applied Math Track</div>
+                            <div>
+                                {MATH351 !== undefined ? (
+                                    <div>
+                                        <span>MATH351 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH351 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH428 !== undefined ? (
+                                    <div>
+                                        <span>MATH428 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH428 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {restrictedCreds >= 5 ? (
                                     <div>
                                         <span>
-                                            Restricted Electives{" "}
-                                            {restrictedCreds}
-                                            /12: ✔️
+                                            Applied Math Track Restricted
+                                            Electives {restrictedCreds}
+                                            /5: ✔️
                                         </span>
                                     </div>
                                 ) : (
                                     <span>
-                                        Restricted Electives {restrictedCreds}
-                                        /12: ❌
+                                        Applied Math Track Restricted Electives{" "}
+                                        {restrictedCreds}
+                                        /5: ❌
+                                    </span>
+                                )}
+                            </div>
+                            <div>or</div>
+                            <div>Data Track</div>
+                            <div>
+                                {CISC437 !== undefined ? (
+                                    <div>
+                                        <span>CISC437 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC437 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH350 !== undefined ? (
+                                    <div>
+                                        <span>MATH350 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH350 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH450 !== undefined ? (
+                                    <div>
+                                        <span>MATH450 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH450 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {restrictedCreds >= 5 ? (
+                                    <div>
+                                        <span>
+                                            Data Track Restricted Electives{" "}
+                                            {restrictedCreds}
+                                            /5: ✔️
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <span>
+                                        Data Track Restricted Electives{" "}
+                                        {restrictedCreds}
+                                        /5: ❌
                                     </span>
                                 )}
                             </div>

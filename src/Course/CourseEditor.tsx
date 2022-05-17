@@ -140,11 +140,11 @@ export function CourseEditor({
                     <Form.Check
                         type="checkbox"
                         id="Req-Check-Creative"
-                        label="Discovey Learning Experience"
+                        label="Discovery Learning Experience"
                         name="Reqs"
-                        value="Discovey Learning Experience"
+                        value="Discovery Learning Experience"
                         checked={chosenReq.includes(
-                            "Discovey Learning Experience"
+                            "Discovery Learning Experience"
                         )}
                         onChange={updateReqs}
                     />
@@ -190,6 +190,15 @@ export function CourseEditor({
                         checked={chosenReq.includes(
                             "Math, Natural Sciences and Technology"
                         )}
+                        onChange={updateReqs}
+                    />
+                    <Form.Check
+                        type="checkbox"
+                        id="Req-Check-Math"
+                        label="Upper Level BREADTH"
+                        name="Reqs"
+                        value="Upper Level BREADTH"
+                        checked={chosenReq.includes("Upper Level BREADTH")}
                         onChange={updateReqs}
                     />
                     <Form.Check
