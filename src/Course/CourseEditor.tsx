@@ -222,18 +222,18 @@ export function CourseEditor({
                     <Form.Check
                         type="checkbox"
                         id="Req-Check-LAB1"
-                        label="Lab Seq 1"
+                        label="Lab Sequence 1"
                         name="Reqs"
-                        value="Lab Seq 1"
+                        value="Lab Sequence 1"
                         checked={chosenReq.includes("Lab Sequence 1")}
                         onChange={updateReqs}
                     />
                     <Form.Check
                         type="checkbox"
                         id="Req-Check-LAB2"
-                        label="Lab Seq 2"
+                        label="Lab Sequence 2"
                         name="Reqs"
-                        value="Lab Seq 2"
+                        value="Lab Sequence 2"
                         checked={chosenReq.includes("Lab Sequence 2")}
                         onChange={updateReqs}
                     />
