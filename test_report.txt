@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx (66.889 s)
+PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx (64.34 s)
   ● Console
 
     console.error
@@ -29,7 +29,7 @@ PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx (66.889 s)
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
-PASS src/Course/MoveCourses.test.tsx (40.702 s)
+PASS src/Course/MoveCourses.test.tsx (39.447 s)
 FAIL src/Plan/Plan.test.tsx
   ● Plan Component tests › Edit Button creates two textboxes
 
@@ -68,7 +68,7 @@ FAIL src/Semesters/Semester.test.tsx
 
       at Object.<anonymous> (src/Semesters/Semester.test.tsx:62:26)
 
-PASS src/Course/EditCourse.test.tsx (9.956 s)
+PASS src/Course/EditCourse.test.tsx (9.989 s)
   ● Console
 
     console.error
@@ -95,8 +95,8 @@ PASS src/Course/EditCourse.test.tsx (9.956 s)
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
-PASS src/Course/CourseView.test.tsx (9.516 s)
-PASS src/Course/Course.test.tsx (7.754 s)
+PASS src/Course/CourseView.test.tsx (9.226 s)
+PASS src/Course/Course.test.tsx (7.242 s)
 PASS src/Welcome.test.tsx
 -------------------------------|---------|----------|---------|---------|-------------------------------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                         
@@ -125,13 +125,13 @@ All files                      |   29.49 |     18.3 |   36.06 |   29.59 |
   SemesterList.tsx             |     100 |      100 |     100 |     100 |                                           
   SemesterView.tsx             |     100 |      100 |     100 |     100 |                                           
  src/VisualizeRequirements     |   22.34 |    13.97 |   24.13 |   22.09 |                                           
-  AIConcentration.tsx          |    92.7 |    59.25 |     100 |   91.93 | 25,34,59,67,74,82,90,98,105,112           
-  Bioinformatics.tsx           |       0 |        0 |       0 |       0 | 10-246                                    
-  Cybersecurity.tsx            |       0 |        0 |       0 |       0 | 10-212                                    
-  DataScience.tsx              |    90.9 |    55.29 |     100 |   89.92 | 25,34,43,51,59,67,74,82,90,97,105,112,119 
-  HighPerformanceComputing.tsx |       0 |        0 |       0 |       0 | 14-223                                    
-  SystemsNetworks.tsx          |       0 |        0 |       0 |       0 | 10-209                                    
-  TheoryComputation.tsx        |       0 |        0 |       0 |       0 | 10-224                                    
+  AIConcentration.tsx          |    92.7 |    59.25 |     100 |   91.93 | 24,33,58,66,73,81,89,97,104,111           
+  Bioinformatics.tsx           |       0 |        0 |       0 |       0 | 9-245                                     
+  Cybersecurity.tsx            |       0 |        0 |       0 |       0 | 9-211                                     
+  DataScience.tsx              |    90.9 |    55.29 |     100 |   89.92 | 24,33,42,50,58,66,73,81,89,96,104,111,118 
+  HighPerformanceComputing.tsx |       0 |        0 |       0 |       0 | 13-222                                    
+  SystemsNetworks.tsx          |       0 |        0 |       0 |       0 | 9-208                                     
+  TheoryComputation.tsx        |       0 |        0 |       0 |       0 | 9-223                                     
   Traditional.tsx              |       0 |        0 |       0 |       0 | 9-201                                     
  src/interfaces                |       0 |        0 |       0 |       0 |                                           
   Course.ts                    |       0 |        0 |       0 |       0 |                                           
@@ -142,5 +142,5 @@ All files                      |   29.49 |     18.3 |   36.06 |   29.59 |
 Test Suites: 2 failed, 6 passed, 8 total
 Tests:       2 failed, 33 passed, 35 total
 Snapshots:   0 total
-Time:        139.471 s
+Time:        134.715 s
 Ran all test suites.
