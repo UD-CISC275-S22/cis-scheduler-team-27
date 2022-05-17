@@ -19,8 +19,7 @@ export function SemesterEditor({
     editClasses: (id: string, courseList: Course[]) => void;
     courseList: Course[];
 }): JSX.Element {
-    const [name, setName] = useState<string>(semester.name);
-    const [year, setYear] = useState<number>(semester.year);
+    const [year, setYear] = useState<string>(semester.year);
     const [season, setSeason] = useState<string>(semester.season);
     /*
     const [credits, setCredits] = useState<number>(semester.credits);
@@ -34,7 +33,6 @@ export function SemesterEditor({
     function save() {
         editSemester(semester.name, {
             ...semester,
-            name: name,
             year: year,
             season: season,
             courses: semester.courses
@@ -44,32 +42,6 @@ export function SemesterEditor({
 
     return (
         <Container>
-            <Col>
-                <Form.Group controlId="semesterName">
-                    <Form.Label>Name:</Form.Label>
-                    <Col>
-                        <Form.Control
-                            value={name}
-                            onChange={(
-                                event: React.ChangeEvent<HTMLInputElement>
-                            ) => setName(event.target.value)}
-                        />
-                    </Col>
-                </Form.Group>
-            </Col>
-            <Col>
-                <Form.Group controlId="semesterYear">
-                    <Form.Label>Year:</Form.Label>
-                    <Col>
-                        <Form.Control
-                            value={year}
-                            onChange={(
-                                event: React.ChangeEvent<HTMLInputElement>
-                            ) => setYear(parseInt(event.target.value))}
-                        />
-                    </Col>
-                </Form.Group>
-            </Col>
             <Col>
                 <Form.Group controlId="semesterSeason">
                     <Form.Label>Season:</Form.Label>
@@ -84,7 +56,20 @@ export function SemesterEditor({
                 </Form.Group>
             </Col>
             <Col>
-                <h5>{semester.name}</h5>
+                <Form.Group controlId="semesterYear">
+                    <Form.Label>Year:</Form.Label>
+                    <Col>
+                        <Form.Control
+                            value={year}
+                            onChange={(
+                                event: React.ChangeEvent<HTMLInputElement>
+                            ) => setYear(event.target.value)}
+                        />
+                    </Col>
+                </Form.Group>
+            </Col>
+            <Col>
+                <h5>{semester.season + " " + semester.year}</h5>
                 <Row>Number of Courses: {courseList.length}</Row>
                 {/*Semester Displays Here*/}
                 <div>
