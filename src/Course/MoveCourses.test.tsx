@@ -24,12 +24,12 @@ describe("Moving and Deleting Courses Tests", () => {
         savePlanButton.click();
         const addSemBut = screen.getByTestId("AddSemButton");
         addSemBut.click();
-        const SemInput = screen.queryAllByRole("textbox");
-        const inputSemBoxSeason = SemInput[0];
-        const inputSemBoxYear = SemInput[1];
+        const SemInputSeason = screen.getByTestId("semSeasonDropdown");
+        userEvent.selectOptions(SemInputSeason, "Fall");
+        const SemInput2 = screen.queryAllByRole("textbox");
+        const inputYear = SemInput2[0];
         const saveButton = screen.getByTestId("save-button");
-        userEvent.type(inputSemBoxSeason, "Fall");
-        userEvent.type(inputSemBoxYear, "2022");
+        userEvent.type(inputYear, "2022");
         saveButton.click();
     });
     test("dragging a course adds it to a semester's courses", () => {
@@ -52,14 +52,13 @@ describe("Moving and Deleting Courses Tests", () => {
     test("a new semester can also accept courses", () => {
         const addSemBut = screen.getByTestId("AddSemButton");
         addSemBut.click();
-        const SemInput = screen.queryAllByRole("textbox");
-        const inputSemBoxSeason = SemInput[0];
-        const inputSemBoxYear = SemInput[1];
+        const SemInputSeason = screen.getByTestId("semSeasonDropdown");
+        userEvent.selectOptions(SemInputSeason, "Spring");
+        const SemInput2 = screen.queryAllByRole("textbox");
+        const inputYear = SemInput2[0];
         const saveButton = screen.getByTestId("save-button");
-        userEvent.clear(inputSemBoxSeason);
-        userEvent.clear(inputSemBoxYear);
-        userEvent.type(inputSemBoxSeason, "Spring");
-        userEvent.type(inputSemBoxYear, "2023");
+        userEvent.clear(inputYear);
+        userEvent.type(inputYear, "2023");
         saveButton.click();
         render(<CourseView />);
         const courseDropdown = screen.getByTestId("course-dropdown");
