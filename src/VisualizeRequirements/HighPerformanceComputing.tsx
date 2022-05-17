@@ -185,6 +185,7 @@ export function HighPerformanceComputing({
     return (
         <div>
             <Button
+                data-testid="HPC-Requirements"
                 onClick={() => {
                     showRequirements();
                 }}

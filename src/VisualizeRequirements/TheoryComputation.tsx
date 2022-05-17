@@ -217,6 +217,7 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
     return (
         <div>
             <Button
+                data-testid="Theory-Requirements"
                 onClick={() => {
                     showRequirements();
                 }}

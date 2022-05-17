@@ -181,6 +181,7 @@ export function DataScience({ plan }: { plan: Plan }): JSX.Element {
     return (
         <div>
             <Button
+                data-testid="Data-Requirements"
                 onClick={() => {
                     showRequirements();
                 }}

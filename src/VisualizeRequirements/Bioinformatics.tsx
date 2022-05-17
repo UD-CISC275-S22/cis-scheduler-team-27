@@ -180,6 +180,7 @@ export function Bioinformatics({ plan }: { plan: Plan }): JSX.Element {
     return (
         <div>
             <Button
+                data-testid="Bio-Requirements"
                 onClick={() => {
                     showRequirements();
                 }}

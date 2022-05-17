@@ -180,6 +180,7 @@ export function SystemsNetworks({ plan }: { plan: Plan }): JSX.Element {
     return (
         <div>
             <Button
+                data-testid="Systems-Requirements"
                 onClick={() => {
                     showRequirements();
                 }}
