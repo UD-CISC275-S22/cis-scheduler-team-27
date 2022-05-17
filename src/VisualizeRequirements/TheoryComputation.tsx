@@ -173,6 +173,43 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
     );
     /* Lab Sciences */
     /*Major Requirements */
+    const CISC304 = courseCodes.find(
+        (course: string): boolean => course === "CISC 304"
+    );
+    const CISC401 = courseCodes.find(
+        (course: string): boolean => course === "CISC 401"
+    );
+    const MATH242 = courseCodes.find(
+        (course: string): boolean => course === "CISC 242"
+    );
+    const MATH349 = courseCodes.find(
+        (course: string): boolean => course === "CISC 349"
+    );
+    const CISC404 = courseCodes.find(
+        (course: string): boolean => course === "CISC 404"
+    );
+    const MATH245 = courseCodes.find(
+        (course: string): boolean => course === "MATH 245"
+    );
+    const MATH315 = courseCodes.find(
+        (course: string): boolean => course === "MATH 315"
+    );
+    const MATH451 = courseCodes.find(
+        (course: string): boolean => course === "MATH 451"
+    );
+    const MATH243 = courseCodes.find(
+        (course: string): boolean => course === "MATH 243"
+    );
+    const MATH302 = courseCodes.find(
+        (course: string): boolean => course === "MATH 302"
+    );
+    const MATH535 = courseCodes.find(
+        (course: string): boolean => course === "MATH 535"
+    );
+    const MATH426 = courseCodes.find(
+        (course: string): boolean => course === "MATH 426"
+    );
+
     const [visible, setVisible] = useState<boolean>(false);
     function showRequirements(): void {
         setVisible(!visible);
@@ -511,20 +548,132 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                         </Col>
                         <Col>
                             <div>Concentration Requirements:</div>
+                            <div>
+                                {CISC304 !== undefined ? (
+                                    <div>
+                                        <span>CISC304 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC304 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {CISC401 !== undefined ? (
+                                    <div>
+                                        <span>CISC401 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC401 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH242 !== undefined ? (
+                                    <div>
+                                        <span>MATH242 4/4: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH242 0/4: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH349 !== undefined ? (
+                                    <div>
+                                        <span>MATH349 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH349 0/3: ❌</span>
+                                )}
+                            </div>
+                            <p></p>
+                            <div>Discrete Track</div>
+                            <div>
+                                {CISC404 !== undefined ? (
+                                    <div>
+                                        <span>CISC404 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>CISC404 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH245 !== undefined ? (
+                                    <div>
+                                        <span>MATH245 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH245 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH315 !== undefined ? (
+                                    <div>
+                                        <span>MATH315 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH315 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH451 !== undefined ? (
+                                    <div>
+                                        <span>MATH451 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH451 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>or</div>
+                            <div>Continuous Track</div>
+                            <div>
+                                {MATH243 !== undefined ? (
+                                    <div>
+                                        <span>MATH243 3/4: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH243 0/4: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH302 !== undefined ? (
+                                    <div>
+                                        <span>MATH302 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH302 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH535 !== undefined ? (
+                                    <div>
+                                        <span>MATH535 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH535 0/3: ❌</span>
+                                )}
+                            </div>
+                            <div>
+                                {MATH426 !== undefined ? (
+                                    <div>
+                                        <span>MATH426 3/3: ✔️</span>
+                                    </div>
+                                ) : (
+                                    <span>MATH426 0/3: ❌</span>
+                                )}
+                            </div>
                             <p></p>
                             <div>
-                                {restrictedCreds >= 12 ? (
+                                {restrictedCreds >= 6 ? (
                                     <div>
                                         <span>
                                             Restricted Electives{" "}
                                             {restrictedCreds}
-                                            /12: ✔️
+                                            /6: ✔️
                                         </span>
                                     </div>
                                 ) : (
                                     <span>
                                         Restricted Electives {restrictedCreds}
-                                        /12: ❌
+                                        /6: ❌
                                     </span>
                                 )}
                             </div>
