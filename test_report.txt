@@ -2,58 +2,47 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/Course/MoveCourses.test.tsx (51.635 s)
-PASS src/Plan/Plan.test.tsx
-PASS src/Semesters/Semester.test.tsx
-  ● Console
+PASS src/Course/MoveCourses.test.tsx (67.535 s)
+FAIL src/Plan/Plan.test.tsx
+  ● Plan Component tests › Edit Button creates two textboxes
 
-    console.error
-      Warning: Received NaN for the `value` attribute. If this is expected, cast the value to a string.
-          at input
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-bootstrap/cjs/FormControl.js:27:3)
-          at div
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-bootstrap/cjs/Col.js:72:8)
-          at div
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-bootstrap/cjs/FormGroup.js:19:3)
-          at div
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-bootstrap/cjs/Col.js:72:8)
-          at div
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-bootstrap/cjs/Container.js:24:3)
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Semesters/SemesterEditor.tsx:8:5)
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Semesters/SemesterView.tsx:12:5)
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-dnd/dist/cjs/core/DndProvider.js:41:23)
-          at div
-          at div
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Semesters/SemesterList.tsx:8:5)
-          at div
-          at div
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Semesters/SemesterControl.tsx:9:5)
-          at span
-          at div
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-bootstrap/cjs/Col.js:72:8)
-          at div
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/node_modules/react-bootstrap/cjs/Container.js:24:3)
-          at div
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Plan/PlanView.tsx:9:5)
-          at div
-          at div
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Plan/PlanList.tsx:15:5)
-          at div
-          at div
-          at div
-          at fn (/home/runner/work/cis-scheduler-team-27/cis-scheduler-team-27/src/Plan/Planner.tsx:9:31)
+    expect(received).toHaveLength(expected)
 
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at validateProperty$1 (node_modules/react-dom/cjs/react-dom.development.js:3492:7)
-      at warnUnknownProperties (node_modules/react-dom/cjs/react-dom.development.js:3559:21)
-      at validateProperties$2 (node_modules/react-dom/cjs/react-dom.development.js:3583:3)
-      at validatePropertiesInDevelopment (node_modules/react-dom/cjs/react-dom.development.js:8765:5)
-      at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
-      at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
+    Expected length: 2
+    Received length: 1
+    Received array:  [<input class="form-control" id="planDesc" value="" />]
+
+      60 |         editPlanBut.click();
+      61 |         const planInput = screen.queryAllByRole("textbox");
+    > 62 |         expect(planInput).toHaveLength(2);
+         |                           ^
+      63 |     });
+      64 |     test("Save button in edit mode saves changes", () => {
+      65 |         render(<Planner />);
+
+      at Object.<anonymous> (src/Plan/Plan.test.tsx:62:27)
+
+FAIL src/Semesters/Semester.test.tsx
+  ● Semester Component tests › Edit Button creates three textboxes
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 3
+    Received length: 2
+    Received array:  [<input class="form-control" id="semesterSeason" value="" />, <input class="form-control" id="semesterYear" value="" />]
+
+      60 |         editSemBut.click();
+      61 |         const SemInput = screen.queryAllByRole("textbox");
+    > 62 |         expect(SemInput).toHaveLength(3);
+         |                          ^
+      63 |     });
+      64 |     test("Save button in edit mode saves changes", () => {
+      65 |         const addSemBut = screen.getByTestId("AddSemButton");
+
+      at Object.<anonymous> (src/Semesters/Semester.test.tsx:62:26)
 
 PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx
-PASS src/Course/EditCourse.test.tsx (10.272 s)
+PASS src/Course/EditCourse.test.tsx (13.325 s)
   ● Console
 
     console.error
@@ -80,13 +69,13 @@ PASS src/Course/EditCourse.test.tsx (10.272 s)
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
-PASS src/Course/CourseView.test.tsx (9.582 s)
-PASS src/Course/Course.test.tsx (6.165 s)
+PASS src/Course/CourseView.test.tsx (14.155 s)
+PASS src/Course/Course.test.tsx (8.446 s)
 PASS src/Welcome.test.tsx
 -------------------------------|---------|----------|---------|---------|-----------------------------------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                             
 -------------------------------|---------|----------|---------|---------|-----------------------------------------------
-All files                      |   18.85 |     5.19 |   25.16 |   19.09 |                                               
+All files                      |   18.75 |     5.19 |   25.26 |   18.99 |                                               
  src                           |     100 |      100 |     100 |     100 |                                               
   App.tsx                      |     100 |      100 |     100 |     100 |                                               
   interfaces.tsx               |       0 |        0 |       0 |       0 |                                               
@@ -97,18 +86,18 @@ All files                      |   18.85 |     5.19 |   25.16 |   19.09 |
   CourseEditor.tsx             |   58.82 |       25 |      50 |    62.5 | 47-54,85                                      
   CoursePool.tsx               |     100 |       50 |     100 |     100 | 14                                            
   CourseView.tsx               |   76.47 |      100 |   72.72 |      75 | 35-38,88                                      
- src/Plan                      |    92.1 |     62.5 |    87.5 |   91.42 |                                               
+ src/Plan                      |   94.44 |     62.5 |    91.3 |   93.93 |                                               
   AddPlan.tsx                  |     100 |      100 |     100 |     100 |                                               
-  PlanEditor.tsx               |    87.5 |      100 |      80 |    87.5 | 51                                            
+  PlanEditor.tsx               |     100 |      100 |     100 |     100 |                                               
   PlanList.tsx                 |     100 |    56.25 |     100 |     100 | 71-91                                         
   PlanView.tsx                 |     100 |      100 |     100 |     100 |                                               
   Planner.tsx                  |    87.5 |    66.66 |      80 |   84.61 | 25,32                                         
- src/Semesters                 |   91.66 |    91.66 |   87.87 |    91.3 |                                               
+ src/Semesters                 |   93.47 |    91.66 |   90.62 |   93.18 |                                               
   AddSemester.tsx              |     100 |      100 |     100 |     100 |                                               
   SemesterControl.tsx          |   93.33 |    83.33 |      90 |    92.3 | 48                                            
-  SemesterEditor.tsx           |   83.33 |      100 |      75 |   83.33 | 68-81                                         
+  SemesterEditor.tsx           |      90 |      100 |   85.71 |      90 | 66                                            
   SemesterList.tsx             |     100 |      100 |     100 |     100 |                                               
-  SemesterView.tsx             |   91.66 |      100 |   88.88 |   91.66 | 52                                            
+  SemesterView.tsx             |   91.66 |      100 |   88.88 |   91.66 | 53                                            
  src/VisualizeRequirements     |   10.69 |     0.14 |    11.4 |   10.56 |                                               
   AIConcentration.tsx          |   89.78 |     1.23 |   95.55 |    88.7 | 24,33,42,50,58,66,73,81,89,97,104,111,201,207 
   Bioinformatics.tsx           |       0 |        0 |       0 |       0 | 9-244                                         
@@ -124,8 +113,8 @@ All files                      |   18.85 |     5.19 |   25.16 |   19.09 |
   Semester.tsx                 |       0 |        0 |       0 |       0 |                                               
 -------------------------------|---------|----------|---------|---------|-----------------------------------------------
 
-Test Suites: 8 passed, 8 total
-Tests:       29 passed, 29 total
+Test Suites: 2 failed, 6 passed, 8 total
+Tests:       2 failed, 27 passed, 29 total
 Snapshots:   0 total
-Time:        83.596 s
+Time:        111.01 s
 Ran all test suites.
