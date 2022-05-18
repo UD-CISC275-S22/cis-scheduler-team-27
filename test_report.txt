@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx (70.964 s)
+PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx (64.862 s)
   ● Console
 
     console.error
@@ -29,10 +29,10 @@ PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx (70.964 s)
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
-PASS src/Course/MoveCourses.test.tsx (40.804 s)
-PASS src/Semesters/Semester.test.tsx
+PASS src/Course/MoveCourses.test.tsx (37.554 s)
+PASS src/Semester/Semester.test.tsx
 PASS src/Plan/Plan.test.tsx
-PASS src/Course/EditCourse.test.tsx (10.31 s)
+PASS src/Course/EditCourse.test.tsx (9.726 s)
   ● Console
 
     console.error
@@ -59,8 +59,8 @@ PASS src/Course/EditCourse.test.tsx (10.31 s)
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
-PASS src/Course/CourseView.test.tsx (10.295 s)
-PASS src/Course/Course.test.tsx (7.628 s)
+PASS src/Course/CourseView.test.tsx (9.799 s)
+PASS src/Course/Course.test.tsx (7.513 s)
 PASS src/Welcome.test.tsx
 -------------------------------|---------|----------|---------|---------|-------------------------------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                         
@@ -82,7 +82,7 @@ All files                      |   29.59 |    18.18 |   36.34 |   29.74 |
   PlanList.tsx                 |     100 |     62.5 |     100 |     100 | 71-74,80-91                               
   PlanView.tsx                 |     100 |      100 |     100 |     100 |                                           
   Planner.tsx                  |    87.5 |    66.66 |      80 |   84.61 | 25,32                                     
- src/Semesters                 |      96 |    91.66 |   94.11 |   95.83 |                                           
+ src/Semester                  |      96 |    91.66 |   94.11 |   95.83 |                                           
   AddSemester.tsx              |     100 |      100 |     100 |     100 |                                           
   SemesterControl.tsx          |   93.33 |    83.33 |      90 |    92.3 | 48                                        
   SemesterEditor.tsx           |   91.66 |      100 |    87.5 |   91.66 | 25                                        
@@ -106,5 +106,5 @@ All files                      |   29.59 |    18.18 |   36.34 |   29.74 |
 Test Suites: 8 passed, 8 total
 Tests:       35 passed, 35 total
 Snapshots:   0 total
-Time:        145.358 s
+Time:        134.389 s
 Ran all test suites.
