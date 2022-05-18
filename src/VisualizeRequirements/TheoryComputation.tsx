@@ -36,37 +36,37 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
         DLECredits = DLECredits + parseInt(DLECourses[i].credits);
     }
 
-    const breadthA = merged.filter(
+    const BreadthA = merged.filter(
         (course: Course): boolean =>
             course.typ === "Creative Arts and Humanities"
     );
-    let breadthACreds = 0;
-    for (let i = 0; i < breadthA.length; i++) {
-        breadthACreds = breadthACreds + parseInt(breadthA[i].credits);
+    let BreadthACreds = 0;
+    for (let i = 0; i < BreadthA.length; i++) {
+        BreadthACreds = BreadthACreds + parseInt(BreadthA[i].credits);
     }
-    const breadthB = merged.filter(
+    const BreadthB = merged.filter(
         (course: Course): boolean =>
             course.typ === "History and Cultural Change"
     );
-    let breadthBCreds = 0;
-    for (let i = 0; i < breadthB.length; i++) {
-        breadthBCreds = breadthBCreds + parseInt(breadthB[i].credits);
+    let BreadthBCreds = 0;
+    for (let i = 0; i < BreadthB.length; i++) {
+        BreadthBCreds = BreadthBCreds + parseInt(BreadthB[i].credits);
     }
-    const breadthC = merged.filter(
+    const BreadthC = merged.filter(
         (course: Course): boolean =>
             course.typ === "Social and Behavioral Sciences"
     );
-    let breadthCCreds = 0;
-    for (let i = 0; i < breadthC.length; i++) {
-        breadthCCreds = breadthCCreds + parseInt(breadthC[i].credits);
+    let BreadthCCreds = 0;
+    for (let i = 0; i < BreadthC.length; i++) {
+        BreadthCCreds = BreadthCCreds + parseInt(BreadthC[i].credits);
     }
-    const breadthD = merged.filter(
+    const BreadthD = merged.filter(
         (course: Course): boolean =>
             course.typ === "Math, Natural Sciences and Technology"
     );
-    let breadthDCreds = 0;
-    for (let i = 0; i < breadthD.length; i++) {
-        breadthDCreds = breadthDCreds + parseInt(breadthD[i].credits);
+    let BreadthDCreds = 0;
+    for (let i = 0; i < BreadthD.length; i++) {
+        BreadthDCreds = BreadthDCreds + parseInt(BreadthD[i].credits);
     }
     const RestrictedElective = merged.filter(
         (course: Course): boolean => course.typ === "Restrictive Elective"
@@ -77,7 +77,7 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
             restrictedCreds + parseInt(RestrictedElective[i].credits);
     }
     const upperBreadthElectives = merged.filter(
-        (course: Course): boolean => course.typ === "Upper Level BREADTH"
+        (course: Course): boolean => course.typ === "Upper Level Breadth"
     );
     let upperBreadthCreds = 0;
     for (let i = 0; i < upperBreadthElectives.length; i++) {
@@ -423,13 +423,13 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                                         {MCCredits >= 3 ? (
                                             <div>
                                                 <span>
-                                                    MultiCultural Requirement
+                                                    Multicultural Requirement
                                                     3/3: ✔️
                                                 </span>
                                             </div>
                                         ) : (
                                             <span>
-                                                MultiCultural Requirement{" "}
+                                                Multicultural Requirement{" "}
                                                 {MCCredits}/3: ❌
                                             </span>
                                         )}
@@ -459,9 +459,9 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                             </div>
                         </Col>
                         <Col>
-                            <div> BREADTH Requirements:</div>
+                            <div> Breadth Requirements:</div>
                             <div>
-                                {breadthACreds >= 3 ? (
+                                {BreadthACreds >= 3 ? (
                                     <div>
                                         <span>
                                             Creative Arts and Humanities 3/3: ✔️
@@ -470,12 +470,12 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                                 ) : (
                                     <span>
                                         Creative Arts and Humanities{" "}
-                                        {breadthACreds}/3: ❌
+                                        {BreadthACreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <div>
-                                {breadthBCreds >= 3 ? (
+                                {BreadthBCreds >= 3 ? (
                                     <div>
                                         <span>
                                             History and Cultural Change 3/3: ✔️
@@ -484,12 +484,12 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                                 ) : (
                                     <span>
                                         History and Cultural Change{" "}
-                                        {breadthBCreds}/3: ❌
+                                        {BreadthBCreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <div>
-                                {breadthCCreds >= 3 ? (
+                                {BreadthCCreds >= 3 ? (
                                     <div>
                                         <span>
                                             Social and Behavioral Sciences 3/3:
@@ -499,12 +499,12 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                                 ) : (
                                     <span>
                                         Social and Behavioral Sciences{" "}
-                                        {breadthCCreds}/3: ❌
+                                        {BreadthCCreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <div>
-                                {breadthDCreds >= 3 ? (
+                                {BreadthDCreds >= 3 ? (
                                     <div>
                                         <span>
                                             Math, Natural Sciences and
@@ -514,7 +514,7 @@ export function TheoryComputation({ plan }: { plan: Plan }): JSX.Element {
                                 ) : (
                                     <span>
                                         Math, Natural Sciences and Technology{" "}
-                                        {breadthDCreds}/3: ❌
+                                        {BreadthDCreds}/3: ❌
                                     </span>
                                 )}
                             </div>
