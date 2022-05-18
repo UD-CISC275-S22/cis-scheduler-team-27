@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx (65.121 s)
+PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx (82.607 s)
   ● Console
 
     console.error
@@ -29,10 +29,10 @@ PASS src/VisualizeRequirements/VisualizeRequirements.test.tsx (65.121 s)
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
-PASS src/Course/MoveCourses.test.tsx (39.6 s)
+PASS src/Course/MoveCourses.test.tsx (46.927 s)
 PASS src/Semester/Semester.test.tsx
 PASS src/Plan/Plan.test.tsx
-PASS src/Course/EditCourse.test.tsx (9.778 s)
+PASS src/Course/EditCourse.test.tsx (12.484 s)
   ● Console
 
     console.error
@@ -59,8 +59,8 @@ PASS src/Course/EditCourse.test.tsx (9.778 s)
       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
 
-PASS src/Course/CourseView.test.tsx (9.323 s)
-PASS src/Course/Course.test.tsx (6.989 s)
+PASS src/Course/CourseView.test.tsx (12.077 s)
+PASS src/Course/Course.test.tsx (9.531 s)
 PASS src/Welcome.test.tsx
 -------------------------------|---------|----------|---------|---------|-------------------------------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                         
@@ -106,5 +106,5 @@ All files                      |   29.59 |    18.18 |   36.34 |   29.74 |
 Test Suites: 8 passed, 8 total
 Tests:       35 passed, 35 total
 Snapshots:   0 total
-Time:        135.265 s
+Time:        169.994 s
 Ran all test suites.
