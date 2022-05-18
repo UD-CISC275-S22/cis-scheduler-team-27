@@ -14,7 +14,7 @@ describe("Welcome component tests", () => {
         const welcomeButton = screen.getByRole("button");
         welcomeButton.click();
         const welcomeMessage = screen.queryAllByText(
-            /Add courses and make mock semesters to see how you can graduate on time./
+            /Use buttons to add, edit, and delete plans, semesters, and courses. /
         );
         expect(welcomeMessage).toHaveLength(1);
     });

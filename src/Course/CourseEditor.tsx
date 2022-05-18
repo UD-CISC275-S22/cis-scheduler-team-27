@@ -195,10 +195,10 @@ export function CourseEditor({
                     <Form.Check
                         type="checkbox"
                         id="Req-Check-Math"
-                        label="Upper Level BREADTH"
+                        label="Upper Level Breadth"
                         name="Reqs"
-                        value="Upper Level BREADTH"
-                        checked={chosenReq.includes("Upper Level BREADTH")}
+                        value="Upper Level Breadth"
+                        checked={chosenReq.includes("Upper Level Breadth")}
                         onChange={updateReqs}
                     />
                     <Form.Check

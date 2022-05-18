@@ -36,37 +36,37 @@ export function SystemsNetworks({ plan }: { plan: Plan }): JSX.Element {
         DLECredits = DLECredits + parseInt(DLECourses[i].credits);
     }
 
-    const BREADTHA = merged.filter(
+    const BreadthA = merged.filter(
         (course: Course): boolean =>
             course.typ === "Creative Arts and Humanities"
     );
-    let BREADTHACreds = 0;
-    for (let i = 0; i < BREADTHA.length; i++) {
-        BREADTHACreds = BREADTHACreds + parseInt(BREADTHA[i].credits);
+    let BreadthACreds = 0;
+    for (let i = 0; i < BreadthA.length; i++) {
+        BreadthACreds = BreadthACreds + parseInt(BreadthA[i].credits);
     }
-    const BREADTHB = merged.filter(
+    const BreadthB = merged.filter(
         (course: Course): boolean =>
             course.typ === "History and Cultural Change"
     );
-    let BREADTHBCreds = 0;
-    for (let i = 0; i < BREADTHB.length; i++) {
-        BREADTHBCreds = BREADTHBCreds + parseInt(BREADTHB[i].credits);
+    let BreadthBCreds = 0;
+    for (let i = 0; i < BreadthB.length; i++) {
+        BreadthBCreds = BreadthBCreds + parseInt(BreadthB[i].credits);
     }
-    const BREADTHC = merged.filter(
+    const BreadthC = merged.filter(
         (course: Course): boolean =>
             course.typ === "Social and Behavioral Sciences"
     );
-    let BREADTHCCreds = 0;
-    for (let i = 0; i < BREADTHC.length; i++) {
-        BREADTHCCreds = BREADTHCCreds + parseInt(BREADTHC[i].credits);
+    let BreadthCCreds = 0;
+    for (let i = 0; i < BreadthC.length; i++) {
+        BreadthCCreds = BreadthCCreds + parseInt(BreadthC[i].credits);
     }
-    const BREADTHD = merged.filter(
+    const BreadthD = merged.filter(
         (course: Course): boolean =>
             course.typ === "Math, Natural Sciences and Technology"
     );
-    let BREADTHDCreds = 0;
-    for (let i = 0; i < BREADTHD.length; i++) {
-        BREADTHDCreds = BREADTHDCreds + parseInt(BREADTHD[i].credits);
+    let BreadthDCreds = 0;
+    for (let i = 0; i < BreadthD.length; i++) {
+        BreadthDCreds = BreadthDCreds + parseInt(BreadthD[i].credits);
     }
     const RestrictedElective = merged.filter(
         (course: Course): boolean => course.typ === "Restrictive Elective"
@@ -76,13 +76,13 @@ export function SystemsNetworks({ plan }: { plan: Plan }): JSX.Element {
         restrictedCreds =
             restrictedCreds + parseInt(RestrictedElective[i].credits);
     }
-    const upperBREADTHElectives = merged.filter(
-        (course: Course): boolean => course.typ === "Upper Level BREADTH"
+    const upperBreadthElectives = merged.filter(
+        (course: Course): boolean => course.typ === "Upper Level Breadth"
     );
-    let upperBREADTHCreds = 0;
-    for (let i = 0; i < upperBREADTHElectives.length; i++) {
-        upperBREADTHCreds =
-            upperBREADTHCreds + parseInt(upperBREADTHElectives[i].credits);
+    let upperBreadthCreds = 0;
+    for (let i = 0; i < upperBreadthElectives.length; i++) {
+        upperBreadthCreds =
+            upperBreadthCreds + parseInt(upperBreadthElectives[i].credits);
     }
     const conElective = merged.filter(
         (course: Course): boolean => course.typ === "Concentration Elective"
@@ -409,13 +409,13 @@ export function SystemsNetworks({ plan }: { plan: Plan }): JSX.Element {
                                         {MCCredits >= 3 ? (
                                             <div>
                                                 <span>
-                                                    MultiCultural Requirement
+                                                    Multicultural Requirement
                                                     3/3: ✔️
                                                 </span>
                                             </div>
                                         ) : (
                                             <span>
-                                                MultiCultural Requirement{" "}
+                                                Multicultural Requirement{" "}
                                                 {MCCredits}/3: ❌
                                             </span>
                                         )}
@@ -445,9 +445,9 @@ export function SystemsNetworks({ plan }: { plan: Plan }): JSX.Element {
                             </div>
                         </Col>
                         <Col>
-                            <div> BREADTH Requirements:</div>
+                            <div> Breadth Requirements:</div>
                             <div>
-                                {BREADTHACreds >= 3 ? (
+                                {BreadthACreds >= 3 ? (
                                     <div>
                                         <span>
                                             Creative Arts and Humanities 3/3: ✔️
@@ -456,12 +456,12 @@ export function SystemsNetworks({ plan }: { plan: Plan }): JSX.Element {
                                 ) : (
                                     <span>
                                         Creative Arts and Humanities{" "}
-                                        {BREADTHACreds}/3: ❌
+                                        {BreadthACreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <div>
-                                {BREADTHBCreds >= 3 ? (
+                                {BreadthBCreds >= 3 ? (
                                     <div>
                                         <span>
                                             History and Cultural Change 3/3: ✔️
@@ -470,12 +470,12 @@ export function SystemsNetworks({ plan }: { plan: Plan }): JSX.Element {
                                 ) : (
                                     <span>
                                         History and Cultural Change{" "}
-                                        {BREADTHBCreds}/3: ❌
+                                        {BreadthBCreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <div>
-                                {BREADTHCCreds >= 3 ? (
+                                {BreadthCCreds >= 3 ? (
                                     <div>
                                         <span>
                                             Social and Behavioral Sciences 3/3:
@@ -485,12 +485,12 @@ export function SystemsNetworks({ plan }: { plan: Plan }): JSX.Element {
                                 ) : (
                                     <span>
                                         Social and Behavioral Sciences{" "}
-                                        {BREADTHCCreds}/3: ❌
+                                        {BreadthCCreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <div>
-                                {BREADTHDCreds >= 3 ? (
+                                {BreadthDCreds >= 3 ? (
                                     <div>
                                         <span>
                                             Math, Natural Sciences and
@@ -500,21 +500,21 @@ export function SystemsNetworks({ plan }: { plan: Plan }): JSX.Element {
                                 ) : (
                                     <span>
                                         Math, Natural Sciences and Technology{" "}
-                                        {BREADTHDCreds}/3: ❌
+                                        {BreadthDCreds}/3: ❌
                                     </span>
                                 )}
                             </div>
                             <p></p>
                             <div>
-                                {upperBREADTHCreds >= 9 ? (
+                                {upperBreadthCreds >= 9 ? (
                                     <div>
                                         <span>
-                                            Upper Level BREADTHs 9/9: ✔️
+                                            Upper Level Breadths 9/9: ✔️
                                         </span>
                                     </div>
                                 ) : (
                                     <span>
-                                        Upper Level BREADTHs {upperBREADTHCreds}
+                                        Upper Level Breadths {upperBreadthCreds}
                                         /9: ❌
                                     </span>
                                 )}
